@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Challengeweek_v2</string>
+    <string name="Challengeweek">Challengeweek</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_beginscherm">Beginscherm</string>
+    <string name="Email">E-mail</string>
+    <string name="Wachtwoord">Wachtwoord</string>
+    <string name="Overzicht">Overzicht</string>
+    <string name="instellingen">Instellingen</string>
+    <string name="Overzichtklassen">Overzicht klassen</string>
+    <string name="Overzichtstudenten">Overzicht studenten</string>
+    <string name="title_activity_overzicht_studenten">OverzichtStudenten</string>
+    <string name="hello_world">Hello world!</string>
+
+</resources>
