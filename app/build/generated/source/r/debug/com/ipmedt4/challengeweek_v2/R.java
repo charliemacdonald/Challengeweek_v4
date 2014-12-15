@@ -1301,6 +1301,7 @@ containing a value of this type.
         public static final int abc_textfield_search_material=0x7f020032;
         public static final int ic_launcher=0x7f020033;
         public static final int logohsleiden=0x7f020034;
+        public static final int roundedbutton=0x7f020035;
     }
     public static final class id {
         public static final int Challengeweek=0x7f080044;
