@@ -42,6 +42,22 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.ipmedt4.challengeweek_v2.Beginscherm" />
         </activity>
+        <activity
+            android:name=".OverzichtKlassen"
+            android:label="@string/title_activity_overzicht_klassen"
+            android:parentActivityName=".Beginscherm" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ipmedt4.challengeweek_v2.Beginscherm" />
+        </activity>
+        <activity
+            android:name=".Instellingen"
+            android:label="@string/title_activity_instellingen"
+            android:parentActivityName=".Beginscherm" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ipmedt4.challengeweek_v2.Beginscherm" />
+        </activity>
     </application>
 
 </manifest>

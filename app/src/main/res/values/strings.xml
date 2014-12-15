@@ -13,5 +13,7 @@
     <string name="Overzichtstudenten">Overzicht studenten</string>
     <string name="title_activity_overzicht_studenten">OverzichtStudenten</string>
     <string name="hello_world">Hello world!</string>
+    <string name="title_activity_overzicht_klassen">OverzichtKlassen</string>
+    <string name="title_activity_instellingen">Instellingen</string>
 
 </resources>

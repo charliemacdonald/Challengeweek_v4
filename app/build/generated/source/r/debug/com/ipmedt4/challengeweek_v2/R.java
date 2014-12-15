@@ -1307,7 +1307,7 @@ containing a value of this type.
         public static final int Overzicht=0x7f080040;
         public static final int Overzichtklassen=0x7f080041;
         public static final int Overzichtstudenten=0x7f080042;
-        public static final int aanmeldknop=0x7f080045;
+        public static final int aanmeldknop=0x7f080047;
         public static final int action_bar=0x7f080031;
         public static final int action_bar_activity_content=0x7f080000;
         public static final int action_bar_container=0x7f080030;
@@ -1333,7 +1333,7 @@ containing a value of this type.
         public static final int disableHome=0x7f08000c;
         public static final int dropdown=0x7f08001c;
         public static final int edit_query=0x7f080033;
-        public static final int emailveld=0x7f080046;
+        public static final int emailveld=0x7f080045;
         public static final int end=0x7f080014;
         public static final int expand_activities_button=0x7f080022;
         public static final int expanded_menu=0x7f080028;
@@ -1373,7 +1373,7 @@ containing a value of this type.
         public static final int title=0x7f080027;
         public static final int up=0x7f080008;
         public static final int useLogo=0x7f080012;
-        public static final int wachtwoordveld=0x7f080047;
+        public static final int wachtwoordveld=0x7f080046;
         public static final int withText=0x7f08001a;
         public static final int wrap_content=0x7f08001d;
     }
@@ -1405,13 +1405,18 @@ containing a value of this type.
         public static final int abc_search_view=0x7f030015;
         public static final int abc_simple_dropdown_hint=0x7f030016;
         public static final int activity_beginscherm=0x7f030017;
-        public static final int activity_loginscherm=0x7f030018;
-        public static final int activity_overzichtstudenten=0x7f030019;
-        public static final int support_simple_spinner_dropdown_item=0x7f03001a;
+        public static final int activity_instellingen=0x7f030018;
+        public static final int activity_loginscherm=0x7f030019;
+        public static final int activity_overzicht_klassen=0x7f03001a;
+        public static final int activity_overzicht_studenten=0x7f03001b;
+        public static final int support_simple_spinner_dropdown_item=0x7f03001c;
     }
     public static final class menu {
         public static final int beginscherm=0x7f0c0000;
         public static final int loginscherm=0x7f0c0001;
+        public static final int menu_instellingen=0x7f0c0002;
+        public static final int menu_overzicht_klassen=0x7f0c0003;
+        public static final int menu_overzicht_studenten=0x7f0c0004;
     }
     public static final class string {
         public static final int Challengeweek=0x7f0a0000;
@@ -1438,8 +1443,12 @@ containing a value of this type.
         public static final int abc_toolbar_collapse_description=0x7f0a0015;
         public static final int action_settings=0x7f0a0016;
         public static final int app_name=0x7f0a0017;
-        public static final int instellingen=0x7f0a0018;
-        public static final int title_activity_beginscherm=0x7f0a0019;
+        public static final int hello_world=0x7f0a0018;
+        public static final int instellingen=0x7f0a0019;
+        public static final int title_activity_beginscherm=0x7f0a001a;
+        public static final int title_activity_instellingen=0x7f0a001b;
+        public static final int title_activity_overzicht_klassen=0x7f0a001c;
+        public static final int title_activity_overzicht_studenten=0x7f0a001d;
     }
     public static final class style {
         /** 

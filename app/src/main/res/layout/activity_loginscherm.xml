@@ -20,51 +20,54 @@
         android:id="@+id/Challengeweek"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/aanmeldknop"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="89dp"
         android:text="@string/Challengeweek"
         android:textSize="40sp"
-        android:textStyle="bold" />
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_marginTop="43dp"
+        android:layout_below="@+id/hsleidenlogo"
+        android:layout_centerHorizontal="true" />
 
     <EditText
-        android:id="@+id/emailveld"
         android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        android:layout_above="@+id/aanmeldknop"
-        android:layout_alignLeft="@+id/Challengeweek"
-        android:layout_alignRight="@+id/Challengeweek"
-        android:layout_marginBottom="46dp"
-        android:ems="10"
+        android:layout_height="50dp"
         android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/emailveld"
         android:background="#ffffff"
-        android:hint="@string/Email" >
-
-        <requestFocus />
-    </EditText>
+        android:hint="E-mailadres"
+        android:layout_below="@+id/Challengeweek"
+        android:layout_alignLeft="@+id/Challengeweek"
+        android:layout_alignStart="@+id/Challengeweek"
+        android:layout_marginTop="50dp"
+        android:layout_alignRight="@+id/Challengeweek"
+        android:layout_alignEnd="@+id/Challengeweek" />
 
     <EditText
-        android:id="@+id/wachtwoordveld"
         android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        android:layout_above="@+id/aanmeldknop"
-        android:layout_alignLeft="@+id/emailveld"
-        android:layout_alignRight="@+id/emailveld"
-        android:background="#ffffff"
+        android:layout_height="50dp"
+        android:inputType="textPassword"
         android:ems="10"
-        android:hint="@string/Wachtwoord"
-        android:inputType="textPassword" />
+        android:id="@+id/wachtwoordveld"
+        android:background="#ffffff"
+        android:hint="Wachtwoord"
+        android:layout_below="@+id/emailveld"
+        android:layout_alignLeft="@+id/emailveld"
+        android:layout_alignStart="@+id/emailveld"
+        android:layout_alignRight="@+id/emailveld"
+        android:layout_alignEnd="@+id/emailveld" />
 
     <Button
-        android:id="@+id/aanmeldknop"
-        android:layout_width="185dp"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/wachtwoordveld"
-        android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/wachtwoordveld"
-        android:layout_marginBottom="161dp"
-        android:background="#cccccc"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
         android:text="Aanmelden"
-        android:textStyle="bold" />
+        android:id="@+id/aanmeldknop"
+        android:layout_below="@+id/wachtwoordveld"
+        android:layout_alignLeft="@+id/wachtwoordveld"
+        android:layout_alignStart="@+id/wachtwoordveld"
+        android:layout_marginTop="57dp"
+        android:layout_alignRight="@+id/wachtwoordveld"
+        android:layout_alignEnd="@+id/wachtwoordveld" />
+
 
 </RelativeLayout>
