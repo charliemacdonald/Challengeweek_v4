@@ -74,6 +74,22 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.ipmedt4.challengeweek_v2.Instellingen" />
         </activity>
+        <activity
+            android:name=".Beoordelingscherm"
+            android:label="@string/title_activity_beoordelingscherm"
+            android:parentActivityName=".OverzichtStudenten" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ipmedt4.challengeweek_v2.OverzichtStudenten" />
+        </activity>
+        <activity
+            android:name=".Bevestigingsscherm"
+            android:label="@string/title_activity_bevestigingsscherm"
+            android:parentActivityName=".Beoordelingscherm" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ipmedt4.challengeweek_v2.Beoordelingscherm" />
+        </activity>
     </application>
 
 </manifest>

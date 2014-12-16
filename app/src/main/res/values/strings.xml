@@ -13,7 +13,6 @@
     <string name="Versie">Versie</string>
     <string name="Disclaimer">Disclaimer</string>
     <string name="Uitloggen">Uitloggen</string>
-
     <string name="Overzichtstudenten">Overzicht studenten</string>
     <string name="title_activity_overzicht_studenten">OverzichtStudenten</string>
     <string name="hello_world">Hello world!</string>
@@ -21,5 +20,7 @@
     <string name="title_activity_instellingen">Instellingen</string>
     <string name="title_activity_versiescherm">Versiescherm</string>
     <string name="title_activity_disclaimerscherm">Disclaimerscherm</string>
+    <string name="title_activity_beoordelingscherm">Beoordelingscherm</string>
+    <string name="title_activity_bevestigingsscherm">Bevestigingsscherm</string>
 
 </resources>
