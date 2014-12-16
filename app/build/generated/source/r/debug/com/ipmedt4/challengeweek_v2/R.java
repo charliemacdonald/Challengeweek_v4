@@ -1304,11 +1304,11 @@ containing a value of this type.
         public static final int roundedbutton=0x7f020035;
     }
     public static final class id {
-        public static final int Challengeweek=0x7f080044;
+        public static final int Challengeweek=0x7f080049;
         public static final int Overzicht=0x7f080040;
         public static final int Overzichtklassen=0x7f080041;
         public static final int Overzichtstudenten=0x7f080042;
-        public static final int aanmeldknop=0x7f080047;
+        public static final int aanmeldknop=0x7f08004c;
         public static final int action_bar=0x7f080031;
         public static final int action_bar_activity_content=0x7f080000;
         public static final int action_bar_container=0x7f080030;
@@ -1322,7 +1322,7 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f08002e;
         public static final int action_mode_bar_stub=0x7f08002d;
         public static final int action_mode_close_button=0x7f080020;
-        public static final int action_settings=0x7f080048;
+        public static final int action_settings=0x7f08004d;
         public static final int activity_chooser_view_content=0x7f080021;
         public static final int always=0x7f080016;
         public static final int beginning=0x7f080013;
@@ -1332,9 +1332,12 @@ containing a value of this type.
         public static final int default_activity_button=0x7f080024;
         public static final int dialog=0x7f08001b;
         public static final int disableHome=0x7f08000c;
+        public static final int disclaimerbutton=0x7f080047;
+        public static final int disclaimertekst=0x7f080044;
+        public static final int disclaimertitel=0x7f080045;
         public static final int dropdown=0x7f08001c;
         public static final int edit_query=0x7f080033;
-        public static final int emailveld=0x7f080045;
+        public static final int emailveld=0x7f08004a;
         public static final int end=0x7f080014;
         public static final int expand_activities_button=0x7f080022;
         public static final int expanded_menu=0x7f080028;
@@ -1372,9 +1375,11 @@ containing a value of this type.
         public static final int submit_area=0x7f08003c;
         public static final int tabMode=0x7f08000b;
         public static final int title=0x7f080027;
+        public static final int uitlogbutton=0x7f080048;
         public static final int up=0x7f080008;
         public static final int useLogo=0x7f080012;
-        public static final int wachtwoordveld=0x7f080046;
+        public static final int versiebutton=0x7f080046;
+        public static final int wachtwoordveld=0x7f08004b;
         public static final int withText=0x7f08001a;
         public static final int wrap_content=0x7f08001d;
     }
@@ -1406,50 +1411,59 @@ containing a value of this type.
         public static final int abc_search_view=0x7f030015;
         public static final int abc_simple_dropdown_hint=0x7f030016;
         public static final int activity_beginscherm=0x7f030017;
-        public static final int activity_instellingen=0x7f030018;
-        public static final int activity_loginscherm=0x7f030019;
-        public static final int activity_overzicht_klassen=0x7f03001a;
-        public static final int activity_overzicht_studenten=0x7f03001b;
-        public static final int support_simple_spinner_dropdown_item=0x7f03001c;
+        public static final int activity_disclaimerscherm=0x7f030018;
+        public static final int activity_instellingen=0x7f030019;
+        public static final int activity_loginscherm=0x7f03001a;
+        public static final int activity_overzicht_klassen=0x7f03001b;
+        public static final int activity_overzicht_studenten=0x7f03001c;
+        public static final int activity_versiescherm=0x7f03001d;
+        public static final int support_simple_spinner_dropdown_item=0x7f03001e;
     }
     public static final class menu {
         public static final int beginscherm=0x7f0c0000;
         public static final int loginscherm=0x7f0c0001;
-        public static final int menu_instellingen=0x7f0c0002;
-        public static final int menu_overzicht_klassen=0x7f0c0003;
-        public static final int menu_overzicht_studenten=0x7f0c0004;
+        public static final int menu_disclaimerscherm=0x7f0c0002;
+        public static final int menu_instellingen=0x7f0c0003;
+        public static final int menu_overzicht_klassen=0x7f0c0004;
+        public static final int menu_overzicht_studenten=0x7f0c0005;
+        public static final int menu_versiescherm=0x7f0c0006;
     }
     public static final class string {
         public static final int Challengeweek=0x7f0a0000;
-        public static final int Email=0x7f0a0001;
-        public static final int Overzicht=0x7f0a0002;
-        public static final int Overzichtklassen=0x7f0a0003;
-        public static final int Overzichtstudenten=0x7f0a0004;
-        public static final int Wachtwoord=0x7f0a0005;
-        public static final int abc_action_bar_home_description=0x7f0a0006;
-        public static final int abc_action_bar_home_description_format=0x7f0a0007;
-        public static final int abc_action_bar_home_subtitle_description_format=0x7f0a0008;
-        public static final int abc_action_bar_up_description=0x7f0a0009;
-        public static final int abc_action_menu_overflow_description=0x7f0a000a;
-        public static final int abc_action_mode_done=0x7f0a000b;
-        public static final int abc_activity_chooser_view_see_all=0x7f0a000c;
-        public static final int abc_activitychooserview_choose_application=0x7f0a000d;
-        public static final int abc_searchview_description_clear=0x7f0a000e;
-        public static final int abc_searchview_description_query=0x7f0a000f;
-        public static final int abc_searchview_description_search=0x7f0a0010;
-        public static final int abc_searchview_description_submit=0x7f0a0011;
-        public static final int abc_searchview_description_voice=0x7f0a0012;
-        public static final int abc_shareactionprovider_share_with=0x7f0a0013;
-        public static final int abc_shareactionprovider_share_with_application=0x7f0a0014;
-        public static final int abc_toolbar_collapse_description=0x7f0a0015;
-        public static final int action_settings=0x7f0a0016;
-        public static final int app_name=0x7f0a0017;
-        public static final int hello_world=0x7f0a0018;
-        public static final int instellingen=0x7f0a0019;
-        public static final int title_activity_beginscherm=0x7f0a001a;
-        public static final int title_activity_instellingen=0x7f0a001b;
-        public static final int title_activity_overzicht_klassen=0x7f0a001c;
-        public static final int title_activity_overzicht_studenten=0x7f0a001d;
+        public static final int Disclaimer=0x7f0a0001;
+        public static final int Email=0x7f0a0002;
+        public static final int Overzicht=0x7f0a0003;
+        public static final int Overzichtklassen=0x7f0a0004;
+        public static final int Overzichtstudenten=0x7f0a0005;
+        public static final int Uitloggen=0x7f0a0006;
+        public static final int Versie=0x7f0a0007;
+        public static final int Wachtwoord=0x7f0a0008;
+        public static final int abc_action_bar_home_description=0x7f0a0009;
+        public static final int abc_action_bar_home_description_format=0x7f0a000a;
+        public static final int abc_action_bar_home_subtitle_description_format=0x7f0a000b;
+        public static final int abc_action_bar_up_description=0x7f0a000c;
+        public static final int abc_action_menu_overflow_description=0x7f0a000d;
+        public static final int abc_action_mode_done=0x7f0a000e;
+        public static final int abc_activity_chooser_view_see_all=0x7f0a000f;
+        public static final int abc_activitychooserview_choose_application=0x7f0a0010;
+        public static final int abc_searchview_description_clear=0x7f0a0011;
+        public static final int abc_searchview_description_query=0x7f0a0012;
+        public static final int abc_searchview_description_search=0x7f0a0013;
+        public static final int abc_searchview_description_submit=0x7f0a0014;
+        public static final int abc_searchview_description_voice=0x7f0a0015;
+        public static final int abc_shareactionprovider_share_with=0x7f0a0016;
+        public static final int abc_shareactionprovider_share_with_application=0x7f0a0017;
+        public static final int abc_toolbar_collapse_description=0x7f0a0018;
+        public static final int action_settings=0x7f0a0019;
+        public static final int app_name=0x7f0a001a;
+        public static final int hello_world=0x7f0a001b;
+        public static final int instellingen=0x7f0a001c;
+        public static final int title_activity_beginscherm=0x7f0a001d;
+        public static final int title_activity_disclaimerscherm=0x7f0a001e;
+        public static final int title_activity_instellingen=0x7f0a001f;
+        public static final int title_activity_overzicht_klassen=0x7f0a0020;
+        public static final int title_activity_overzicht_studenten=0x7f0a0021;
+        public static final int title_activity_versiescherm=0x7f0a0022;
     }
     public static final class style {
         /** 
