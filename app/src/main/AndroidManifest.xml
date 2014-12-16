@@ -5,7 +5,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="9"
+        android:minSdkVersion="12"
         android:targetSdkVersion="21" />
 
     <android:uses-permission
@@ -23,7 +23,7 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name=".Loginscherm"
-            android:label="@string/app_name" >
+            android:label="@string/Challengeweek" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -32,11 +32,11 @@
         </activity>
         <activity
             android:name=".Beginscherm"
-            android:label="@string/title_activity_beginscherm" >
+            android:label="@string/Challengeweek" >
         </activity>
         <activity
             android:name=".OverzichtStudenten"
-            android:label="@string/title_activity_overzicht_studenten"
+            android:label="@string/Challengeweek"
             android:parentActivityName=".Beginscherm" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -44,7 +44,7 @@
         </activity>
         <activity
             android:name=".OverzichtKlassen"
-            android:label="@string/title_activity_overzicht_klassen"
+            android:label="@string/Challengeweek"
             android:parentActivityName=".Beginscherm" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -52,7 +52,7 @@
         </activity>
         <activity
             android:name=".Instellingen"
-            android:label="@string/title_activity_instellingen"
+            android:label="@string/Challengeweek"
             android:parentActivityName=".Beginscherm" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -60,7 +60,7 @@
         </activity>
         <activity
             android:name=".Versiescherm"
-            android:label="@string/title_activity_versiescherm"
+            android:label="@string/Challengeweek"
             android:parentActivityName=".Instellingen" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -68,7 +68,7 @@
         </activity>
         <activity
             android:name=".Disclaimerscherm"
-            android:label="@string/title_activity_disclaimerscherm"
+            android:label="@string/Challengeweek"
             android:parentActivityName=".Instellingen" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -76,7 +76,7 @@
         </activity>
         <activity
             android:name=".Beoordelingscherm"
-            android:label="@string/title_activity_beoordelingscherm"
+            android:label="@string/Challengeweek"
             android:parentActivityName=".OverzichtStudenten" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -84,7 +84,7 @@
         </activity>
         <activity
             android:name=".Bevestigingsscherm"
-            android:label="@string/title_activity_bevestigingsscherm"
+            android:label="@string/Challengeweek"
             android:parentActivityName=".Beoordelingscherm" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
