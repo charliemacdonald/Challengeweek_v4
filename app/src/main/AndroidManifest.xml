@@ -90,6 +90,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.ipmedt4.challengeweek_v2.Beoordelingscherm" />
         </activity>
+        <activity
+            android:name=".OverzichtStudenten_2"
+            android:label="@string/title_activity_overzicht_studenten_2"
+            android:parentActivityName=".OverzichtKlassen" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ipmedt4.challengeweek_v2.OverzichtKlassen" />
+        </activity>
     </application>
 
 </manifest>

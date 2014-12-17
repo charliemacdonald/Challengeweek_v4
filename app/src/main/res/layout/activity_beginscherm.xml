@@ -20,9 +20,9 @@
         android:layout_height="wrap_content"
         android:text="@string/Overzicht"
         android:textColor="#000000"
-        android:textSize="40sp"
+        android:textSize="36sp"
         android:textStyle="bold"
-        android:layout_below="@+id/hsleidenlogo"
+        android:layout_alignBottom="@+id/hsleidenlogo"
         android:layout_centerHorizontal="true" />
 
     <Button
@@ -31,6 +31,7 @@
         android:layout_height="50dp"
         android:background="@drawable/roundedbutton"
         android:text="@string/Overzichtklassen"
+        android:textStyle="bold"
         android:layout_marginTop="38dp"
         android:layout_below="@+id/Overzicht"
         android:layout_alignParentLeft="true"
@@ -44,12 +45,12 @@
         android:layout_height="wrap_content"
         android:background="@drawable/roundedbutton"
         android:text="@string/Overzichtstudenten"
-        android:layout_below="@+id/Overzichtklassen"
+        android:textStyle="bold"
+        android:layout_centerVertical="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="33dp"
-        android:layout_alignRight="@+id/Overzichtklassen"
-        android:layout_alignEnd="@+id/Overzichtklassen" />
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <Button
         android:id="@+id/instellingen"
@@ -57,10 +58,11 @@
         android:layout_height="wrap_content"
         android:background="@drawable/roundedbutton"
         android:text="@string/instellingen"
-        android:layout_below="@+id/Overzichtstudenten"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="38dp"
+        android:layout_marginBottom="84dp"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 

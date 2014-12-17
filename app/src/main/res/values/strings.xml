@@ -16,13 +16,25 @@
     <string name="Overzichtstudenten">Overzicht studenten</string>
     <string name="title_activity_overzicht_studenten">OverzichtStudenten</string>
     <string name="hello_world">Hello world!</string>
-    <string name ="Klassen">Klassen</string>
+    <string name="Klassen">Klassen</string>
     <string name="Studenten">Studenten</string>
+    <string name="inf1a">INF1A</string>
+    <string name="inf1b">INF1B</string>
+    <string name="inf1c">INF1C</string>
+    <string name="inf1d">INF1D</string>
+    <string name="inf1e">INF1E</string>
+    <string name="inf1f">INF1F</string>
+    <string name="inf1g">INF1G</string>
+    <string name="inf1h">INF1H</string>
+    <string name="inf1i">INF1I</string>
+    <string name="inf1j">INF1J</string>
+    <string name="inf1k">INF1K</string>
     <string name="title_activity_overzicht_klassen">OverzichtKlassen</string>
     <string name="title_activity_instellingen">Instellingen</string>
     <string name="title_activity_versiescherm">Versiescherm</string>
     <string name="title_activity_disclaimerscherm">Disclaimerscherm</string>
     <string name="title_activity_beoordelingscherm">Beoordelingscherm</string>
     <string name="title_activity_bevestigingsscherm">Bevestigingsscherm</string>
+    <string name="title_activity_overzicht_studenten_2">OverzichtStudenten_2</string>
 
 </resources>
