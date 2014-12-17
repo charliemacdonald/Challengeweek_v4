@@ -98,6 +98,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.ipmedt4.challengeweek_v2.OverzichtKlassen" />
         </activity>
+        <activity
+            android:name=".Overzicht_Studenten2"
+            android:label="@string/title_activity_overzicht__studenten2"
+            android:parentActivityName=".OverzichtKlassen" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ipmedt4.challengeweek_v2.OverzichtKlassen" />
+        </activity>
     </application>
 
 </manifest>

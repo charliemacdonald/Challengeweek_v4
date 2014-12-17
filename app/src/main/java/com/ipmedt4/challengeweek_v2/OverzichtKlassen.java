@@ -1,17 +1,107 @@
 package com.ipmedt4.challengeweek_v2;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 
 public class OverzichtKlassen extends ActionBarActivity {
-
+    Button inf1abutton;
+    Button inf1bbutton;
+    Button inf1cbutton;
+    Button inf1dbutton;
+    Button inf1ebutton;
+    Button inf1fbutton;
+    Button inf1gbutton;
+    Button inf1hbutton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_overzicht_klassen);
+        Button inf1abutton = (Button) findViewById(R.id.inf1abutton);
+        Button inf1bbutton = (Button) findViewById(R.id.inf1bbutton);
+        Button inf1cbutton = (Button) findViewById(R.id.inf1cbutton);
+        Button inf1dbutton = (Button) findViewById(R.id.inf1dbutton);
+        Button inf1ebutton = (Button) findViewById(R.id.inf1ebutton);
+        Button inf1fbutton = (Button) findViewById(R.id.inf1fbutton);
+        Button inf1gbutton = (Button) findViewById(R.id.inf1gbutton);
+        Button inf1hbutton = (Button) findViewById(R.id.inf1hbutton);
+        inf1abutton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                Intent intent = new Intent(v.getContext(), Overzicht_Studenten2.class);
+                startActivityForResult(intent, 0);
+
+
+            }});
+        inf1bbutton.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v) {
+                Intent myintent2 = new Intent(v.getContext(), Overzicht_Studenten2.class);
+                startActivity(myintent2);
+
+            }
+        });
+
+        inf1cbutton.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v) {
+                Intent myintent2 = new Intent(v.getContext(), Overzicht_Studenten2.class);
+                startActivity(myintent2);
+
+            }
+        });
+
+        inf1dbutton.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v) {
+                Intent myintent2 = new Intent(v.getContext(), Overzicht_Studenten2.class);
+                startActivity(myintent2);
+
+            }
+        });
+
+        inf1ebutton.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v) {
+                Intent myintent2 = new Intent(v.getContext(), Overzicht_Studenten2.class);
+                startActivity(myintent2);
+
+            }
+        });
+
+        inf1fbutton.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v) {
+                Intent myintent2 = new Intent(v.getContext(), Overzicht_Studenten2.class);
+                startActivity(myintent2);
+
+            }
+        });
+
+        inf1gbutton.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v) {
+                Intent myintent2 = new Intent(v.getContext(), Overzicht_Studenten2.class);
+                startActivity(myintent2);
+
+            }
+        });
+
+        inf1hbutton.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v) {
+                Intent myintent2 = new Intent(v.getContext(), Overzicht_Studenten2.class);
+                startActivity(myintent2);
+
+            }
+        });
     }
 
 

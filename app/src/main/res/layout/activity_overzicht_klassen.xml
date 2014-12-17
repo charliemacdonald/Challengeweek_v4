@@ -1,3 +1,9 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
@@ -15,7 +21,7 @@
     <TextView android:text="@string/Klassen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="36sp"
+        android:textSize="30sp"
         android:textColor="#000000"
         android:textStyle="bold"
 
@@ -31,11 +37,12 @@
         android:background="@drawable/roundedbutton"
         android:textColor="#000000"
         android:id="@+id/inf1abutton"
-        android:layout_above="@+id/inf1bbutton"
+        android:layout_below="@+id/textView2"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_marginTop="72dp"
+        android:layout_alignRight="@+id/inf1bbutton"
+        android:layout_alignEnd="@+id/inf1bbutton" />
 
     <Button
         android:layout_width="wrap_content"
@@ -44,11 +51,11 @@
         android:background="@drawable/roundedbutton"
         android:id="@+id/inf1bbutton"
         android:textColor="#000000"
-        android:layout_above="@+id/inf1cbutton"
+        android:layout_below="@+id/inf1abutton"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignRight="@+id/inf1cbutton"
+        android:layout_alignEnd="@+id/inf1cbutton" />
 
     <Button
         android:layout_width="wrap_content"
@@ -57,11 +64,11 @@
         android:background="@drawable/roundedbutton"
         android:textColor="#000000"
         android:id="@+id/inf1cbutton"
-        android:layout_above="@+id/inf1dbutton"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
+        android:layout_below="@+id/inf1bbutton"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:layout_width="wrap_content"
@@ -70,11 +77,11 @@
         android:id="@+id/inf1dbutton"
         android:background="@drawable/roundedbutton"
         android:textColor="#000000"
-        android:layout_above="@+id/inf1ebutton"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
+        android:layout_below="@+id/inf1cbutton"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:layout_width="wrap_content"
@@ -83,11 +90,11 @@
         android:id="@+id/inf1ebutton"
         android:background="@drawable/roundedbutton"
         android:textColor="#000000"
-        android:layout_above="@+id/inf1fbutton"
+        android:layout_below="@+id/inf1dbutton"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignRight="@+id/inf1dbutton"
+        android:layout_alignEnd="@+id/inf1dbutton" />
 
     <Button
         android:layout_width="wrap_content"
@@ -96,11 +103,12 @@
         android:id="@+id/inf1fbutton"
         android:background="@drawable/roundedbutton"
         android:textColor="#000000"
-        android:layout_above="@+id/inf1gbutton"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
+        android:layout_below="@+id/inf1ebutton"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/hsleidenlogo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:layout_width="wrap_content"
@@ -109,11 +117,11 @@
         android:id="@+id/inf1gbutton"
         android:background="@drawable/roundedbutton"
         android:textColor="#000000"
-        android:layout_above="@+id/inf1hbutton"
+        android:layout_below="@+id/inf1fbutton"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignRight="@+id/inf1fbutton"
+        android:layout_alignEnd="@+id/inf1fbutton" />
 
     <Button
         android:layout_width="wrap_content"
@@ -122,10 +130,37 @@
         android:id="@+id/inf1hbutton"
         android:background="@drawable/roundedbutton"
         android:textColor="#000000"
+        android:layout_below="@+id/inf1gbutton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/inf1gbutton"
+        android:layout_alignEnd="@+id/inf1gbutton" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/inf1i"
+        android:id="@+id/inf1ibutton"
+        android:background="@drawable/roundedbutton"
+        android:textColor="#000000"
+        android:layout_below="@+id/inf1hbutton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/inf1hbutton"
+        android:layout_alignEnd="@+id/inf1hbutton" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/inf1j"
+        android:id="@+id/inf1jbutton"
+        android:background="@drawable/roundedbutton"
+        android:textColor="#000000"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignRight="@+id/inf1ibutton"
+        android:layout_alignEnd="@+id/inf1ibutton" />
 
 </RelativeLayout>
+</ScrollView>

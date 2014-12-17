@@ -36,5 +36,6 @@
     <string name="title_activity_beoordelingscherm">Beoordelingscherm</string>
     <string name="title_activity_bevestigingsscherm">Bevestigingsscherm</string>
     <string name="title_activity_overzicht_studenten_2">OverzichtStudenten_2</string>
+    <string name="title_activity_overzicht__studenten2">Overzicht_Studenten2</string>
 
 </resources>

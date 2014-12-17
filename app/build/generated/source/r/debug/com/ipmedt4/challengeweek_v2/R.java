@@ -1322,10 +1322,11 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f08002e;
         public static final int action_mode_bar_stub=0x7f08002d;
         public static final int action_mode_close_button=0x7f080020;
-        public static final int action_settings=0x7f080057;
+        public static final int action_settings=0x7f08005a;
         public static final int activity_chooser_view_content=0x7f080021;
         public static final int always=0x7f080016;
         public static final int beginning=0x7f080013;
+        public static final int boxstudent1=0x7f080059;
         public static final int checkbox=0x7f080029;
         public static final int collapseActionView=0x7f080017;
         public static final int decor_content_parent=0x7f08002f;
@@ -1355,6 +1356,8 @@ containing a value of this type.
         public static final int inf1fbutton=0x7f080053;
         public static final int inf1gbutton=0x7f080054;
         public static final int inf1hbutton=0x7f080055;
+        public static final int inf1ibutton=0x7f080056;
+        public static final int inf1jbutton=0x7f080057;
         public static final int instellingen=0x7f080043;
         public static final int listMode=0x7f080009;
         public static final int list_item=0x7f080025;
@@ -1382,7 +1385,7 @@ containing a value of this type.
         public static final int split_action_bar=0x7f080007;
         public static final int submit_area=0x7f08003c;
         public static final int tabMode=0x7f08000b;
-        public static final int textView=0x7f080056;
+        public static final int textView=0x7f080058;
         public static final int textView2=0x7f08004d;
         public static final int title=0x7f080027;
         public static final int uitlogbutton=0x7f080048;
@@ -1426,10 +1429,11 @@ containing a value of this type.
         public static final int activity_disclaimerscherm=0x7f03001a;
         public static final int activity_instellingen=0x7f03001b;
         public static final int activity_loginscherm=0x7f03001c;
-        public static final int activity_overzicht_klassen=0x7f03001d;
-        public static final int activity_overzicht_studenten=0x7f03001e;
-        public static final int activity_versiescherm=0x7f03001f;
-        public static final int support_simple_spinner_dropdown_item=0x7f030020;
+        public static final int activity_overzicht__studenten2=0x7f03001d;
+        public static final int activity_overzicht_klassen=0x7f03001e;
+        public static final int activity_overzicht_studenten=0x7f03001f;
+        public static final int activity_versiescherm=0x7f030020;
+        public static final int support_simple_spinner_dropdown_item=0x7f030021;
     }
     public static final class menu {
         public static final int beginscherm=0x7f0c0000;
@@ -1438,9 +1442,11 @@ containing a value of this type.
         public static final int menu_bevestigingsscherm=0x7f0c0003;
         public static final int menu_disclaimerscherm=0x7f0c0004;
         public static final int menu_instellingen=0x7f0c0005;
-        public static final int menu_overzicht_klassen=0x7f0c0006;
-        public static final int menu_overzicht_studenten=0x7f0c0007;
-        public static final int menu_versiescherm=0x7f0c0008;
+        public static final int menu_overzicht__studenten2=0x7f0c0006;
+        public static final int menu_overzicht_klassen=0x7f0c0007;
+        public static final int menu_overzicht_studenten=0x7f0c0008;
+        public static final int menu_overzicht_studenten_2=0x7f0c0009;
+        public static final int menu_versiescherm=0x7f0c000a;
     }
     public static final class string {
         public static final int Challengeweek=0x7f0a0000;
@@ -1490,9 +1496,11 @@ containing a value of this type.
         public static final int title_activity_bevestigingsscherm=0x7f0a002c;
         public static final int title_activity_disclaimerscherm=0x7f0a002d;
         public static final int title_activity_instellingen=0x7f0a002e;
-        public static final int title_activity_overzicht_klassen=0x7f0a002f;
-        public static final int title_activity_overzicht_studenten=0x7f0a0030;
-        public static final int title_activity_versiescherm=0x7f0a0031;
+        public static final int title_activity_overzicht__studenten2=0x7f0a002f;
+        public static final int title_activity_overzicht_klassen=0x7f0a0030;
+        public static final int title_activity_overzicht_studenten=0x7f0a0031;
+        public static final int title_activity_overzicht_studenten_2=0x7f0a0032;
+        public static final int title_activity_versiescherm=0x7f0a0033;
     }
     public static final class style {
         /** 
