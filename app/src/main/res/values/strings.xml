@@ -32,6 +32,9 @@
     <string name="Verzenden">Verzenden</string>
     <string name="Beoordeling">Beoordeling</string>
     <string name="Criteriagehaald">Criteria behaald</string>
+    <string name="vraagbeoordelingbevestigen">Wilt u dit cijfer bevestigen?</string>
+    <string name="jabevestigen">Ja, bevestigen</string>
+    <string name="neebeoordeling">Nee, beoordeling aanpassen</string>
     <string name="title_activity_overzicht_klassen">OverzichtKlassen</string>
     <string name="title_activity_instellingen">Instellingen</string>
     <string name="title_activity_versiescherm">Versiescherm</string>
