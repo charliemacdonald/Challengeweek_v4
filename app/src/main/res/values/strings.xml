@@ -30,6 +30,7 @@
     <string name="inf1j">INF1J</string>
     <string name="inf1k">INF1K</string>
     <string name="Verzenden">Verzenden</string>
+    <string name="Beoordeling">Beoordeling</string>
     <string name="title_activity_overzicht_klassen">OverzichtKlassen</string>
     <string name="title_activity_instellingen">Instellingen</string>
     <string name="title_activity_versiescherm">Versiescherm</string>
