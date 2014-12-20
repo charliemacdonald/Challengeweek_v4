@@ -106,6 +106,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.ipmedt4.challengeweek_v2.OverzichtKlassen" />
         </activity>
+        <activity
+            android:name=".Opmerkingenscherm"
+            android:label="@string/title_activity_opmerkingenscherm"
+            android:parentActivityName=".Beoordelingscherm" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ipmedt4.challengeweek_v2.Beoordelingscherm" />
+        </activity>
     </application>
 
 </manifest>
