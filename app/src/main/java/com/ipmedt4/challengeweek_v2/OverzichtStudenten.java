@@ -1,5 +1,6 @@
 package com.ipmedt4.challengeweek_v2;
 
+import android.annotation.TargetApi;
 import android.app.Activity;
 import android.app.ListActivity;
 import android.content.Context;
@@ -8,6 +9,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteException;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.os.Build;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.text.Editable;
@@ -51,6 +53,7 @@ private SimpleCursorAdapter dataAdapter;
         displayListView();
 
     }
+    @TargetApi(Build.VERSION_CODES.HONEYCOMB)
     private void displayListView(){
         Cursor cursor = dbHelper.showAlleStudenten();
 

@@ -42,11 +42,12 @@ public class StudentDBAdapter {
         @Override
         public void onCreate(SQLiteDatabase db){
             Log.w(TAG, DATABASE_CREATE);
+            db.execSQL(DATABASE_CREATE);
         }
 
         @Override
         public void onUpgrade (SQLiteDatabase db, int oldVersion, int newVersion){
-          Log.w(TAG, "Upgrading database from veriosn" + oldVersion + "to" + newVersion +
+          Log.w(TAG, "Upgrading database from version" + oldVersion + "to" + newVersion +
                   "which will destroy all old data");
             db.execSQL("DROP TABLE IF EXISTS" + SQLITE_TABLE);
             onCreate(db);
