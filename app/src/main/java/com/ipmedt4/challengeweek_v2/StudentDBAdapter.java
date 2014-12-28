@@ -77,6 +77,20 @@ public class StudentDBAdapter {
         return mDB.insert(SQLITE_TABLE, null, initialValues);
     }
 
+    public long OpmerkingenOpslaan (String opmerkingen){
+        ContentValues initialValues = new ContentValues();
+        initialValues.put(KEY_OPMERKINGEN, opmerkingen);
+
+        return mDB.insert(SQLITE_TABLE, null, initialValues);
+    }
+
+    public long CijferOpslaan (String cijfer){
+        ContentValues initialValues = new ContentValues();
+        initialValues.put(KEY_CIJFER, cijfer);
+
+        return mDB.insert(SQLITE_TABLE, null, initialValues);
+    }
+
     public boolean deleteAllStudenten(){
         int doneDelete = 0;
         doneDelete = mDB.delete(SQLITE_TABLE, null, null);
@@ -115,17 +129,25 @@ public class StudentDBAdapter {
    }
     public void insertStudenten(){
         createStudent("Adel, Pieter", "s1078455", "INF1G");
-        createStudent("Adel, Pieter", "s1078455", "INF1G");
-        createStudent("Adel, Pieter", "s1078455", "INF1G");
-        createStudent("Adel, Pieter", "s1078455", "INF1G");
-        createStudent("Adel, Pieter", "s1078455", "INF1G");
-        createStudent("Adel, Pieter", "s1078455", "INF1G");
-        createStudent("Adel, Pieter", "s1078455", "INF1G");
-        createStudent("Adel, Pieter", "s1078455", "INF1G");
-        createStudent("Adel, Pieter", "s1078455", "INF1G");
-        createStudent("Adel, Pieter", "s1078455", "INF1G");
-        createStudent("Adel, Pieter", "s1078455", "INF1G");
-        createStudent("Adel, Pieter", "s1078455", "INF1G");
+        createStudent("Bieber, Justin", "s1084567", "INF1D");
+        createStudent("Dadel, Maria", "s1087499", "INF1F");
+        createStudent("Dekker, Vera", "s1084235", "INF1B");
+        createStudent("Elegast, Karel", "s1074211", "INF1E");
+        createStudent("Emmer, Lisa", "s1074326", "INF1C");
+        createStudent("Hendriksen, Dorien", "s1074788", "INF1A");
+        createStudent("Krokus, Joke", "s1089413", "INF1H");
+        createStudent("Mandarijn, Max", "s1084211", "INF1H");
+        createStudent("Nelissen, Henk", "s1087465", "INF1F");
+        createStudent("Rokers, Lianne", "s1071244", "INF1G");
+        createStudent("Tekkel, Hester ", "s1071586", "INF1C");
+        createStudent("Uitjes, Berend ", "s1087451", "INF1A");
+        createStudent("Venkeltje, Sophia ", "s1075612", "INF1B");
+        createStudent("Vlieger, Olaf ", "s1074127", "INF1E");
+        createStudent("Vogel, Bas ", "s1084522", "INF1A");
+        createStudent("Water, Michiel ", "s1084531", "INF1H");
+        createStudent("Weken, Dirk ", "s1074537", "INF1D");
+        createStudent("Wieken, Stefanie ", "s1084511", "INF1C");
+        createStudent("Zeker, Donald ", "s1077369", "INF1E");
 
 
     }

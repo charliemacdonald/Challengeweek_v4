@@ -44,7 +44,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
-        android:layout_alignBottom="@+id/textView3"
+        android:layout_below="@+id/textView2"
         android:layout_centerHorizontal="true" />
 
 
@@ -54,8 +54,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
-        android:layout_alignBottom="@+id/textView2"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignTop="@+id/textView2"
+        android:layout_alignLeft="@+id/klas"
+        android:layout_alignStart="@+id/klas" />
 
     <TextView
         android:id="@+id/naam"

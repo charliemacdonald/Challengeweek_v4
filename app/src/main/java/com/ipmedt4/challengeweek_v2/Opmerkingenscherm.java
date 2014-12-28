@@ -1,17 +1,39 @@
 package com.ipmedt4.challengeweek_v2;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 
 
 public class Opmerkingenscherm extends ActionBarActivity {
+    StudentDBAdapter db = new StudentDBAdapter(this);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_opmerkingenscherm);
+        Button opmerkingenopslaan = (Button) findViewById(R.id.opmerkingenopslaanbutton);
+        opmerkingenopslaan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+             db.open();
+                long id;
+
+                EditText opmerkingentekst = (EditText) findViewById(R.id.opmerkingentekst);
+                String opmerkingen = opmerkingentekst.getText().toString();
+                db.OpmerkingenOpslaan(opmerkingen);
+                db.close();
+                Intent intent = new Intent(v.getContext(), Beoordelingscherm.class);
+                startActivityForResult(intent, 0);
+
+
+            }
+        });
     }
 
 

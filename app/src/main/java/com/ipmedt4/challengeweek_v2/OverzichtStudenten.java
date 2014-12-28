@@ -15,9 +15,11 @@ import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -26,14 +28,16 @@ import android.widget.FilterQueryProvider;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
 
 
-public class OverzichtStudenten extends Activity {
+public class OverzichtStudenten extends ActionBarActivity {
 private StudentDBAdapter dbHelper;
 private SimpleCursorAdapter dataAdapter;
+ListView listview;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,6 +57,8 @@ private SimpleCursorAdapter dataAdapter;
         displayListView();
 
     }
+
+
     @TargetApi(Build.VERSION_CODES.HONEYCOMB)
     private void displayListView(){
         Cursor cursor = dbHelper.showAlleStudenten();
@@ -117,6 +123,8 @@ private SimpleCursorAdapter dataAdapter;
             }
         });
     }
+
+
 
 
 
