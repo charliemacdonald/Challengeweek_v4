@@ -29,9 +29,9 @@ public class StudentDBAdapter {
 
     private final Context mCtx;
 
-    private static final String DATABASE_CREATE = "CREATE TABLE IF NOT EXISTS" + SQLITE_TABLE + "(" +
-            KEY_ROWID + "INTEGER PRIMARY KEY AUTOINCREMENT," + KEY_NAAM + "," + KEY_STUDENTNUMMER + ","
-            + KEY_KLAS + "," + KEY_CIJFER + "," + KEY_OPMERKINGEN + "," + ")";
+    private static final String DATABASE_CREATE = " CREATE TABLE IF NOT EXISTS " + SQLITE_TABLE + "(" +
+            KEY_ROWID + " INTEGER PRIMARY KEY AUTOINCREMENT, " + KEY_NAAM + "," + KEY_STUDENTNUMMER + ","
+            + KEY_KLAS + "," + KEY_CIJFER + "," + KEY_OPMERKINGEN +  ")";
 
     private static class DatabaseHelper extends SQLiteOpenHelper {
 

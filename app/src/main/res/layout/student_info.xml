@@ -3,7 +3,8 @@
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:padding="6dip" >
+    android:padding="6dip"
+    android:background="@drawable/rounded_border">
 
     <TextView
         android:id="@+id/textView1"
@@ -12,6 +13,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:text="Naam: "
+        android:textStyle="bold"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <TextView
@@ -19,6 +21,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Studentnummer:"
+        android:textStyle="bold"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:layout_below="@+id/textView1"
         android:layout_alignParentLeft="true"
@@ -31,6 +34,7 @@
         android:layout_alignLeft="@+id/textView2"
         android:layout_below="@+id/textView2"
         android:text="Klas: "
+        android:textStyle="bold"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
 
