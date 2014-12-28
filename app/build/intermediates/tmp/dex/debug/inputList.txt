@@ -1,0 +1,5 @@
+C:\Users\Charlie\AndroidStudioProjects\Challengeweek_v2\app\build\intermediates\classes\debug
+C:\Users\Charlie\AndroidStudioProjects\Challengeweek_v2\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-731828187d4250642973ecb3e42769944c2740fa.jar
+C:\Users\Charlie\AndroidStudioProjects\Challengeweek_v2\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-3037698bc58d72496beac03b0243f52adc3f52fa.jar
+C:\Users\Charlie\AndroidStudioProjects\Challengeweek_v2\app\build\intermediates\pre-dexed\debug\classes-a6c9d60cfe15a7825688cd2b95df07d13e827798.jar
+C:\Users\Charlie\AndroidStudioProjects\Challengeweek_v2\app\build\intermediates\pre-dexed\debug\classes-e85821b27bd6f9b27c5b9de3c776ade1418d794e.jar

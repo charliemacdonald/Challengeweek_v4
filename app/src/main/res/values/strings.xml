@@ -13,6 +13,8 @@
     <string name="Versie">Versie</string>
     <string name="Disclaimer">Disclaimer</string>
     <string name="Uitloggen">Uitloggen</string>
+    <string name="some_text"> Overzicht studenten </string>
+    <string name= "some_hint"> Typ hier om student te zoeken </string>
     <string name="Overzichtstudenten">Overzicht studenten</string>
     <string name="title_activity_overzicht_studenten">OverzichtStudenten</string>
     <string name="hello_world">Hello world!</string>

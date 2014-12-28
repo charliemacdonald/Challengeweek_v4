@@ -6,64 +6,53 @@ package com.ipmedt4.challengeweek_v2;
 public class Studenten
 {
 
-    private int _id;
-    private String _naam;
-    private String _studentnummer;
-    private String _klas;
-    private int _cijfer;
-    private String _opmerkingen;
+   String id = null;
+   String naam = null;
+   String studentnummer = null;
+    String klas = null;
+    String cijfer = null;
+    String opmerkingen = null;
 
-    public Studenten(){
+      public String getId(){
+      return id;
       }
-
-    public Studenten(int id, String naam, String studentnummer, String klas, int cijfer, String opmerkingen){
-
-      this._id = id;
-      this._naam = naam;
-      this._studentnummer = studentnummer;
-      this._klas = klas;
-      this._cijfer = cijfer;
-      this._opmerkingen = opmerkingen;
-
+    public void setId(String id){
+        this.id = id;
     }
-
-    public Studenten (String naam, String studentnummer, String klas, int cijfer, String opmerkingen){
-
-        this._naam = naam;
-        this._studentnummer = studentnummer;
-        this._klas = klas;
-        this._cijfer = cijfer;
-        this._opmerkingen = opmerkingen;
-
+    public String getNaam(){
+        return naam;
     }
-
-
-   public void setID(int id){
-      this._id = id;
-
-   }
-
-   public String getStudentnaam(){
-    return this._naam;
-
-   }
-
-    public String getKlas() {
-       return this._klas;
+    public void setNaam(String naam){
+        this.naam = naam;
     }
-
     public String getStudentnummer(){
-        return this._studentnummer;
-
+        return studentnummer;
     }
-
-    public int getCijfer(){
-        return this._cijfer;
-
+    public void setStudentnummer(String studentnummer){
+        this.studentnummer = studentnummer;
     }
-
+    public String getKlas(){
+        return klas;
+    }
+    public void setKlas(String klas){
+        this.klas = klas;
+    }
+    public String getCijfer(){
+        return cijfer;
+    }
+    public void setCijfer(String cijfer){
+        this.cijfer = cijfer;
+    }
     public String getOpmerkingen(){
-        return this._opmerkingen;
-
+        return opmerkingen;
     }
-}
+
+    public void setOpmerkingen(String opmerkingen){
+    this.opmerkingen = opmerkingen;     }
+    }
+
+
+
+
+
+
