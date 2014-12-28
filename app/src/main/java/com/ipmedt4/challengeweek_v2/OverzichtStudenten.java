@@ -68,8 +68,8 @@ private SimpleCursorAdapter dataAdapter;
           R.id.klas
         };
 
-        //
-        dataAdapter = newSimpleCursorAdapter(
+
+        dataAdapter = new SimpleCursorAdapter(
                 this, R.layout.student_info,
                 cursor,
                 columns,
@@ -114,6 +114,7 @@ private SimpleCursorAdapter dataAdapter;
             }
         });
     }
+
 
 
 
