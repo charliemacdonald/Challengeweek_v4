@@ -83,7 +83,7 @@ ListView listview;
                 cursor,
                 columns,
                 to,
-                0);
+                1);
 
         ListView listView = (ListView) findViewById(R.id.listView1);
         listView.setAdapter(dataAdapter);

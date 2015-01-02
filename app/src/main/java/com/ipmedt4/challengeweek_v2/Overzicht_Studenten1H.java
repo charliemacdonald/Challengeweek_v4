@@ -6,21 +6,19 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 
-public class Overzicht_Studenten2 extends ActionBarActivity {
+public class Overzicht_Studenten1H extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getIntent().getStringExtra("selectie_button_1a");
-        setContentView(R.layout.activity_overzicht__studenten2);
-
+        setContentView(R.layout.activity_overzicht__studenten1h);
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_overzicht__studenten2, menu);
+        getMenuInflater().inflate(R.menu.menu_overzicht__studenten1_h, menu);
         return true;
     }
 

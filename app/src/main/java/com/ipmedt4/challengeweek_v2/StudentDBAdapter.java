@@ -129,17 +129,17 @@ public class StudentDBAdapter {
        }
        return mCursor;}
 
-    public Cursor SelecteerStudenten1A(String naam, String studentnummer, String klas){
+    public Cursor SelecteerStudenten1A(){
         String[] args = {"INF1A"};
         Cursor mCursor = mDB.rawQuery(" SELECT naam, studentnummer, klas FROM STUDENTEN WHERE klas = ?", args);
-        ;
+
         if(mCursor !=null){
             mCursor.moveToFirst();
         }
         return mCursor;
     }
 
-    public Cursor SelecteerStudenten1B(String naam, String studentnummer, String klas){
+    public Cursor SelecteerStudenten1B(){
         String[] args = {"INF1B"};
         Cursor mCursor = mDB.rawQuery(" SELECT naam, studentnummer, klas FROM STUDENTEN WHERE klas = ?", args);
         ;
@@ -149,7 +149,7 @@ public class StudentDBAdapter {
         return mCursor;
     }
 
-    public Cursor SelecteerStudenten1C(String naam, String studentnummer, String klas){
+    public Cursor SelecteerStudenten1C(){
         String[] args = {"INF1C"};
         Cursor mCursor = mDB.rawQuery(" SELECT naam, studentnummer, klas FROM STUDENTEN WHERE klas = ?", args);
         ;
@@ -159,7 +159,7 @@ public class StudentDBAdapter {
         return mCursor;
     }
 
-    public Cursor SelecteerStudenten1D(String naam, String studentnummer, String klas){
+    public Cursor SelecteerStudenten1D(){
         String[] args = {"INF1D"};
         Cursor mCursor = mDB.rawQuery(" SELECT naam, studentnummer, klas FROM STUDENTEN WHERE klas = ?", args);
         ;
@@ -169,7 +169,7 @@ public class StudentDBAdapter {
         return mCursor;
     }
 
-    public Cursor SelecteerStudenten1E(String naam, String studentnummer, String klas){
+    public Cursor SelecteerStudenten1E(){
         String[] args = {"INF1E"};
         Cursor mCursor = mDB.rawQuery(" SELECT naam, studentnummer, klas FROM STUDENTEN WHERE klas = ?", args);
         ;
@@ -179,7 +179,7 @@ public class StudentDBAdapter {
         return mCursor;
     }
 
-    public Cursor SelecteerStudenten1F(String naam, String studentnummer, String klas){
+    public Cursor SelecteerStudenten1F(){
         String[] args = {"INF1F"};
         Cursor mCursor = mDB.rawQuery(" SELECT naam, studentnummer, klas FROM STUDENTEN WHERE klas = ?", args);
         ;
@@ -189,7 +189,7 @@ public class StudentDBAdapter {
         return mCursor;
     }
 
-    public Cursor SelecteerStudenten1G(String naam, String studentnummer, String klas){
+    public Cursor SelecteerStudenten1G(){
         String[] args = {"INF1G"};
         Cursor mCursor = mDB.rawQuery(" SELECT naam, studentnummer, klas FROM STUDENTEN WHERE klas = ?", args);
         ;
@@ -199,7 +199,7 @@ public class StudentDBAdapter {
         return mCursor;
     }
 
-    public Cursor SelecteerStudenten1H(String naam, String studentnummer, String klas){
+    public Cursor SelecteerStudenten1H(){
         String[] args = {"INF1H"};
         Cursor mCursor = mDB.rawQuery(" SELECT naam, studentnummer, klas FROM STUDENTEN WHERE klas = ?", args);
         ;
