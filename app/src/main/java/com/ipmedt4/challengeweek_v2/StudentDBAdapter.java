@@ -131,7 +131,7 @@ public class StudentDBAdapter {
 
     public Cursor SelecteerStudenten1A(){
         String[] args = {"INF1A"};
-        Cursor mCursor = mDB.rawQuery(" SELECT naam, studentnummer, klas FROM STUDENTEN WHERE klas = ?", args);
+        Cursor mCursor = mDB.rawQuery(" SELECT 'naam', 'studentnummer', 'klas' FROM STUDENTEN WHERE klas = '?'", args);
 
         if(mCursor !=null){
             mCursor.moveToFirst();
@@ -141,7 +141,7 @@ public class StudentDBAdapter {
 
     public Cursor SelecteerStudenten1B(){
         String[] args = {"INF1B"};
-        Cursor mCursor = mDB.rawQuery(" SELECT naam, studentnummer, klas FROM STUDENTEN WHERE klas = ?", args);
+        Cursor mCursor = mDB.rawQuery(" SELECT 'naam', 'studentnummer', 'klas' FROM STUDENTEN WHERE klas = '?'", args);
         ;
         if(mCursor !=null){
             mCursor.moveToFirst();

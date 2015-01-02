@@ -33,7 +33,7 @@ public class Bevestigingsscherm extends ActionBarActivity {
                 builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
 
                     public void onClick(DialogInterface dialog, int which) {
-                        Intent myintent2 = new Intent(v.getContext(), Overzicht_Studenten2.class);
+                        Intent myintent2 = new Intent(v.getContext(), OverzichtStudenten.class);
                         startActivity(myintent2);
 
 
