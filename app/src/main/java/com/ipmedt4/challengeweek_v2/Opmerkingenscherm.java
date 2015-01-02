@@ -28,7 +28,7 @@ public class Opmerkingenscherm extends ActionBarActivity {
                 String opmerkingen = opmerkingentekst.getText().toString();
                 db.OpmerkingenOpslaan(opmerkingen);
                 db.close();
-                Intent intent = new Intent(v.getContext(), Beoordelingscherm.class);
+                Intent intent = new Intent(v.getContext(), Bevestigingsscherm.class);
                 startActivityForResult(intent, 0);
 
 

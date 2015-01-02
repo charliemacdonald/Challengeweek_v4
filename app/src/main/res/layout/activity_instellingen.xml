@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:text="@string/Versie"
         android:id="@+id/versiebutton"
-        android:background="#3399cc"
+        android:background="@drawable/roundedbutton"
         android:textColor="#000000"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
@@ -25,26 +25,24 @@
         android:layout_height="wrap_content"
         android:text="@string/Disclaimer"
         android:id="@+id/disclaimerbutton"
-        android:background="#3399cc"
+        android:background="@drawable/roundedbutton"
         android:textColor="#000000"
-        android:layout_marginTop="36dp"
         android:layout_below="@+id/versiebutton"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/versiebutton"
+        android:layout_alignEnd="@+id/versiebutton" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/Uitloggen"
         android:id="@+id/uitlogbutton"
-        android:background="#3399cc"
+        android:background="@drawable/roundedbutton"
         android:textColor="#000000"
         android:layout_below="@+id/disclaimerbutton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="41dp"
-        android:layout_alignRight="@+id/disclaimerbutton"
-        android:layout_alignEnd="@+id/disclaimerbutton" />
+        android:layout_alignParentStart="true" />
 </RelativeLayout>

@@ -24,17 +24,17 @@
 <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/Verzenden"
+            android:text="@string/volgende"
             android:background="@drawable/roundedbutton"
             android:textColor="#000000"
             android:textStyle="bold"
             android:id="@+id/verzendbutton"
             android:layout_column="12"
     android:layout_alignParentBottom="true"
-    android:layout_alignRight="@+id/textView18"
-    android:layout_alignEnd="@+id/textView18"
-    android:layout_toRightOf="@+id/hsleidenlogo"
-    android:layout_toEndOf="@+id/hsleidenlogo" />
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -63,8 +63,8 @@
         android:layout_below="@+id/hsleidenlogo"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/checkBox"
-        android:layout_alignEnd="@+id/checkBox" />
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
 
 
@@ -78,18 +78,18 @@
         android:layout_below="@+id/Onderdeel1"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/checkBox"
-        android:layout_alignEnd="@+id/checkBox" />
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/Criteriagehaald"
         android:id="@+id/checkBox"
-        android:layout_below="@+id/Onderdeel1"
-        android:layout_alignRight="@+id/Beoordeling"
-        android:layout_alignEnd="@+id/Beoordeling"
-        android:layout_alignBottom="@+id/onderdeel11" />
+        android:layout_alignBottom="@+id/onderdeel11"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/Onderdeel1" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -295,8 +295,8 @@
         android:layout_below="@+id/textView10"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/Beoordeling"
-        android:layout_alignEnd="@+id/Beoordeling" />
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -304,9 +304,9 @@
         android:text="@string/Criteriagehaald"
         android:id="@+id/checkBox9"
         android:layout_below="@+id/textView10"
-        android:layout_alignRight="@+id/Beoordeling"
-        android:layout_alignEnd="@+id/Beoordeling"
-        android:layout_alignBottom="@+id/textView11" />
+        android:layout_alignBottom="@+id/textView11"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -318,8 +318,8 @@
         android:layout_below="@+id/textView11"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/Beoordeling"
-        android:layout_alignEnd="@+id/Beoordeling" />
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -327,9 +327,9 @@
         android:text="@string/Criteriagehaald"
         android:id="@+id/checkBox10"
         android:layout_below="@+id/textView11"
-        android:layout_alignRight="@+id/Beoordeling"
-        android:layout_alignEnd="@+id/Beoordeling"
-        android:layout_alignBottom="@+id/textView12" />
+        android:layout_alignBottom="@+id/textView12"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -341,8 +341,8 @@
         android:layout_below="@+id/textView12"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/Beoordeling"
-        android:layout_alignEnd="@+id/Beoordeling" />
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -350,9 +350,9 @@
         android:text="@string/Criteriagehaald"
         android:id="@+id/checkBox11"
         android:layout_below="@+id/textView12"
-        android:layout_alignRight="@+id/Beoordeling"
-        android:layout_alignEnd="@+id/Beoordeling"
-        android:layout_alignBottom="@+id/textView13" />
+        android:layout_alignBottom="@+id/textView13"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -373,85 +373,9 @@
         android:text="@string/Criteriagehaald"
         android:id="@+id/checkBox12"
         android:layout_below="@+id/textView13"
-        android:layout_alignRight="@+id/Beoordeling"
-        android:layout_alignEnd="@+id/Beoordeling"
-        android:layout_alignBottom="@+id/textView14" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Onderdeel 4"
-        android:id="@+id/textView15"
-        android:background="@drawable/rounded_border"
-        android:textSize="18sp"
-        android:textColor="#000000"
-        android:textStyle="bold"
-        android:layout_marginTop="46dp"
-        android:layout_below="@+id/textView14"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/checkBox12"
-        android:layout_alignEnd="@+id/checkBox12" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Text"
-        android:background="@drawable/rounded_border"
-        android:textColor="#000000"
-        android:id="@+id/textView16"
-        android:layout_below="@+id/textView15"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/textView15"
-        android:layout_alignEnd="@+id/textView15" />
-
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/Criteriagehaald"
-        android:id="@+id/checkBox13"
-        android:layout_below="@+id/textView15"
-        android:layout_alignRight="@+id/checkBox12"
-        android:layout_alignEnd="@+id/checkBox12"
-        android:layout_alignBottom="@+id/textView16" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Text"
-        android:id="@+id/textView17"
-        android:background="@drawable/rounded_border"
-        android:textColor="#000000"
-        android:layout_below="@+id/textView16"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/checkBox12"
-        android:layout_alignEnd="@+id/checkBox12" />
-
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/Criteriagehaald"
-        android:id="@+id/checkBox14"
-        android:layout_below="@+id/textView16"
-        android:layout_alignRight="@+id/textView16"
-        android:layout_alignEnd="@+id/textView16"
-        android:layout_alignBottom="@+id/textView17" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Text"
-        android:id="@+id/textView18"
-        android:background="@drawable/rounded_border"
-        android:textColor="#000000"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignBottom="@+id/textView17"
-        android:layout_alignRight="@+id/checkBox12"
-        android:layout_alignEnd="@+id/checkBox12"
-        android:layout_below="@+id/textView17" />
+        android:layout_alignBottom="@+id/textView14"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
 
 </RelativeLayout>

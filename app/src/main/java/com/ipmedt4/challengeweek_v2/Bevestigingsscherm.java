@@ -1,5 +1,7 @@
 package com.ipmedt4.challengeweek_v2;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -22,10 +24,23 @@ public class Bevestigingsscherm extends ActionBarActivity {
         beoordelingbevestigen.setOnClickListener(new View.OnClickListener() {
 
             @Override
-            public void onClick(View v) {
-                // TODO Auto-generated method stub
-                Intent intent = new Intent(v.getContext(), Overzicht_Studenten2.class);
-                startActivityForResult(intent, 0);
+            public void onClick(final View v) {
+                AlertDialog.Builder builder;
+                builder = new AlertDialog.Builder(Bevestigingsscherm.this);
+                builder.setMessage("Uw beoordeling is succesvol opgeslagen!");
+                builder.setTitle("Beoordeling succesvol");
+
+                builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+
+                    public void onClick(DialogInterface dialog, int which) {
+                        Intent myintent2 = new Intent(v.getContext(), Overzicht_Studenten2.class);
+                        startActivity(myintent2);
+
+
+                    }
+                });
+                builder.show();
+
 
 
             }});

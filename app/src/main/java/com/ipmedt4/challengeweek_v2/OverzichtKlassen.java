@@ -10,7 +10,7 @@ import android.widget.Button;
 
 
 public class OverzichtKlassen extends ActionBarActivity {
-    Button inf1abutton;
+public Button inf1abutton;
     Button inf1bbutton;
     Button inf1cbutton;
     Button inf1dbutton;
@@ -22,7 +22,7 @@ public class OverzichtKlassen extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_overzicht_klassen);
-        Button inf1abutton = (Button) findViewById(R.id.inf1abutton);
+        final Button inf1abutton = (Button) findViewById(R.id.inf1abutton);
         Button inf1bbutton = (Button) findViewById(R.id.inf1bbutton);
         Button inf1cbutton = (Button) findViewById(R.id.inf1cbutton);
         Button inf1dbutton = (Button) findViewById(R.id.inf1dbutton);
@@ -34,10 +34,8 @@ public class OverzichtKlassen extends ActionBarActivity {
 
             @Override
             public void onClick(View v) {
-                // TODO Auto-generated method stub
-                Intent intent = new Intent(v.getContext(), Overzicht_Studenten2.class);
-                startActivityForResult(intent, 0);
-
+                Intent myintent2 = new Intent(v.getContext(), Overzicht_Studenten2.class);
+                startActivity(myintent2);
 
             }});
         inf1bbutton.setOnClickListener(new View.OnClickListener() {

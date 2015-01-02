@@ -11,7 +11,9 @@ public class Overzicht_Studenten2 extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getIntent().getStringExtra("selectie_button_1a");
         setContentView(R.layout.activity_overzicht__studenten2);
+
     }
 
 

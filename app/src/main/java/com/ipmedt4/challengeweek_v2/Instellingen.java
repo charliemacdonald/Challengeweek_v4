@@ -1,5 +1,7 @@
 package com.ipmedt4.challengeweek_v2;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -43,13 +45,40 @@ Button uitlogbutton;
 
         uitlogbutton.setOnClickListener(new View.OnClickListener() {
 
-            public void onClick(View v) {
-                Intent myintent2 = new Intent(v.getContext(), Loginscherm.class);
-                startActivity(myintent2);
+            public void onClick(final View v) {
+                AlertDialog.Builder builder;
+                builder = new AlertDialog.Builder(Instellingen.this);
+                builder.setMessage("Weet u zeker dat u wilt uitloggen?");
+                builder.setTitle("Uitloggen");
+
+
+                builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+
+                    public void onClick(DialogInterface dialog, int which) {
+                        Intent myintent2 = new Intent(v.getContext(), Loginscherm.class);
+                        startActivity(myintent2);
+
+
+                    }
+                });
+
+                builder.setNegativeButton("Annuleren", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                  
+
+                    }
+                });
+                builder.show();
+
 
             }
+
         });
+
+
     }
+
 
 
     @Override

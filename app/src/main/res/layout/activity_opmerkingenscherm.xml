@@ -20,7 +20,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/opslaan"
+        android:text="@string/volgende"
         android:background="@drawable/roundedbutton"
         android:id="@+id/opmerkingenopslaanbutton"
         android:layout_alignParentBottom="true"

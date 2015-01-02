@@ -4,7 +4,8 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.ipmedt4.challengeweek_v2.Bevestigingsscherm">
+    tools:context="com.ipmedt4.challengeweek_v2.Bevestigingsscherm"
+    android:id="@+id/">
 
     <ImageView
         android:id="@+id/hsleidenlogo"
@@ -12,19 +13,7 @@
         android:layout_height="55dp"
         android:src="@drawable/logohsleiden" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/jabevestigen"
-        android:textColor="#000000"
-        android:id="@+id/beoordelingbevestigen"
-        android:background="#3399cc"
-        android:layout_marginTop="60dp"
-        android:layout_below="@+id/textView4"
-        android:layout_alignLeft="@+id/textView4"
-        android:layout_alignStart="@+id/textView4"
-        android:layout_alignRight="@+id/bevestingannuleren"
-        android:layout_alignEnd="@+id/bevestingannuleren" />
+
 
     <Button
         android:layout_width="wrap_content"
@@ -32,11 +21,27 @@
         android:text="@string/neebeoordeling"
         android:background="#3399cc"
         android:id="@+id/bevestingannuleren"
-        android:layout_below="@+id/beoordelingbevestigen"
-        android:layout_alignRight="@+id/textView4"
-        android:layout_alignEnd="@+id/textView4"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="72dp"
+        android:layout_alignRight="@+id/beoordelingbevestigen"
+        android:layout_alignEnd="@+id/beoordelingbevestigen"
+        android:layout_alignLeft="@+id/beoordelingbevestigen"
+        android:layout_alignStart="@+id/beoordelingbevestigen" />
+
+    <Button
+        android:layout_width="456dp"
+        android:layout_height="wrap_content"
+        android:text="@string/jabevestigen"
+        android:textColor="#000000"
+        android:id="@+id/beoordelingbevestigen"
+        android:background="#3399cc"
+        android:layout_gravity="center_vertical"
+        android:layout_above="@+id/bevestingannuleren"
         android:layout_alignLeft="@+id/textView4"
-        android:layout_alignStart="@+id/textView4" />
+        android:layout_alignStart="@+id/textView4"
+        android:layout_alignRight="@+id/textView4"
+        android:layout_alignEnd="@+id/textView4" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -46,8 +51,22 @@
         android:textSize="20sp"
         android:textStyle="bold"
         android:id="@+id/textView4"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_above="@+id/bevestingannuleren"
+        android:layout_toRightOf="@+id/hsleidenlogo"
+        android:layout_toEndOf="@+id/hsleidenlogo"
+        android:layout_marginBottom="48dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkmark"
+        android:src="@drawable/Checkmarkblauw"
+        android:layout_below="@+id/hsleidenlogo"
+        android:layout_above="@+id/textView4"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_alignRight="@+id/textView4"
+        android:layout_alignEnd="@+id/textView4" />
 
 
 </RelativeLayout>

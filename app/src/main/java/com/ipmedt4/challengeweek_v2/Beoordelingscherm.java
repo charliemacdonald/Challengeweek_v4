@@ -21,7 +21,7 @@ Button verzendbutton;
             @Override
             public void onClick(View v) {
                 // TODO Auto-generated method stub
-                Intent intent = new Intent(v.getContext(), Bevestigingsscherm.class);
+                Intent intent = new Intent(v.getContext(), Opmerkingenscherm.class);
                 startActivityForResult(intent, 0);
 
 

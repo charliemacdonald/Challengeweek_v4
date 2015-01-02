@@ -49,6 +49,7 @@ public class StudentDBAdapter {
         public void onUpgrade (SQLiteDatabase db, int oldVersion, int newVersion){
           Log.w(TAG, "Upgrading database from version" + oldVersion + "to" + newVersion +
                   "which will destroy all old data");
+
             db.execSQL("DROP TABLE IF EXISTS" + SQLITE_TABLE);
             onCreate(db);
         }
@@ -99,6 +100,7 @@ public class StudentDBAdapter {
 
     }
 
+
     public Cursor fetchStudentenbyName(String inputText) throws SQLiteException{
     Log.w(TAG, inputText);
     Cursor mCursor = null;
@@ -125,8 +127,88 @@ public class StudentDBAdapter {
        if (mCursor != null){
            mCursor.moveToFirst();
        }
-       return mCursor;
-   }
+       return mCursor;}
+
+    public Cursor SelecteerStudenten1A(String naam, String studentnummer, String klas){
+        String[] args = {"INF1A"};
+        Cursor mCursor = mDB.rawQuery(" SELECT naam, studentnummer, klas FROM STUDENTEN WHERE klas = ?", args);
+        ;
+        if(mCursor !=null){
+            mCursor.moveToFirst();
+        }
+        return mCursor;
+    }
+
+    public Cursor SelecteerStudenten1B(String naam, String studentnummer, String klas){
+        String[] args = {"INF1B"};
+        Cursor mCursor = mDB.rawQuery(" SELECT naam, studentnummer, klas FROM STUDENTEN WHERE klas = ?", args);
+        ;
+        if(mCursor !=null){
+            mCursor.moveToFirst();
+        }
+        return mCursor;
+    }
+
+    public Cursor SelecteerStudenten1C(String naam, String studentnummer, String klas){
+        String[] args = {"INF1C"};
+        Cursor mCursor = mDB.rawQuery(" SELECT naam, studentnummer, klas FROM STUDENTEN WHERE klas = ?", args);
+        ;
+        if(mCursor !=null){
+            mCursor.moveToFirst();
+        }
+        return mCursor;
+    }
+
+    public Cursor SelecteerStudenten1D(String naam, String studentnummer, String klas){
+        String[] args = {"INF1D"};
+        Cursor mCursor = mDB.rawQuery(" SELECT naam, studentnummer, klas FROM STUDENTEN WHERE klas = ?", args);
+        ;
+        if(mCursor !=null){
+            mCursor.moveToFirst();
+        }
+        return mCursor;
+    }
+
+    public Cursor SelecteerStudenten1E(String naam, String studentnummer, String klas){
+        String[] args = {"INF1E"};
+        Cursor mCursor = mDB.rawQuery(" SELECT naam, studentnummer, klas FROM STUDENTEN WHERE klas = ?", args);
+        ;
+        if(mCursor !=null){
+            mCursor.moveToFirst();
+        }
+        return mCursor;
+    }
+
+    public Cursor SelecteerStudenten1F(String naam, String studentnummer, String klas){
+        String[] args = {"INF1F"};
+        Cursor mCursor = mDB.rawQuery(" SELECT naam, studentnummer, klas FROM STUDENTEN WHERE klas = ?", args);
+        ;
+        if(mCursor !=null){
+            mCursor.moveToFirst();
+        }
+        return mCursor;
+    }
+
+    public Cursor SelecteerStudenten1G(String naam, String studentnummer, String klas){
+        String[] args = {"INF1G"};
+        Cursor mCursor = mDB.rawQuery(" SELECT naam, studentnummer, klas FROM STUDENTEN WHERE klas = ?", args);
+        ;
+        if(mCursor !=null){
+            mCursor.moveToFirst();
+        }
+        return mCursor;
+    }
+
+    public Cursor SelecteerStudenten1H(String naam, String studentnummer, String klas){
+        String[] args = {"INF1H"};
+        Cursor mCursor = mDB.rawQuery(" SELECT naam, studentnummer, klas FROM STUDENTEN WHERE klas = ?", args);
+        ;
+        if(mCursor !=null){
+            mCursor.moveToFirst();
+        }
+        return mCursor;
+    }
+
     public void insertStudenten(){
         createStudent("Adel, Pieter", "s1078455", "INF1G");
         createStudent("Bieber, Justin", "s1084567", "INF1D");
