@@ -91,13 +91,14 @@ ListView listview;
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> listView, View view, int position, long id) {
-            Cursor cursor = (Cursor) listView.getItemAtPosition(position);
+          Cursor cursor = (Cursor) listView.getItemAtPosition(position);
+
                 Intent myintent2 = new Intent(view.getContext(), Beoordelingscherm.class);
+
                 startActivity(myintent2);
 
-                String studentNaam = cursor.getString(cursor.getColumnIndexOrThrow("naam"));
-                Toast.makeText(getApplicationContext(),
-                        studentNaam, Toast.LENGTH_SHORT).show();
+
+
             }
         });
 

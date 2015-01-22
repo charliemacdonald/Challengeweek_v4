@@ -14,9 +14,7 @@
     <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <android:uses-permission
         android:name="android.permission.READ_EXTERNAL_STORAGE"
-        android:maxSdkVersion="18"
-        />
-
+        android:maxSdkVersion="18" />
 
     <application
         android:allowBackup="true"
@@ -92,22 +90,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.ipmedt4.challengeweek_v2.Beoordelingscherm" />
         </activity>
-        <activity
-            android:name=".OverzichtStudenten_2"
-            android:label="@string/title_activity_overzicht_studenten_2"
-            android:parentActivityName=".OverzichtKlassen" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.ipmedt4.challengeweek_v2.OverzichtKlassen" />
-        </activity>
-        <activity
-            android:name=".Overzicht_Studenten2"
-            android:label="@string/title_activity_overzicht__studenten2"
-            android:parentActivityName=".OverzichtKlassen" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.ipmedt4.challengeweek_v2.OverzichtKlassen" />
-        </activity>
+
         <activity
             android:name=".Opmerkingenscherm"
             android:label="@string/title_activity_opmerkingenscherm"
@@ -115,6 +98,70 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.ipmedt4.challengeweek_v2.Beoordelingscherm" />
+        </activity>
+        <activity
+            android:name=".Overzicht_Studenten1A"
+            android:label="@string/title_activity_overzicht__studenten1"
+            android:parentActivityName=".OverzichtKlassen" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ipmedt4.challengeweek_v2.OverzichtKlassen" />
+        </activity>
+        <activity
+            android:name=".Overzicht_Studenten1B"
+            android:label="@string/title_activity_selecteer__studenten1_b"
+            android:parentActivityName=".OverzichtKlassen" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ipmedt4.challengeweek_v2.OverzichtKlassen" />
+        </activity>
+        <activity
+            android:name=".Overzicht_Studenten1C"
+            android:label="@string/title_activity_overzicht__studenten1_c"
+            android:parentActivityName=".OverzichtKlassen" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ipmedt4.challengeweek_v2.OverzichtKlassen" />
+        </activity>
+        <activity
+            android:name=".Overzicht_Studenten1D"
+            android:label="@string/title_activity_overzicht__studenten1_d"
+            android:parentActivityName=".OverzichtKlassen" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ipmedt4.challengeweek_v2.OverzichtKlassen" />
+        </activity>
+        <activity
+            android:name=".Overzicht_Studenten1E"
+            android:label="@string/title_activity_overzicht__studenten1_e"
+            android:parentActivityName=".OverzichtKlassen" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ipmedt4.challengeweek_v2.OverzichtKlassen" />
+        </activity>
+        <activity
+            android:name=".Overzicht_Studenten1F"
+            android:label="@string/title_activity_overzicht__studenten1_f"
+            android:parentActivityName=".OverzichtKlassen" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ipmedt4.challengeweek_v2.OverzichtKlassen" />
+        </activity>
+        <activity
+            android:name=".Overzicht_Studenten1G"
+            android:label="@string/title_activity_overzicht__studenten1_g"
+            android:parentActivityName=".OverzichtKlassen" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ipmedt4.challengeweek_v2.OverzichtKlassen" />
+        </activity>
+        <activity
+            android:name=".Overzicht_Studenten1H"
+            android:label="@string/title_activity_overzicht__studenten1_h"
+            android:parentActivityName=".OverzichtKlassen" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ipmedt4.challengeweek_v2.OverzichtKlassen" />
         </activity>
     </application>
 

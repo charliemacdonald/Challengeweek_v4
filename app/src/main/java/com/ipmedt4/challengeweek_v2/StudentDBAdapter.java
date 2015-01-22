@@ -78,19 +78,6 @@ public class StudentDBAdapter {
         return mDB.insert(SQLITE_TABLE, null, initialValues);
     }
 
-    public long OpmerkingenOpslaan (String opmerkingen){
-        ContentValues initialValues = new ContentValues();
-        initialValues.put(KEY_OPMERKINGEN, opmerkingen);
-
-        return mDB.insert(SQLITE_TABLE, null, initialValues);
-    }
-
-    public long CijferOpslaan (String cijfer){
-        ContentValues initialValues = new ContentValues();
-        initialValues.put(KEY_CIJFER, cijfer);
-
-        return mDB.insert(SQLITE_TABLE, null, initialValues);
-    }
 
     public boolean deleteAllStudenten(){
         int doneDelete = 0;
@@ -130,19 +117,28 @@ public class StudentDBAdapter {
        return mCursor;}
 
     public Cursor SelecteerStudenten1A(){
-        String[] args = {"INF1A"};
-        Cursor mCursor = mDB.rawQuery(" SELECT 'naam', 'studentnummer', 'klas' FROM STUDENTEN WHERE klas = '?'", args);
+        String Table = "Studenten";
+        String [] fields = {KEY_ROWID, KEY_NAAM, KEY_STUDENTNUMMER, KEY_KLAS};
+        String where = "_klas = 'INF1A'";
+        Cursor mCursor = mDB.query(Table, fields, where, null, null, null, null);
 
         if(mCursor !=null){
             mCursor.moveToFirst();
         }
         return mCursor;
     }
+    public void OpmerkingenOpslaan(String opmerkingen){
+        mDB.insert(SQLITE_TABLE, KEY_OPMERKINGEN + "=" + KEY_NAAM, null);
+
+    }
+
+
 
     public Cursor SelecteerStudenten1B(){
-        String[] args = {"INF1B"};
-        Cursor mCursor = mDB.rawQuery(" SELECT 'naam', 'studentnummer', 'klas' FROM STUDENTEN WHERE klas = '?'", args);
-        ;
+        String Table = "Studenten";
+        String [] fields = {KEY_ROWID, KEY_NAAM, KEY_STUDENTNUMMER, KEY_KLAS};
+        String where = "_klas = 'INF1B'";
+        Cursor mCursor = mDB.query(Table, fields, where, null, null, null, null);
         if(mCursor !=null){
             mCursor.moveToFirst();
         }
@@ -150,9 +146,10 @@ public class StudentDBAdapter {
     }
 
     public Cursor SelecteerStudenten1C(){
-        String[] args = {"INF1C"};
-        Cursor mCursor = mDB.rawQuery(" SELECT naam, studentnummer, klas FROM STUDENTEN WHERE klas = ?", args);
-        ;
+        String Table = "Studenten";
+        String [] fields = {KEY_ROWID, KEY_NAAM, KEY_STUDENTNUMMER, KEY_KLAS};
+        String where = "_klas = 'INF1C'";
+        Cursor mCursor = mDB.query(Table, fields, where, null, null, null, null);
         if(mCursor !=null){
             mCursor.moveToFirst();
         }
@@ -160,9 +157,10 @@ public class StudentDBAdapter {
     }
 
     public Cursor SelecteerStudenten1D(){
-        String[] args = {"INF1D"};
-        Cursor mCursor = mDB.rawQuery(" SELECT naam, studentnummer, klas FROM STUDENTEN WHERE klas = ?", args);
-        ;
+        String Table = "Studenten";
+        String [] fields = {KEY_ROWID, KEY_NAAM, KEY_STUDENTNUMMER, KEY_KLAS};
+        String where = "_klas = 'INF1D'";
+        Cursor mCursor = mDB.query(Table, fields, where, null, null, null, null);
         if(mCursor !=null){
             mCursor.moveToFirst();
         }
@@ -170,9 +168,10 @@ public class StudentDBAdapter {
     }
 
     public Cursor SelecteerStudenten1E(){
-        String[] args = {"INF1E"};
-        Cursor mCursor = mDB.rawQuery(" SELECT naam, studentnummer, klas FROM STUDENTEN WHERE klas = ?", args);
-        ;
+        String Table = "Studenten";
+        String [] fields = {KEY_ROWID, KEY_NAAM, KEY_STUDENTNUMMER, KEY_KLAS};
+        String where = "_klas = 'INF1E'";
+        Cursor mCursor = mDB.query(Table, fields, where, null, null, null, null);
         if(mCursor !=null){
             mCursor.moveToFirst();
         }
@@ -180,9 +179,10 @@ public class StudentDBAdapter {
     }
 
     public Cursor SelecteerStudenten1F(){
-        String[] args = {"INF1F"};
-        Cursor mCursor = mDB.rawQuery(" SELECT naam, studentnummer, klas FROM STUDENTEN WHERE klas = ?", args);
-        ;
+        String Table = "Studenten";
+        String [] fields = {KEY_ROWID, KEY_NAAM, KEY_STUDENTNUMMER, KEY_KLAS};
+        String where = "_klas = 'INF1F'";
+        Cursor mCursor = mDB.query(Table, fields, where, null, null, null, null);
         if(mCursor !=null){
             mCursor.moveToFirst();
         }
@@ -190,9 +190,10 @@ public class StudentDBAdapter {
     }
 
     public Cursor SelecteerStudenten1G(){
-        String[] args = {"INF1G"};
-        Cursor mCursor = mDB.rawQuery(" SELECT naam, studentnummer, klas FROM STUDENTEN WHERE klas = ?", args);
-        ;
+        String Table = "Studenten";
+        String [] fields = {KEY_ROWID, KEY_NAAM, KEY_STUDENTNUMMER, KEY_KLAS};
+        String where = "_klas = 'INF1G'";
+        Cursor mCursor = mDB.query(Table, fields, where, null, null, null, null);
         if(mCursor !=null){
             mCursor.moveToFirst();
         }
@@ -200,9 +201,10 @@ public class StudentDBAdapter {
     }
 
     public Cursor SelecteerStudenten1H(){
-        String[] args = {"INF1H"};
-        Cursor mCursor = mDB.rawQuery(" SELECT naam, studentnummer, klas FROM STUDENTEN WHERE klas = ?", args);
-        ;
+        String Table = "Studenten";
+        String [] fields = {KEY_ROWID, KEY_NAAM, KEY_STUDENTNUMMER, KEY_KLAS};
+        String where = "_klas = 'INF1H'";
+        Cursor mCursor = mDB.query(Table, fields, where, null, null, null, null);
         if(mCursor !=null){
             mCursor.moveToFirst();
         }

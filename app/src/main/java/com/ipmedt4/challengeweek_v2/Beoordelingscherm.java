@@ -7,10 +7,13 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 
 
 public class Beoordelingscherm extends ActionBarActivity {
 Button verzendbutton;
+
+int cijfer;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,8 +28,41 @@ Button verzendbutton;
                 startActivityForResult(intent, 0);
 
 
-            }});
-    }
+            }
+        });
+        final CheckBox checkbox1 = (CheckBox) findViewById(R.id.checkBox);
+        checkbox1.setOnClickListener(new View.OnClickListener()
+        {
+        @Override
+        public void onClick(View v) {
+        if (checkbox1.isChecked())
+        cijfer = 10;
+        else
+        cijfer = 1;
+}});
+        final CheckBox checkbox2 = (CheckBox) findViewById(R.id.checkBox2);
+        checkbox2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(checkbox2.isChecked())
+                    cijfer = 10 ;
+                if (checkbox1.isChecked());
+                else cijfer = (int) 9.5;
+
+            }
+        });}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     @Override

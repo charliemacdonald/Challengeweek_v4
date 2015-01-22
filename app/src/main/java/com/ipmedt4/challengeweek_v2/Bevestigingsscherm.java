@@ -9,11 +9,13 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 
 public class Bevestigingsscherm extends ActionBarActivity {
     Button beoordelingbevestigen;
     Button beoordelingannuleren;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +23,8 @@ public class Bevestigingsscherm extends ActionBarActivity {
         setContentView(R.layout.activity_bevestigingsscherm);
         Button beoordelingbevestigen = (Button) findViewById(R.id.beoordelingbevestigen);
         Button beoordelingannuleren = (Button) findViewById(R.id.bevestingannuleren);
+        TextView beoordelingtekst = (TextView) findViewById(R.id.beoordelingtekst);
+
         beoordelingbevestigen.setOnClickListener(new View.OnClickListener() {
 
             @Override

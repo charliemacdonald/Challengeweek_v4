@@ -17,7 +17,7 @@
     <string name="Disclaimer">Disclaimer</string>
     <string name="Uitloggen">Uitloggen</string>
     <string name="some_text"> Overzicht studenten </string>
-    <string name= "some_hint"> Typ hier om student te zoeken </string>
+    <string name="some_hint"> Typ hier om student te zoeken </string>
     <string name="Overzichtstudenten">Overzicht studenten</string>
     <string name="title_activity_overzicht_studenten">OverzichtStudenten</string>
     <string name="hello_world">Hello world!</string>
@@ -49,5 +49,13 @@
     <string name="title_activity_overzicht_studenten_2">OverzichtStudenten_2</string>
     <string name="title_activity_overzicht__studenten2">Overzicht_Studenten2</string>
     <string name="title_activity_opmerkingenscherm">Opmerkingenscherm</string>
+    <string name="title_activity_overzicht__studenten1">Overzicht_Studenten1A</string>
+    <string name="title_activity_selecteer__studenten1_b">Selecteer_Studenten1B</string>
+    <string name="title_activity_overzicht__studenten1_c">Overzicht_Studenten1C</string>
+    <string name="title_activity_overzicht__studenten1_d">Overzicht_Studenten1D</string>
+    <string name="title_activity_overzicht__studenten1_e">Overzicht_Studenten1E</string>
+    <string name="title_activity_overzicht__studenten1_f">Overzicht_Studenten1F</string>
+    <string name="title_activity_overzicht__studenten1_g">Overzicht_Studenten1G</string>
+    <string name="title_activity_overzicht__studenten1_h">Overzicht_Studenten1H</string>
 
 </resources>

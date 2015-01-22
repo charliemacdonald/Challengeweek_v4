@@ -67,7 +67,7 @@ public class Overzicht_Studenten1B extends ActionBarActivity {
                 cursor,
                 columns,
                 to,
-                1);
+                0);
 
         ListView listView = (ListView) findViewById(R.id.listView1);
         listView.setAdapter(dataAdapter);
@@ -79,9 +79,7 @@ public class Overzicht_Studenten1B extends ActionBarActivity {
                 Intent myintent2 = new Intent(view.getContext(), Beoordelingscherm.class);
                 startActivity(myintent2);
 
-                String studentNaam = cursor.getString(cursor.getColumnIndexOrThrow("naam"));
-                Toast.makeText(getApplicationContext(),
-                        studentNaam, Toast.LENGTH_SHORT).show();
+
             }
         });
 
