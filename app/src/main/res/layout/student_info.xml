@@ -67,4 +67,24 @@
         android:layout_alignLeft="@+id/studentnummer"
         android:layout_alignStart="@+id/studentnummer" />
 
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Groep: "
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/groep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_alignTop="@+id/textView15"
+        android:layout_alignLeft="@+id/klas"
+        android:layout_alignStart="@+id/klas" />
+
 </RelativeLayout>

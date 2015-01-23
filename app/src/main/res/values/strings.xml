@@ -19,6 +19,7 @@
     <string name="some_text"> Overzicht studenten </string>
     <string name="some_hint"> Typ hier om student te zoeken </string>
     <string name="Overzichtstudenten">Overzicht studenten</string>
+    <string name="Overzichtgroepen"> Overzicht groepen</string>
     <string name="title_activity_overzicht_studenten">OverzichtStudenten</string>
     <string name="hello_world">Hello world!</string>
     <string name="Klassen">Klassen</string>
@@ -57,5 +58,6 @@
     <string name="title_activity_overzicht__studenten1_f">Overzicht_Studenten1F</string>
     <string name="title_activity_overzicht__studenten1_g">Overzicht_Studenten1G</string>
     <string name="title_activity_overzicht__studenten1_h">Overzicht_Studenten1H</string>
+    <string name="title_activity_overzicht_groepen">OverzichtGroepen</string>
 
 </resources>

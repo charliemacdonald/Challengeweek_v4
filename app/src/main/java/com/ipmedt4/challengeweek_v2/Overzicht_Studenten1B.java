@@ -51,14 +51,16 @@ public class Overzicht_Studenten1B extends ActionBarActivity {
         String[] columns = new String[]{
                 StudentDBAdapter.KEY_NAAM,
                 StudentDBAdapter.KEY_STUDENTNUMMER,
-                StudentDBAdapter.KEY_KLAS
+                StudentDBAdapter.KEY_KLAS,
+                StudentDBAdapter.KEY_GROEP
         };
 
         //In XML gedefiniërde Views
         int[] to = new int[]{
                 R.id.naam,
                 R.id.studentnummer,
-                R.id.klas
+                R.id.klas,
+                R.id.groep
         };
 
 

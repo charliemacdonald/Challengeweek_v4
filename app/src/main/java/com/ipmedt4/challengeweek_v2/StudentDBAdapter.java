@@ -16,6 +16,7 @@ public class StudentDBAdapter {
     public static final String KEY_NAAM = "_naam";
     public static final String KEY_STUDENTNUMMER = "_studentnummer";
     public static final String KEY_KLAS = "_klas";
+    public static final String KEY_GROEP = "_groep";
     public static final String KEY_CIJFER = "_cijfer";
     public static final String KEY_OPMERKINGEN = "_opmerkingen";
 
@@ -31,7 +32,7 @@ public class StudentDBAdapter {
 
     private static final String DATABASE_CREATE = " CREATE TABLE IF NOT EXISTS " + SQLITE_TABLE + "(" +
             KEY_ROWID + " INTEGER PRIMARY KEY AUTOINCREMENT, " + KEY_NAAM + "," + KEY_STUDENTNUMMER + ","
-            + KEY_KLAS + "," + KEY_CIJFER + "," + KEY_OPMERKINGEN +  ")";
+            + KEY_KLAS + "," + KEY_GROEP + "," + KEY_CIJFER + "," + KEY_OPMERKINGEN +  ")";
 
     private static class DatabaseHelper extends SQLiteOpenHelper {
 
@@ -69,11 +70,12 @@ public class StudentDBAdapter {
             mDbHelper.close();
         }
     }
-    public long createStudent (String naam, String studentnummer, String klas){
+    public long createStudent (String naam, String studentnummer, String klas, String groep){
         ContentValues initialValues = new ContentValues();
         initialValues.put(KEY_NAAM, naam);
         initialValues.put(KEY_STUDENTNUMMER, studentnummer);
         initialValues.put(KEY_KLAS, klas);
+        initialValues.put(KEY_GROEP, groep);
 
         return mDB.insert(SQLITE_TABLE, null, initialValues);
     }
@@ -118,7 +120,7 @@ public class StudentDBAdapter {
 
     public Cursor SelecteerStudenten1A(){
         String Table = "Studenten";
-        String [] fields = {KEY_ROWID, KEY_NAAM, KEY_STUDENTNUMMER, KEY_KLAS};
+        String [] fields = {KEY_ROWID, KEY_NAAM, KEY_STUDENTNUMMER, KEY_KLAS, KEY_GROEP};
         String where = "_klas = 'INF1A'";
         Cursor mCursor = mDB.query(Table, fields, where, null, null, null, null);
 
@@ -136,7 +138,7 @@ public class StudentDBAdapter {
 
     public Cursor SelecteerStudenten1B(){
         String Table = "Studenten";
-        String [] fields = {KEY_ROWID, KEY_NAAM, KEY_STUDENTNUMMER, KEY_KLAS};
+        String [] fields = {KEY_ROWID, KEY_NAAM, KEY_STUDENTNUMMER, KEY_KLAS, KEY_GROEP};
         String where = "_klas = 'INF1B'";
         Cursor mCursor = mDB.query(Table, fields, where, null, null, null, null);
         if(mCursor !=null){
@@ -147,7 +149,7 @@ public class StudentDBAdapter {
 
     public Cursor SelecteerStudenten1C(){
         String Table = "Studenten";
-        String [] fields = {KEY_ROWID, KEY_NAAM, KEY_STUDENTNUMMER, KEY_KLAS};
+        String [] fields = {KEY_ROWID, KEY_NAAM, KEY_STUDENTNUMMER, KEY_KLAS, KEY_GROEP};
         String where = "_klas = 'INF1C'";
         Cursor mCursor = mDB.query(Table, fields, where, null, null, null, null);
         if(mCursor !=null){
@@ -158,7 +160,7 @@ public class StudentDBAdapter {
 
     public Cursor SelecteerStudenten1D(){
         String Table = "Studenten";
-        String [] fields = {KEY_ROWID, KEY_NAAM, KEY_STUDENTNUMMER, KEY_KLAS};
+        String [] fields = {KEY_ROWID, KEY_NAAM, KEY_STUDENTNUMMER, KEY_KLAS, KEY_GROEP};
         String where = "_klas = 'INF1D'";
         Cursor mCursor = mDB.query(Table, fields, where, null, null, null, null);
         if(mCursor !=null){
@@ -169,7 +171,7 @@ public class StudentDBAdapter {
 
     public Cursor SelecteerStudenten1E(){
         String Table = "Studenten";
-        String [] fields = {KEY_ROWID, KEY_NAAM, KEY_STUDENTNUMMER, KEY_KLAS};
+        String [] fields = {KEY_ROWID, KEY_NAAM, KEY_STUDENTNUMMER, KEY_KLAS, KEY_GROEP};
         String where = "_klas = 'INF1E'";
         Cursor mCursor = mDB.query(Table, fields, where, null, null, null, null);
         if(mCursor !=null){
@@ -180,7 +182,7 @@ public class StudentDBAdapter {
 
     public Cursor SelecteerStudenten1F(){
         String Table = "Studenten";
-        String [] fields = {KEY_ROWID, KEY_NAAM, KEY_STUDENTNUMMER, KEY_KLAS};
+        String [] fields = {KEY_ROWID, KEY_NAAM, KEY_STUDENTNUMMER, KEY_KLAS, KEY_GROEP};
         String where = "_klas = 'INF1F'";
         Cursor mCursor = mDB.query(Table, fields, where, null, null, null, null);
         if(mCursor !=null){
@@ -191,7 +193,7 @@ public class StudentDBAdapter {
 
     public Cursor SelecteerStudenten1G(){
         String Table = "Studenten";
-        String [] fields = {KEY_ROWID, KEY_NAAM, KEY_STUDENTNUMMER, KEY_KLAS};
+        String [] fields = {KEY_ROWID, KEY_NAAM, KEY_STUDENTNUMMER, KEY_KLAS, KEY_GROEP};
         String where = "_klas = 'INF1G'";
         Cursor mCursor = mDB.query(Table, fields, where, null, null, null, null);
         if(mCursor !=null){
@@ -202,7 +204,7 @@ public class StudentDBAdapter {
 
     public Cursor SelecteerStudenten1H(){
         String Table = "Studenten";
-        String [] fields = {KEY_ROWID, KEY_NAAM, KEY_STUDENTNUMMER, KEY_KLAS};
+        String [] fields = {KEY_ROWID, KEY_NAAM, KEY_STUDENTNUMMER, KEY_KLAS, KEY_GROEP};
         String where = "_klas = 'INF1H'";
         Cursor mCursor = mDB.query(Table, fields, where, null, null, null, null);
         if(mCursor !=null){
@@ -212,26 +214,29 @@ public class StudentDBAdapter {
     }
 
     public void insertStudenten(){
-        createStudent("Adel, Pieter", "s1078455", "INF1G");
-        createStudent("Bieber, Justin", "s1084567", "INF1D");
-        createStudent("Dadel, Maria", "s1087499", "INF1F");
-        createStudent("Dekker, Vera", "s1084235", "INF1B");
-        createStudent("Elegast, Karel", "s1074211", "INF1E");
-        createStudent("Emmer, Lisa", "s1074326", "INF1C");
-        createStudent("Hendriksen, Dorien", "s1074788", "INF1A");
-        createStudent("Krokus, Joke", "s1089413", "INF1H");
-        createStudent("Mandarijn, Max", "s1084211", "INF1H");
-        createStudent("Nelissen, Henk", "s1087465", "INF1F");
-        createStudent("Rokers, Lianne", "s1071244", "INF1G");
-        createStudent("Tekkel, Hester ", "s1071586", "INF1C");
-        createStudent("Uitjes, Berend ", "s1087451", "INF1A");
-        createStudent("Venkeltje, Sophia ", "s1075612", "INF1B");
-        createStudent("Vlieger, Olaf ", "s1074127", "INF1E");
-        createStudent("Vogel, Bas ", "s1084522", "INF1A");
-        createStudent("Water, Michiel ", "s1084531", "INF1H");
-        createStudent("Weken, Dirk ", "s1074537", "INF1D");
-        createStudent("Wieken, Stefanie ", "s1084511", "INF1C");
-        createStudent("Zeker, Donald ", "s1077369", "INF1E");
+        createStudent("Adel, Pieter", "s1078455", "INF1G", "2");
+        createStudent("Bieber, Justin", "s1084567", "INF1D", "1");
+        createStudent("Cornelissen, Frederik","s1089456", "INF1B", "2");
+        createStudent("Dadel, Maria", "s1087499", "INF1F", "3");
+        createStudent("Dekker, Vera", "s1084235", "INF1B", "1");
+        createStudent("Elegast, Karel", "s1074211", "INF1E", "1");
+        createStudent("Emmer, Lisa", "s1074326", "INF1C", "2");
+        createStudent("Ezel, Merel", "s1089475", "INF1G", "3");
+        createStudent("Hendriksen, Dorien", "s1074788", "INF1A", "3");
+        createStudent("Krokus, Joke", "s1089413", "INF1H", "2");
+        createStudent("Mandarijn, Max", "s1084211", "INF1H", "2");
+        createStudent("Nelissen, Henk", "s1087465", "INF1F", "1");
+        createStudent("Ober, Jan", "s1087455", "INF1F", "2");
+        createStudent("Rokers, Lianne", "s1071244", "INF1G", "3");
+        createStudent("Tekkel, Hester ", "s1071586", "INF1C", "1");
+        createStudent("Uitjes, Berend ", "s1087451", "INF1A", "2");
+        createStudent("Venkeltje, Sophia ", "s1075612", "INF1B", "2");
+        createStudent("Vlieger, Olaf ", "s1074127", "INF1E", "2");
+        createStudent("Vogel, Bas ", "s1084522", "INF1A", "1");
+        createStudent("Water, Michiel ", "s1084531", "INF1H", "3");
+        createStudent("Weken, Dirk ", "s1074537", "INF1D", "2");
+        createStudent("Wieken, Stefanie ", "s1084511", "INF1C", "1");
+        createStudent("Zeker, Donald ", "s1077369", "INF1E", "3");
 
 
     }

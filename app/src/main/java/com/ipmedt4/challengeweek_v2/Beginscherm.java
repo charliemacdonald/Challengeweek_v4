@@ -12,7 +12,8 @@ import android.widget.TextView;
 
 public class Beginscherm extends ActionBarActivity {
 Button OverzichtStudenten;
-Button OverzichtKlassen; 
+Button OverzichtKlassen;
+Button OverzichtGroepen;
 Button Instellingen; 
 TextView Overzicht; 
 ImageView hsleidenlogo;
@@ -24,7 +25,8 @@ ImageView hsleidenlogo;
 	     ImageView hsleidenlogo = (ImageView) findViewById(R.id.hsleidenlogo); 
 	     Button OverzichtStudenten = (Button) findViewById(R.id.Overzichtstudenten); 
 	     Button OverzichtKlassen = (Button) findViewById(R.id.Overzichtklassen); 
-	     Button Instellingen = (Button) findViewById(R.id.instellingen); 
+	     Button Instellingen = (Button) findViewById(R.id.instellingen);
+         Button OverzichtGroepen = (Button) findViewById(R.id.Overzichtgroepen);
 	     OverzichtStudenten.setOnClickListener(new View.OnClickListener() {
 				
 				@Override
@@ -43,7 +45,18 @@ ImageView hsleidenlogo;
             startActivity(myintent2);
 
         }
-	}); 
+	});
+        OverzichtGroepen.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                Intent intent = new Intent(v.getContext(), OverzichtGroepen.class);
+                startActivityForResult(intent, 0);
+
+
+            }});
+
 	
 	Instellingen.setOnClickListener(new View.OnClickListener() {
 

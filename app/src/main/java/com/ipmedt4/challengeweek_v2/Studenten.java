@@ -10,6 +10,7 @@ public class Studenten
    String naam = null;
    String studentnummer = null;
     String klas = null;
+    String groep = null;
     String cijfer = null;
     String opmerkingen = null;
 
@@ -36,6 +37,12 @@ public class Studenten
     }
     public void setKlas(String klas){
         this.klas = klas;
+    }
+    public String getGroep(){
+        return groep;
+    }
+    public void setGroep(String groep){
+        this.groep = groep;
     }
     public String getCijfer(){
         return cijfer;
