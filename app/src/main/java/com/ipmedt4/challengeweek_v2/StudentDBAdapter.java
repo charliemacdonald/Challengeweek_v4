@@ -111,7 +111,7 @@ public class StudentDBAdapter {
 
    public Cursor showAlleStudenten(){
        Cursor mCursor = mDB.query(SQLITE_TABLE, new String[] {KEY_ROWID, KEY_NAAM, KEY_STUDENTNUMMER,
-       KEY_KLAS}, null, null, null, null, null);
+       KEY_KLAS, KEY_GROEP}, null, null, null, null, null);
 
        if (mCursor != null){
            mCursor.moveToFirst();

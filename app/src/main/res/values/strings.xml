@@ -12,7 +12,7 @@
     <string name="Wachtwoord">Wachtwoord</string>
     <string name="Overzicht">Overzicht</string>
     <string name="instellingen">Instellingen</string>
-    <string name="Overzichtklassen">Overzicht klassen</string>
+    <string name="Overzichtklassen">Overzicht groepen per klas</string>
     <string name="Versie">Versie</string>
     <string name="Disclaimer">Disclaimer</string>
     <string name="Uitloggen">Uitloggen</string>
@@ -59,5 +59,13 @@
     <string name="title_activity_overzicht__studenten1_g">Overzicht_Studenten1G</string>
     <string name="title_activity_overzicht__studenten1_h">Overzicht_Studenten1H</string>
     <string name="title_activity_overzicht_groepen">OverzichtGroepen</string>
+    <string name="title_activity_groepen_1">Groepen_1A</string>
+    <string name="title_activity_groepen_1_b">Groepen_1B</string>
+    <string name="title_activity_groepen_1_c">Groepen_1C</string>
+    <string name="title_activity_groepen_1_d">Groepen_1D</string>
+    <string name="title_activity_groepen_1_e">Groepen_1E</string>
+    <string name="title_activity_groepen_1_f">Groepen_1F</string>
+    <string name="title_activity_groepen_1_g">Groepen_1G</string>
+    <string name="title_activity_groepen_1_h">Groepen_1H</string>
 
 </resources>

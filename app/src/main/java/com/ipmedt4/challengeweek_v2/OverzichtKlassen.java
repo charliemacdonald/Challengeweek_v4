@@ -34,14 +34,14 @@ public Button inf1abutton;
 
             @Override
             public void onClick(View v) {
-                Intent myintent2 = new Intent(v.getContext(), Overzicht_Studenten1A.class);
+                Intent myintent2 = new Intent(v.getContext(), Groepen_1A.class);
                 startActivity(myintent2);
 
             }});
         inf1bbutton.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
-                Intent myintent2 = new Intent(v.getContext(), Overzicht_Studenten1B.class);
+                Intent myintent2 = new Intent(v.getContext(), Groepen_1B.class);
                 startActivity(myintent2);
 
             }
@@ -50,7 +50,7 @@ public Button inf1abutton;
         inf1cbutton.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
-                Intent myintent2 = new Intent(v.getContext(), Overzicht_Studenten1C.class);
+                Intent myintent2 = new Intent(v.getContext(), Groepen_1C.class);
                 startActivity(myintent2);
 
             }
@@ -59,7 +59,7 @@ public Button inf1abutton;
         inf1dbutton.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
-                Intent myintent2 = new Intent(v.getContext(), Overzicht_Studenten1D.class);
+                Intent myintent2 = new Intent(v.getContext(), Groepen_1D.class);
                 startActivity(myintent2);
 
             }
@@ -68,7 +68,7 @@ public Button inf1abutton;
         inf1ebutton.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
-                Intent myintent2 = new Intent(v.getContext(), Overzicht_Studenten1E.class);
+                Intent myintent2 = new Intent(v.getContext(), Groepen_1E.class);
                 startActivity(myintent2);
 
             }
@@ -77,7 +77,7 @@ public Button inf1abutton;
         inf1fbutton.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
-                Intent myintent2 = new Intent(v.getContext(), Overzicht_Studenten1F.class);
+                Intent myintent2 = new Intent(v.getContext(), Groepen_1F.class);
                 startActivity(myintent2);
 
             }
@@ -86,7 +86,7 @@ public Button inf1abutton;
         inf1gbutton.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
-                Intent myintent2 = new Intent(v.getContext(), Overzicht_Studenten1G.class);
+                Intent myintent2 = new Intent(v.getContext(), Groepen_1G.class);
                 startActivity(myintent2);
 
             }
@@ -95,7 +95,7 @@ public Button inf1abutton;
         inf1hbutton.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
-                Intent myintent2 = new Intent(v.getContext(), Overzicht_Studenten1H.class);
+                Intent myintent2 = new Intent(v.getContext(), Groepen_1H.class);
                 startActivity(myintent2);
 
             }

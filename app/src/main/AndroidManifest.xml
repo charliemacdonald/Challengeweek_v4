@@ -170,6 +170,70 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.ipmedt4.challengeweek_v2.Beginscherm" />
         </activity>
+        <activity
+            android:name=".Groepen_1A"
+            android:label="@string/title_activity_groepen_1"
+            android:parentActivityName=".OverzichtKlassen" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ipmedt4.challengeweek_v2.OverzichtKlassen" />
+        </activity>
+        <activity
+            android:name=".Groepen_1B"
+            android:label="@string/title_activity_groepen_1_b"
+            android:parentActivityName=".OverzichtKlassen" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ipmedt4.challengeweek_v2.OverzichtKlassen" />
+        </activity>
+        <activity
+            android:name=".Groepen_1C"
+            android:label="@string/title_activity_groepen_1_c"
+            android:parentActivityName=".OverzichtKlassen" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ipmedt4.challengeweek_v2.OverzichtKlassen" />
+        </activity>
+        <activity
+            android:name=".Groepen_1D"
+            android:label="@string/title_activity_groepen_1_d"
+            android:parentActivityName=".OverzichtKlassen" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ipmedt4.challengeweek_v2.OverzichtKlassen" />
+        </activity>
+        <activity
+            android:name=".Groepen_1E"
+            android:label="@string/title_activity_groepen_1_e"
+            android:parentActivityName=".OverzichtKlassen" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ipmedt4.challengeweek_v2.OverzichtKlassen" />
+        </activity>
+        <activity
+            android:name=".Groepen_1F"
+            android:label="@string/title_activity_groepen_1_f"
+            android:parentActivityName=".OverzichtKlassen" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ipmedt4.challengeweek_v2.OverzichtKlassen" />
+        </activity>
+        <activity
+            android:name=".Groepen_1G"
+            android:label="@string/title_activity_groepen_1_g"
+            android:parentActivityName=".OverzichtKlassen" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ipmedt4.challengeweek_v2.OverzichtKlassen" />
+        </activity>
+        <activity
+            android:name=".Groepen_1H"
+            android:label="@string/title_activity_groepen_1_h"
+            android:parentActivityName=".OverzichtKlassen" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ipmedt4.challengeweek_v2.OverzichtKlassen" />
+        </activity>
     </application>
 
 </manifest>
