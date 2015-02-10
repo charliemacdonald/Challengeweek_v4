@@ -47,12 +47,11 @@
         android:text="@string/Overzichtstudenten"
         android:textStyle="bold"
         android:onClick="displayResultatenLijst"
-        android:layout_below="@+id/Overzichtklassen"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="50dp"
+        android:layout_centerVertical="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <Button
         android:id="@+id/instellingen"
@@ -67,19 +66,5 @@
         android:layout_marginBottom="84dp"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
-
-    <Button
-        android:id="@+id/Overzichtgroepen"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/Overzichtgroepen"
-        android:background="@drawable/roundedbutton"
-        android:textStyle="bold"
-        android:layout_above="@+id/instellingen"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="53dp"
-        android:layout_alignRight="@+id/instellingen"
-        android:layout_alignEnd="@+id/instellingen" />
 
 </RelativeLayout>

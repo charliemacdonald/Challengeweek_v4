@@ -21,13 +21,7 @@ public class Opmerkingenscherm extends ActionBarActivity {
         opmerkingenopslaan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-             db.open();
-                long id;
 
-                EditText opmerkingentekst = (EditText) findViewById(R.id.opmerkingentekst);
-                String opmerkingen = opmerkingentekst.getText().toString();
-                db.OpmerkingenOpslaan(opmerkingen);
-                db.close();
                 Intent intent = new Intent(v.getContext(), Bevestigingsscherm.class);
                 startActivityForResult(intent, 0);
 

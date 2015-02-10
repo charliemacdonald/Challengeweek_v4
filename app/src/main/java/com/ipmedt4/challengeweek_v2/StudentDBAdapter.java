@@ -129,8 +129,22 @@ public class StudentDBAdapter {
         }
         return mCursor;
     }
-    public void OpmerkingenOpslaan(String opmerkingen){
+    public void OpmerkingenOpslaanStudent(String opmerkingen){
         mDB.insert(SQLITE_TABLE, KEY_OPMERKINGEN + "=" + KEY_NAAM, null);
+
+    }
+    public void OpmerkingenOpslaanGroep(String opmerkingen){
+        mDB.insert(SQLITE_TABLE, KEY_OPMERKINGEN + "=" + KEY_GROEP, null);
+
+    }
+
+    public void BeoordelingOpslaanStudent(String cijfer){
+        mDB.insert(SQLITE_TABLE, KEY_CIJFER+ "=" + KEY_NAAM, null);
+
+    }
+
+    public void BeoordelingOpslaanGroep(String cijfer){
+        mDB.insert(SQLITE_TABLE, KEY_CIJFER + "=" + KEY_GROEP, null);
 
     }
 
@@ -212,6 +226,8 @@ public class StudentDBAdapter {
         }
         return mCursor;
     }
+
+
 
     public void insertStudenten(){
         createStudent("Adel, Pieter", "s1078455", "INF1G", "2");

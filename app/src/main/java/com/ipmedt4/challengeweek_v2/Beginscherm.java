@@ -26,7 +26,7 @@ ImageView hsleidenlogo;
 	     Button OverzichtStudenten = (Button) findViewById(R.id.Overzichtstudenten); 
 	     Button OverzichtKlassen = (Button) findViewById(R.id.Overzichtklassen); 
 	     Button Instellingen = (Button) findViewById(R.id.instellingen);
-         Button OverzichtGroepen = (Button) findViewById(R.id.Overzichtgroepen);
+
 	     OverzichtStudenten.setOnClickListener(new View.OnClickListener() {
 				
 				@Override
@@ -46,16 +46,7 @@ ImageView hsleidenlogo;
 
         }
 	});
-        OverzichtGroepen.setOnClickListener(new View.OnClickListener() {
 
-            @Override
-            public void onClick(View v) {
-                // TODO Auto-generated method stub
-                Intent intent = new Intent(v.getContext(), OverzichtGroepen.class);
-                startActivityForResult(intent, 0);
-
-
-            }});
 
 	
 	Instellingen.setOnClickListener(new View.OnClickListener() {

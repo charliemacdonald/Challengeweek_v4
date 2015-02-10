@@ -6,6 +6,7 @@
     android:padding="6dip"
     android:background="@drawable/rounded_border">
 
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
@@ -23,7 +24,7 @@
         android:text="Studentnummer:"
         android:textStyle="bold"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:layout_below="@+id/naam"
+        android:layout_below="@+id/Naam"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
@@ -40,32 +41,33 @@
 
 
     <TextView
-        android:id="@+id/klas"
+        android:id="@+id/Groep"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
-        android:layout_below="@+id/textView2"
+        android:layout_alignBaseline="@+id/textView15"
+        android:layout_alignBottom="@+id/textView15"
+        android:layout_alignLeft="@+id/Studentnummer"
+        android:layout_alignStart="@+id/Studentnummer" />
+
+
+
+    <TextView
+        android:id="@+id/Studentnummer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_alignBottom="@+id/textView2"
         android:layout_centerHorizontal="true" />
 
-
-
     <TextView
-        android:id="@+id/studentnummer"
+        android:id="@+id/Naam"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
-        android:layout_alignTop="@+id/textView2"
-        android:layout_alignLeft="@+id/klas"
-        android:layout_alignStart="@+id/klas" />
-
-    <TextView
-        android:id="@+id/naam"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        android:layout_alignTop="@+id/naam"
-        android:layout_alignLeft="@+id/studentnummer"
-        android:layout_alignStart="@+id/studentnummer" />
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/Groep"
+        android:layout_alignStart="@+id/Groep" />
 
     <TextView
         android:id="@+id/textView15"
@@ -79,12 +81,11 @@
         android:layout_alignParentStart="true" />
 
     <TextView
-        android:id="@+id/groep"
+        android:id="@+id/Klas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
-        android:layout_alignTop="@+id/textView15"
-        android:layout_alignLeft="@+id/klas"
-        android:layout_alignStart="@+id/klas" />
+        android:layout_above="@+id/textView15"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

@@ -16,6 +16,7 @@
         android:name="android.permission.READ_EXTERNAL_STORAGE"
         android:maxSdkVersion="18" />
 
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -162,14 +163,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.ipmedt4.challengeweek_v2.OverzichtKlassen" />
         </activity>
-        <activity
-            android:name=".OverzichtGroepen"
-            android:label="@string/title_activity_overzicht_groepen"
-            android:parentActivityName=".Beginscherm" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.ipmedt4.challengeweek_v2.Beginscherm" />
-        </activity>
+
         <activity
             android:name=".Groepen_1A"
             android:label="@string/title_activity_groepen_1"
@@ -235,5 +229,6 @@
                 android:value="com.ipmedt4.challengeweek_v2.OverzichtKlassen" />
         </activity>
     </application>
+    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>
