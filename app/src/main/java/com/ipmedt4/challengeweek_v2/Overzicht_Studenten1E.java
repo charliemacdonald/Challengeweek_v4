@@ -42,6 +42,7 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 
 
@@ -52,7 +53,7 @@ public class Overzicht_Studenten1E extends ListActivity {
     private ProgressDialog pDialog;
 
     // URL to get contacts JSON
-    private static String url = "http://charlenemacdonald.com/studenten.json";
+    private static String url = "http://charlenemacdonald.com/allestudenten.json";
 
     // JSON Node names
     private static final String TAG_STUDENTEN = "studenten";
@@ -110,14 +111,15 @@ public class Overzicht_Studenten1E extends ListActivity {
             }
         });
 
+        String klas = "INF1E";
         // Calling async task to get json
-        new GetStudenten().execute();
+        new GetStudenten().execute(klas);
     }
 
     /**
      * Async task class to get json by making HTTP call
      * */
-    private class GetStudenten extends AsyncTask<Void, Void, Void> {
+    private class GetStudenten extends AsyncTask<String, Void, Void> {
 
         @Override
         protected void onPreExecute() {
@@ -132,7 +134,13 @@ public class Overzicht_Studenten1E extends ListActivity {
         }
 
         @Override
-        protected Void doInBackground(Void... arg0) {
+        protected Void doInBackground(String... arg0) {
+            HashSet<String> klasFilter = new HashSet<String>();
+            for (int i = 0; i < arg0.length; i++) {
+                klasFilter.add(arg0[i]);
+            }
+
+
             // Creating service handler class instance
             ServiceHandler sh = new ServiceHandler();
 
@@ -161,7 +169,7 @@ public class Overzicht_Studenten1E extends ListActivity {
 
                         // tmp hashmap for single contact
                         HashMap<String, String> student = new HashMap<String, String>();
-
+                        if (klasFilter.contains(Klas)){
                         // adding each child node to HashMap key => value
                         student.put(TAG_NAAM, Naam);
                         student.put(TAG_STUDENTNUMMER, Studentnummer);
@@ -170,7 +178,7 @@ public class Overzicht_Studenten1E extends ListActivity {
 
                         // adding contact to contact list
                         studentList.add(student);
-                    }
+                    } }
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
