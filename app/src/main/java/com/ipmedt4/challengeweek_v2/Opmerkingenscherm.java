@@ -11,7 +11,7 @@ import android.widget.EditText;
 
 
 public class Opmerkingenscherm extends ActionBarActivity {
-    StudentDBAdapter db = new StudentDBAdapter(this);
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

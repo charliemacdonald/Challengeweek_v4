@@ -49,7 +49,7 @@ public class OverzichtStudenten extends ListActivity {
     private ProgressDialog pDialog;
 
     // URL to get contacts JSON
-    private static String url = "http://charlenemacdonald.com/studenten.json";
+    private static String url = "http://charlenemacdonald.com/allestudenten.json";
 
     // JSON Node names
     private static final String TAG_STUDENTEN = "studenten";

@@ -42,6 +42,7 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 
 
@@ -50,7 +51,7 @@ public class Overzicht_Studenten1A extends ListActivity {
     private ProgressDialog pDialog;
 
     // URL to get contacts JSON
-    private static String url = "http://charlenemacdonald.com/studenten.json";
+    private static String url = "http://charlenemacdonald.com/allestudenten.json";
 
     // JSON Node names
     private static final String TAG_STUDENTEN = "studenten";
@@ -107,15 +108,16 @@ public class Overzicht_Studenten1A extends ListActivity {
 
             }
         });
+        String klas = "INF1A";
 
         // Calling async task to get json
-        new GetStudenten().execute();
+        new GetStudenten().execute(klas);
     }
 
     /**
      * Async task class to get json by making HTTP call
      * */
-    private class GetStudenten extends AsyncTask<Void, Void, Void> {
+    private class GetStudenten extends AsyncTask<String, Void, Void> {
 
         @Override
         protected void onPreExecute() {
@@ -130,7 +132,12 @@ public class Overzicht_Studenten1A extends ListActivity {
         }
 
         @Override
-        protected Void doInBackground(Void... arg0) {
+        protected Void doInBackground(String... arg0) {
+            HashSet<String> klasFilter = new HashSet<String>();
+            for (int i = 0; i < arg0.length; i++) {
+                klasFilter.add(arg0[i]);
+            }
+
             // Creating service handler class instance
             ServiceHandler sh = new ServiceHandler();
 
@@ -151,6 +158,7 @@ public class Overzicht_Studenten1A extends ListActivity {
                     for (int i = 0; i < studenten.length(); i++) {
                         JSONObject c = studenten.getJSONObject(i);
 
+
                         String Naam = c.getString(TAG_NAAM);
                         String Studentnummer = c.getString(TAG_STUDENTNUMMER);
                         String Klas = c.getString(TAG_KLAS);
@@ -160,17 +168,18 @@ public class Overzicht_Studenten1A extends ListActivity {
 
                         // tmp hashmap for single contact
                         HashMap<String, String> student = new HashMap<String, String>();
+                        if (klasFilter.contains(Klas)) {
+                            // adding each child node to HashMap key => value
 
-                        // adding each child node to HashMap key => value
-
-                        student.put(TAG_NAAM, Naam);
-                        student.put(TAG_STUDENTNUMMER, Studentnummer);
-                        student.put(TAG_KLAS, Klas);
-                        student.put(TAG_GROEP, Groep);
+                            student.put(TAG_NAAM, Naam);
+                            student.put(TAG_STUDENTNUMMER, Studentnummer);
+                            student.put(TAG_KLAS, Klas);
+                            student.put(TAG_GROEP, Groep);
 
 
-                        // adding contact to contact list
-                        studentList.add(student);
+                            // adding contact to contact list
+                            studentList.add(student);
+                        }
                     }
                 } catch (JSONException e) {
                     e.printStackTrace();
@@ -193,9 +202,9 @@ public class Overzicht_Studenten1A extends ListActivity {
              * */
             ListAdapter adapter = new SimpleAdapter(
                     Overzicht_Studenten1A.this, studentList,
-                    R.layout.student_info, new String[] { TAG_NAAM, TAG_STUDENTNUMMER,
-                    TAG_KLAS, TAG_GROEP }, new int[] { R.id.Naam,
-                    R.id.Studentnummer, R.id.Klas, R.id.Groep });
+                    R.layout.student_info, new String[]{TAG_NAAM, TAG_STUDENTNUMMER,
+                    TAG_KLAS, TAG_GROEP}, new int[]{R.id.Naam,
+                    R.id.Studentnummer, R.id.Klas, R.id.Groep});
 
             setListAdapter(adapter);
         }
