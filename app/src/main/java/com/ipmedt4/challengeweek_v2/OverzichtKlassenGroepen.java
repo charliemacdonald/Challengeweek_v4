@@ -9,8 +9,8 @@ import android.view.View;
 import android.widget.Button;
 
 
-public class OverzichtKlassen extends ActionBarActivity {
-public Button inf1abutton;
+public class OverzichtKlassenGroepen extends ActionBarActivity {
+    public Button inf1abutton;
     Button inf1bbutton;
     Button inf1cbutton;
     Button inf1dbutton;
@@ -21,11 +21,11 @@ public Button inf1abutton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_overzicht_klassen);
+        setContentView(R.layout.activity_overzicht_klassen_groepen);
         Button inf1abutton = (Button) findViewById(R.id.inf1abutton);
         Button inf1bbutton = (Button) findViewById(R.id.inf1bbutton);
         Button inf1cbutton = (Button) findViewById(R.id.inf1cbutton);
-        Button inf1dbutton = (Button) findViewById(R.id.inf1dbutton);
+        final Button inf1dbutton = (Button) findViewById(R.id.inf1dbutton);
         Button inf1ebutton = (Button) findViewById(R.id.inf1ebutton);
         Button inf1fbutton = (Button) findViewById(R.id.inf1fbutton);
         Button inf1gbutton = (Button) findViewById(R.id.inf1gbutton);
@@ -34,15 +34,19 @@ public Button inf1abutton;
 
             @Override
             public void onClick(View v) {
-                Intent myintent2 = new Intent(v.getContext(), Overzicht_Studenten1A.class);
-                startActivity(myintent2);
+                Intent in = new Intent(v.getContext(), Groepenscherm.class);
+                String klas = "INF1A";
+                in.putExtra("INF1A", klas);
+                startActivityForResult(in, 0);
 
             }});
         inf1bbutton.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
-                Intent myintent2 = new Intent(v.getContext(), Overzicht_Studenten1B.class);
-                startActivity(myintent2);
+                Intent in = new Intent(v.getContext(), Groepenscherm.class);
+                String klas = "INF1B";
+                in.putExtra("INF1B", klas);
+                startActivityForResult(in, 0);
 
             }
         });
@@ -50,8 +54,10 @@ public Button inf1abutton;
         inf1cbutton.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
-                Intent myintent2 = new Intent(v.getContext(), Overzicht_Studenten1C.class);
-                startActivity(myintent2);
+                Intent in = new Intent(v.getContext(), Groepenscherm.class);
+                String klas = "INF1C";
+                in.putExtra("INF1C", klas);
+                startActivityForResult(in, 0);
 
             }
         });
@@ -59,8 +65,10 @@ public Button inf1abutton;
         inf1dbutton.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
-                Intent myintent2 = new Intent(v.getContext(), Overzicht_Studenten1D.class);
-                startActivity(myintent2);
+                Intent in = new Intent(v.getContext(), Groepenscherm.class);
+                String klas = "INF1D";
+                in.putExtra("INF1D", klas);
+                startActivityForResult(in, 0);
 
             }
         });
@@ -68,8 +76,10 @@ public Button inf1abutton;
         inf1ebutton.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
-                Intent myintent2 = new Intent(v.getContext(), Overzicht_Studenten1E.class);
-                startActivity(myintent2);
+                Intent in = new Intent(v.getContext(), Groepenscherm.class);
+                String klas = "INF1E";
+                in.putExtra("INF1E", klas);
+                startActivityForResult(in, 0);
 
             }
         });
@@ -77,17 +87,20 @@ public Button inf1abutton;
         inf1fbutton.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
-                Intent myintent2 = new Intent(v.getContext(), Overzicht_Studenten1F.class);
-                startActivity(myintent2);
-
+                Intent in = new Intent(v.getContext(), Groepenscherm.class);
+                String klas = "INF1F";
+                in.putExtra("INF1F", klas);
+                startActivityForResult(in, 0);
             }
         });
 
         inf1gbutton.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
-                Intent myintent2 = new Intent(v.getContext(), Overzicht_Studenten1G.class);
-                startActivity(myintent2);
+                Intent in = new Intent(v.getContext(), Groepenscherm.class);
+                String klas = "INF1G";
+                in.putExtra("INF1G", klas);
+                startActivityForResult(in, 0);
 
             }
         });
@@ -95,18 +108,21 @@ public Button inf1abutton;
         inf1hbutton.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
-                Intent myintent2 = new Intent(v.getContext(), Overzicht_Studenten1H.class);
-                startActivity(myintent2);
+                Intent in = new Intent(v.getContext(), Groepenscherm.class);
+                String klas = "INF1H";
+                in.putExtra("INF1H", klas);
+                startActivityForResult(in, 0);
 
             }
         });
     }
 
 
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_overzicht_klassen, menu);
+        getMenuInflater().inflate(R.menu.menu_overzicht_klassen_groepen, menu);
         return true;
     }
 

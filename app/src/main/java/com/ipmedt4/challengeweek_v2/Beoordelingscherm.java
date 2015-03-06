@@ -13,19 +13,30 @@ import android.widget.CheckBox;
 public class Beoordelingscherm extends ActionBarActivity {
 Button verzendbutton;
 
-int cijfer;
+String cijfer;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_beoordelingscherm);
+        Intent in = getIntent();
+        String naam = in.getStringExtra("Naam");
+        String studentnummer = in.getStringExtra("Studentnummer");
+        String klas = in.getStringExtra("Klas");
+
         Button verzendbutton = (Button) findViewById(R.id.verzendbutton);
         verzendbutton.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
                 // TODO Auto-generated method stub
-                Intent intent = new Intent(v.getContext(), Opmerkingenscherm.class);
-                startActivityForResult(intent, 0);
+                Intent in = new Intent(getApplicationContext(), Opmerkingenscherm.class);
+                String naam = in.getStringExtra("Naam");
+                String studentnummer = in.getStringExtra("Studentnummer");
+                in.putExtra("Naam", naam);
+                in.putExtra("Studentnummer", studentnummer);
+                in.putExtra("cijfer", cijfer);
+
+                startActivityForResult(in, 0);
 
 
             }
@@ -36,18 +47,18 @@ int cijfer;
         @Override
         public void onClick(View v) {
         if (checkbox1.isChecked())
-        cijfer = 10;
+        cijfer = "10";
         else
-        cijfer = 1;
+        cijfer = "1";
 }});
         final CheckBox checkbox2 = (CheckBox) findViewById(R.id.checkBox2);
         checkbox2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if(checkbox2.isChecked())
-                    cijfer = 10 ;
+                    cijfer = "10" ;
                 if (checkbox1.isChecked());
-                else cijfer = (int) 9.5;
+                else cijfer = "9.5";
 
             }
         });}

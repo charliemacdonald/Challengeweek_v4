@@ -167,10 +167,46 @@
         <activity
             android:name=".Groepenscherm"
             android:label="@string/title_activity_groepenscherm"
-            android:parentActivityName=".OverzichtKlassen" >
+            android:parentActivityName=".OverzichtKlassenGroepen" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.ipmedt4.challengeweek_v2.OverzichtKlassen" />
+                android:value="com.ipmedt4.challengeweek_v2.OverzichtKlassenGroepen" />
+        </activity>
+        <activity
+            android:name=".OverzichtKlassenGroepen"
+            android:label="@string/title_activity_overzicht_klassen_groepen"
+            android:parentActivityName=".Beginscherm" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ipmedt4.challengeweek_v2.Beginscherm" />
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main" >
+        </activity>
+        <activity
+            android:name=".BeoordelingschermGroepen"
+            android:label="@string/title_activity_beoordelingscherm_groepen"
+            android:parentActivityName=".Groepenscherm" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ipmedt4.challengeweek_v2.Groepenscherm" />
+        </activity>
+        <activity
+            android:name=".OpmerkingenschermGroepen"
+            android:label="@string/title_activity_opmerkingenscherm_groepen"
+            android:parentActivityName=".BeoordelingschermGroepen" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ipmedt4.challengeweek_v2.BeoordelingschermGroepen" />
+        </activity>
+        <activity
+            android:name=".BevestigingschermGroepen"
+            android:label="@string/title_activity_bevestigingscherm_groepen"
+            android:parentActivityName=".OpmerkingenschermGroepen" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ipmedt4.challengeweek_v2.OpmerkingenschermGroepen" />
         </activity>
     </application>
 

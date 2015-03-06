@@ -18,7 +18,7 @@
     <string name="Uitloggen">Uitloggen</string>
     <string name="some_text"> Overzicht studenten </string>
     <string name="some_hint"> Typ hier om student te zoeken </string>
-    <string name="Overzichtstudenten">Overzicht studenten</string>
+    <string name="Overzichtstudenten">Overzicht studenten per klas</string>
     <string name="Overzichtgroepen"> Overzicht groepen</string>
     <string name="title_activity_overzicht_studenten">OverzichtStudenten</string>
     <string name="hello_world">Hello world!</string>
@@ -35,6 +35,13 @@
     <string name="inf1i">INF1I</string>
     <string name="inf1j">INF1J</string>
     <string name="inf1k">INF1K</string>
+    <string name="groepen">Groepen</string>
+    <string name="groep2"> Groep 2</string>
+    <string name="groep3"> Groep 3</string>
+    <string name="groep4"> Groep 4</string>
+    <string name="groep5"> Groep 5</string>
+    <string name="groep6"> Groep 6</string>
+    <string name="groep1"> Groep 1</string>
     <string name="Verzenden">Verzenden</string>
     <string name="Beoordeling">Beoordeling</string>
     <string name="Criteriagehaald">Criteria behaald</string>
@@ -68,5 +75,10 @@
     <string name="title_activity_groepen_1_g">Groepen_1G</string>
     <string name="title_activity_groepen_1_h">Groepen_1H</string>
     <string name="title_activity_groepenscherm">Groepenscherm</string>
+    <string name="title_activity_overzicht_klassen_groepen">OverzichtKlassenGroepen</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_beoordelingscherm_groepen">BeoordelingschermGroepen</string>
+    <string name="title_activity_opmerkingenscherm_groepen">OpmerkingenschermGroepen</string>
+    <string name="title_activity_bevestigingscherm_groepen">BevestigingschermGroepen</string>
 
 </resources>

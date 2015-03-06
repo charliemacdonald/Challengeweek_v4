@@ -32,7 +32,7 @@ ImageView hsleidenlogo;
 				@Override
 				public void onClick(View v) {
 					// TODO Auto-generated method stub
-					Intent intent = new Intent(v.getContext(), OverzichtStudenten.class); 
+					Intent intent = new Intent(v.getContext(), OverzichtKlassen.class);
 					startActivityForResult(intent, 0); 
 				
 			 
@@ -41,7 +41,7 @@ ImageView hsleidenlogo;
 	OverzichtKlassen.setOnClickListener(new View.OnClickListener() {
 
         public void onClick(View v) {
-            Intent myintent2 = new Intent(v.getContext(), OverzichtKlassen.class);
+            Intent myintent2 = new Intent(v.getContext(), OverzichtKlassenGroepen.class);
             startActivity(myintent2);
 
         }

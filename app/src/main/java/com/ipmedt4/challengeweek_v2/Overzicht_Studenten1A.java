@@ -103,7 +103,7 @@ public class Overzicht_Studenten1A extends ListActivity {
                         Beoordelingscherm.class);
                 in.putExtra(TAG_NAAM, Naam);
                 in.putExtra(TAG_STUDENTNUMMER, Studentnummer);
-                in.putExtra(TAG_KLAS, Klas);
+
                 startActivity(in);
 
             }
