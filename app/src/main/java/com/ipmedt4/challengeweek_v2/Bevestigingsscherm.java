@@ -3,8 +3,8 @@ package com.ipmedt4.challengeweek_v2;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -21,15 +21,27 @@ public class Bevestigingsscherm extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bevestigingsscherm);
+        Intent in = getIntent();
+        String Naam = in.getStringExtra("Naam");
+        String Studentnummer = in.getStringExtra("Studentnummer");
+        String cijfer = in.getStringExtra("cijfer");
+
+        String opmerkingen = in.getStringExtra("opmerkingen");
         Button beoordelingbevestigen = (Button) findViewById(R.id.beoordelingbevestigen);
         Button beoordelingannuleren = (Button) findViewById(R.id.bevestingannuleren);
         TextView beoordelingtekst = (TextView) findViewById(R.id.beoordelingtekst);
+        String tekstbeoordeling = "De student heeft het cijfer" + cijfer + ""+ "behaald";
+        beoordelingtekst.setText(tekstbeoordeling);
+        System.out.println (tekstbeoordeling);
+
 
         beoordelingbevestigen.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(final View v) {
-                AlertDialog.Builder builder;
+
+
+              AlertDialog.Builder builder;
                 builder = new AlertDialog.Builder(Bevestigingsscherm.this);
                 builder.setMessage("Uw beoordeling is succesvol opgeslagen!");
                 builder.setTitle("Beoordeling succesvol");
@@ -37,8 +49,10 @@ public class Bevestigingsscherm extends ActionBarActivity {
                 builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
 
                     public void onClick(DialogInterface dialog, int which) {
-                        Intent myintent2 = new Intent(v.getContext(), OverzichtStudenten.class);
-                        startActivity(myintent2);
+
+                        BeoordelingVersturen();
+                        Intent in = new Intent(v.getContext(), Beginscherm.class);
+                    startActivityForResult(in, 0);
 
 
                     }
@@ -59,6 +73,11 @@ public class Bevestigingsscherm extends ActionBarActivity {
 
 
             }});
+    }
+
+    private void BeoordelingVersturen(){
+
+
     }
 
 

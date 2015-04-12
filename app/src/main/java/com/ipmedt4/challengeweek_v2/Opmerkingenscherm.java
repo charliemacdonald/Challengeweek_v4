@@ -17,13 +17,27 @@ public class Opmerkingenscherm extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_opmerkingenscherm);
+        final Intent intent = getIntent();
+        final String Naam = intent.getStringExtra("Naam");
+        final String Studentnummer = intent.getStringExtra("Studentnummer");
+        final String cijfer = intent.getStringExtra("cijfer");
+        EditText opmerkingentekst = (EditText) findViewById(R.id.opmerkingentekst);
+        final String opmerkingen  = opmerkingentekst.getText().toString();
+        System.out.println("Opmerkingen zijn:" + opmerkingen);
+
+
+
         Button opmerkingenopslaan = (Button) findViewById(R.id.opmerkingenopslaanbutton);
         opmerkingenopslaan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(v.getContext(), Bevestigingsscherm.class);
-                startActivityForResult(intent, 0);
+                Intent in = new Intent(v.getContext(), Bevestigingsscherm.class);
+                in.putExtra("Naam", Naam);
+                in.putExtra("Studentnummer", Studentnummer);
+                in.putExtra("cijfer", cijfer);
+                in.putExtra("opmerkingen", opmerkingen);
+                startActivityForResult(in, 0);
 
 
             }

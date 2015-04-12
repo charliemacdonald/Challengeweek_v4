@@ -1,9 +1,13 @@
 package com.ipmedt4.challengeweek_v2;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 
 
 public class OpmerkingenschermGroepen extends ActionBarActivity {
@@ -12,7 +16,31 @@ public class OpmerkingenschermGroepen extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_opmerkingenscherm_groepen);
+        EditText opmerkingentekst = (EditText) findViewById(R.id.opmerkingentekst);
+        final String opmerkingen  = opmerkingentekst.getText().toString();
+
+        Button opmerkingenopslaan = (Button) findViewById(R.id.opmerkingenopslaanbutton);
+        opmerkingenopslaan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent in = new Intent(v.getContext(), BevestigingschermGroepen.class);
+                String klas = in.getStringExtra("klas");
+                String groep = in.getStringExtra("groep");
+                String cijfer = in.getStringExtra("cijfer");
+                in.putExtra("klas", klas);
+                in.putExtra("groep", groep);
+                in.putExtra("cijfer", cijfer);
+                in.putExtra("opmerkingen", opmerkingen);
+                startActivityForResult(in, 0);
+
+
+            }
+        });
     }
+
+
+
 
 
     @Override

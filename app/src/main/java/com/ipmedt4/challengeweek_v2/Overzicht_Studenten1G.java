@@ -1,49 +1,25 @@
 package com.ipmedt4.challengeweek_v2;
 
-import android.annotation.TargetApi;
-import android.app.Activity;
 import android.app.ListActivity;
 import android.app.ProgressDialog;
-import android.content.Context;
 import android.content.Intent;
-import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteException;
-import android.database.sqlite.SQLiteOpenHelper;
 import android.os.AsyncTask;
-import android.os.Build;
-import android.os.StrictMode;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.text.Editable;
-import android.text.TextWatcher;
+import android.os.StrictMode;
 import android.util.Log;
-import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.FilterQueryProvider;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
-import android.widget.SimpleCursorAdapter;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import org.apache.http.NameValuePair;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
 
 
 public class Overzicht_Studenten1G extends ListActivity {
@@ -53,7 +29,7 @@ public class Overzicht_Studenten1G extends ListActivity {
     private ProgressDialog pDialog;
 
     // URL to get contacts JSON
-    private static String url = "http://charlenemacdonald.com/allestudenten.json";
+    private static String url = "http://charlenemacdonald.com/getStudenten1G.php";
 
     // JSON Node names
     private static final String TAG_STUDENTEN = "studenten";
@@ -74,7 +50,7 @@ public class Overzicht_Studenten1G extends ListActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_overzicht_studenten);
+        setContentView(R.layout.activity_overzicht__studenten1g);
         if (android.os.Build.VERSION.SDK_INT > 9) {
             StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
             StrictMode.setThreadPolicy(policy);
@@ -111,16 +87,14 @@ public class Overzicht_Studenten1G extends ListActivity {
             }
         });
 
-        String klas = "INF1G";
-
         // Calling async task to get json
-        new GetStudenten().execute(klas);
+        new GetStudenten().execute();
     }
 
     /**
      * Async task class to get json by making HTTP call
      * */
-    private class GetStudenten extends AsyncTask<String, Void, Void> {
+    private class GetStudenten extends AsyncTask<Void, Void, Void> {
 
         @Override
         protected void onPreExecute() {
@@ -135,12 +109,7 @@ public class Overzicht_Studenten1G extends ListActivity {
         }
 
         @Override
-        protected Void doInBackground(String... arg0) {
-            HashSet<String> klasFilter = new HashSet<String>();
-            for (int i = 0; i < arg0.length; i++) {
-                klasFilter.add(arg0[i]);
-            }
-
+        protected Void doInBackground(Void... arg0) {
             // Creating service handler class instance
             ServiceHandler sh = new ServiceHandler();
 
@@ -164,21 +133,19 @@ public class Overzicht_Studenten1G extends ListActivity {
                         String Studentnummer = c.getString(TAG_STUDENTNUMMER);
                         String Klas = c.getString(TAG_KLAS);
                         String Groep = c.getString(TAG_GROEP);
-                        String Cijfer = c.getString(TAG_CIJFER);
-                        String Opmerkingen = c.getString(TAG_OPMERKINGEN);
+
 
                         // tmp hashmap for single contact
                         HashMap<String, String> student = new HashMap<String, String>();
-                        if (klasFilter.contains(Klas)) {
-                            // adding each child node to HashMap key => value
-                            student.put(TAG_NAAM, Naam);
-                            student.put(TAG_STUDENTNUMMER, Studentnummer);
-                            student.put(TAG_KLAS, Klas);
-                            student.put(TAG_GROEP, Groep);
 
-                            // adding contact to contact list
-                            studentList.add(student);
-                        }
+                        // adding each child node to HashMap key => value
+                        student.put(TAG_NAAM, Naam);
+                        student.put(TAG_STUDENTNUMMER, Studentnummer);
+                        student.put(TAG_KLAS, Klas);
+                        student.put(TAG_GROEP, Groep);
+
+                        // adding contact to contact list
+                        studentList.add(student);
                     }
                 } catch (JSONException e) {
                     e.printStackTrace();

@@ -1,55 +1,33 @@
 package com.ipmedt4.challengeweek_v2;
 
-import android.annotation.TargetApi;
-import android.app.Activity;
+
 import android.app.ListActivity;
 import android.app.ProgressDialog;
-import android.content.Context;
 import android.content.Intent;
-import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteException;
-import android.database.sqlite.SQLiteOpenHelper;
 import android.os.AsyncTask;
-import android.os.Build;
-import android.os.StrictMode;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.text.Editable;
-import android.text.TextWatcher;
+import android.os.StrictMode;
 import android.util.Log;
-import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.FilterQueryProvider;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
-import android.widget.SimpleCursorAdapter;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import org.apache.http.NameValuePair;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 
 
 public class OverzichtStudenten extends ListActivity {
     private ProgressDialog pDialog;
 
     // URL to get contacts JSON
-    private static String url = "http://charlenemacdonald.com/allestudenten.json";
+    private static String url = "http://charlenemacdonald.com/getAlleStudenten.php";
 
     // JSON Node names
     private static final String TAG_STUDENTEN = "studenten";
@@ -153,8 +131,7 @@ public class OverzichtStudenten extends ListActivity {
                         String Studentnummer = c.getString(TAG_STUDENTNUMMER);
                         String Klas = c.getString(TAG_KLAS);
                         String Groep = c.getString(TAG_GROEP);
-                        String Cijfer = c.getString(TAG_CIJFER);
-                        String Opmerkingen = c.getString(TAG_OPMERKINGEN);
+
 
                         // tmp hashmap for single contact
                         HashMap<String, String> student = new HashMap<String, String>();

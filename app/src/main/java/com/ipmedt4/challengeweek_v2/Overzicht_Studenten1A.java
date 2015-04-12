@@ -1,49 +1,25 @@
 package com.ipmedt4.challengeweek_v2;
 
-import android.annotation.TargetApi;
-import android.app.Activity;
 import android.app.ListActivity;
 import android.app.ProgressDialog;
-import android.content.Context;
 import android.content.Intent;
-import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteException;
-import android.database.sqlite.SQLiteOpenHelper;
 import android.os.AsyncTask;
-import android.os.Build;
-import android.os.StrictMode;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.text.Editable;
-import android.text.TextWatcher;
+import android.os.StrictMode;
 import android.util.Log;
-import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.FilterQueryProvider;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
-import android.widget.SimpleCursorAdapter;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import org.apache.http.NameValuePair;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
 
 
 public class Overzicht_Studenten1A extends ListActivity {
@@ -51,7 +27,7 @@ public class Overzicht_Studenten1A extends ListActivity {
     private ProgressDialog pDialog;
 
     // URL to get contacts JSON
-    private static String url = "http://charlenemacdonald.com/allestudenten.json";
+    private static String url = "http://charlenemacdonald.com/getStudenten1A.php";
 
     // JSON Node names
     private static final String TAG_STUDENTEN = "studenten";
@@ -76,7 +52,7 @@ public class Overzicht_Studenten1A extends ListActivity {
         if (android.os.Build.VERSION.SDK_INT > 9) {
             StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
             StrictMode.setThreadPolicy(policy);
-            System.out.println("*** My thread is nu geconfigureerd zodat het interverbinding toestaat");
+            System.out.println("*** My thread is now configured to allow connection");
         }
 
         studentList = new ArrayList<HashMap<String, String>>();
@@ -103,21 +79,20 @@ public class Overzicht_Studenten1A extends ListActivity {
                         Beoordelingscherm.class);
                 in.putExtra(TAG_NAAM, Naam);
                 in.putExtra(TAG_STUDENTNUMMER, Studentnummer);
-
+                in.putExtra(TAG_KLAS, Klas);
                 startActivity(in);
 
             }
         });
-        String klas = "INF1A";
 
         // Calling async task to get json
-        new GetStudenten().execute(klas);
+        new GetStudenten().execute();
     }
 
     /**
      * Async task class to get json by making HTTP call
      * */
-    private class GetStudenten extends AsyncTask<String, Void, Void> {
+    private class GetStudenten extends AsyncTask<Void, Void, Void> {
 
         @Override
         protected void onPreExecute() {
@@ -132,12 +107,7 @@ public class Overzicht_Studenten1A extends ListActivity {
         }
 
         @Override
-        protected Void doInBackground(String... arg0) {
-            HashSet<String> klasFilter = new HashSet<String>();
-            for (int i = 0; i < arg0.length; i++) {
-                klasFilter.add(arg0[i]);
-            }
-
+        protected Void doInBackground(Void... arg0) {
             // Creating service handler class instance
             ServiceHandler sh = new ServiceHandler();
 
@@ -153,33 +123,27 @@ public class Overzicht_Studenten1A extends ListActivity {
                     // Getting JSON Array node
                     studenten = jsonObj.getJSONArray(TAG_STUDENTEN);
 
-
                     // looping through All Contacts
                     for (int i = 0; i < studenten.length(); i++) {
                         JSONObject c = studenten.getJSONObject(i);
-
 
                         String Naam = c.getString(TAG_NAAM);
                         String Studentnummer = c.getString(TAG_STUDENTNUMMER);
                         String Klas = c.getString(TAG_KLAS);
                         String Groep = c.getString(TAG_GROEP);
-                        String Cijfer = c.getString(TAG_CIJFER);
-                        String Opmerkingen = c.getString(TAG_OPMERKINGEN);
+
 
                         // tmp hashmap for single contact
                         HashMap<String, String> student = new HashMap<String, String>();
-                        if (klasFilter.contains(Klas)) {
-                            // adding each child node to HashMap key => value
 
-                            student.put(TAG_NAAM, Naam);
-                            student.put(TAG_STUDENTNUMMER, Studentnummer);
-                            student.put(TAG_KLAS, Klas);
-                            student.put(TAG_GROEP, Groep);
+                        // adding each child node to HashMap key => value
+                        student.put(TAG_NAAM, Naam);
+                        student.put(TAG_STUDENTNUMMER, Studentnummer);
+                        student.put(TAG_KLAS, Klas);
+                        student.put(TAG_GROEP, Groep);
 
-
-                            // adding contact to contact list
-                            studentList.add(student);
-                        }
+                        // adding contact to contact list
+                        studentList.add(student);
                     }
                 } catch (JSONException e) {
                     e.printStackTrace();
@@ -202,9 +166,9 @@ public class Overzicht_Studenten1A extends ListActivity {
              * */
             ListAdapter adapter = new SimpleAdapter(
                     Overzicht_Studenten1A.this, studentList,
-                    R.layout.student_info, new String[]{TAG_NAAM, TAG_STUDENTNUMMER,
-                    TAG_KLAS, TAG_GROEP}, new int[]{R.id.Naam,
-                    R.id.Studentnummer, R.id.Klas, R.id.Groep});
+                    R.layout.student_info, new String[] { TAG_NAAM, TAG_STUDENTNUMMER,
+                    TAG_KLAS, TAG_GROEP }, new int[] { R.id.Naam,
+                    R.id.Studentnummer, R.id.Klas, R.id.Groep });
 
             setListAdapter(adapter);
         }

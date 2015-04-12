@@ -1,5 +1,6 @@
 package com.ipmedt4.challengeweek_v2;
 
+import android.graphics.Typeface;
 import android.support.v7.app.ActionBarActivity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -21,11 +22,17 @@ ImageView hsleidenlogo;
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_beginscherm);
-		 TextView Challengeweek = (TextView) findViewById(R.id.Challengeweek); 
+		 TextView Overzicht = (TextView) findViewById(R.id.Overzicht);
+        Typeface typeface = Typeface.createFromAsset(getAssets(), "Fonts/Roboto-Medium.ttf");
+        Overzicht.setTypeface(typeface);
 	     ImageView hsleidenlogo = (ImageView) findViewById(R.id.hsleidenlogo); 
-	     Button OverzichtStudenten = (Button) findViewById(R.id.Overzichtstudenten); 
-	     Button OverzichtKlassen = (Button) findViewById(R.id.Overzichtklassen); 
+	     Button OverzichtStudenten = (Button) findViewById(R.id.Overzichtstudenten);
+
+        OverzichtStudenten.setTypeface(typeface);
+
+	     Button OverzichtKlassen = (Button) findViewById(R.id.Overzichtklassen);
 	     Button Instellingen = (Button) findViewById(R.id.instellingen);
+        Button AlleStudenten = (Button) findViewById(R.id.buttonallestudenten);
 
 	     OverzichtStudenten.setOnClickListener(new View.OnClickListener() {
 				
@@ -46,6 +53,16 @@ ImageView hsleidenlogo;
 
         }
 	});
+        AlleStudenten.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                Intent intent = new Intent(v.getContext(), OverzichtStudenten.class);
+                startActivityForResult(intent, 0);
+
+
+            }});
 
 
 	

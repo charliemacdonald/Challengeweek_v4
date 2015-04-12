@@ -13,15 +13,19 @@ import android.widget.CheckBox;
 public class Beoordelingscherm extends ActionBarActivity {
 Button verzendbutton;
 
+
 String cijfer;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_beoordelingscherm);
-        Intent in = getIntent();
-        String naam = in.getStringExtra("Naam");
-        String studentnummer = in.getStringExtra("Studentnummer");
-        String klas = in.getStringExtra("Klas");
+        final Intent intent = getIntent();
+        final String Naam = intent.getStringExtra("Naam");
+        final String Studentnummer = intent.getStringExtra("Studentnummer");
+
+
+
 
         Button verzendbutton = (Button) findViewById(R.id.verzendbutton);
         verzendbutton.setOnClickListener(new View.OnClickListener() {
@@ -30,10 +34,9 @@ String cijfer;
             public void onClick(View v) {
                 // TODO Auto-generated method stub
                 Intent in = new Intent(getApplicationContext(), Opmerkingenscherm.class);
-                String naam = in.getStringExtra("Naam");
-                String studentnummer = in.getStringExtra("Studentnummer");
-                in.putExtra("Naam", naam);
-                in.putExtra("Studentnummer", studentnummer);
+                in.putExtra("Naam", Naam);
+                in.putExtra("Studentnummer", Studentnummer);
+                String.valueOf(cijfer);
                 in.putExtra("cijfer", cijfer);
 
                 startActivityForResult(in, 0);
@@ -42,26 +45,189 @@ String cijfer;
             }
         });
         final CheckBox checkbox1 = (CheckBox) findViewById(R.id.checkBox);
+        final CheckBox checkbox2 = (CheckBox) findViewById(R.id.checkBox2);
+        final CheckBox checkbox3 = (CheckBox) findViewById(R.id.checkBox3);
+        final CheckBox checkbox4 = (CheckBox) findViewById(R.id.checkBox4);
+        final CheckBox checkbox5 = (CheckBox) findViewById(R.id.checkBox5);
+        final CheckBox checkbox6 = (CheckBox) findViewById(R.id.checkBox6);
+        final CheckBox checkbox7 = (CheckBox) findViewById(R.id.checkBox7);
+        final CheckBox checkbox8 = (CheckBox) findViewById(R.id.checkBox8);
+        final CheckBox checkbox9 = (CheckBox) findViewById(R.id.checkBox9);
+        final CheckBox checkbox10 = (CheckBox) findViewById(R.id.checkBox10);
+        final CheckBox checkbox11 = (CheckBox) findViewById(R.id.checkBox11);
+        final CheckBox checkbox12 = (CheckBox) findViewById(R.id.checkBox12);
+
         checkbox1.setOnClickListener(new View.OnClickListener()
         {
         @Override
         public void onClick(View v) {
-        if (checkbox1.isChecked())
+        if (checkbox1.isChecked() && (checkbox2.isChecked()) && (checkbox3.isChecked())
+        && (checkbox4.isChecked()) && (checkbox5.isChecked()) && (checkbox6.isChecked())
+                && (checkbox7.isChecked()) && (checkbox8.isChecked()) && (checkbox9.isChecked())
+                && (checkbox10.isChecked()) && (checkbox11.isChecked()) && (checkbox12.isChecked()))
         cijfer = "10";
         else
         cijfer = "1";
+            System.out.println("Cijfer is " + cijfer);
 }});
-        final CheckBox checkbox2 = (CheckBox) findViewById(R.id.checkBox2);
-        checkbox2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if(checkbox2.isChecked())
-                    cijfer = "10" ;
-                if (checkbox1.isChecked());
-                else cijfer = "9.5";
+    checkbox2.setOnClickListener(new View.OnClickListener()
+    {
+        @Override
+        public void onClick(View v) {
+        if (checkbox1.isChecked() && (checkbox2.isChecked()) && (checkbox3.isChecked())
+                && (checkbox4.isChecked()) && (checkbox5.isChecked()) && (checkbox6.isChecked())
+                && (checkbox7.isChecked()) && (checkbox8.isChecked()) && (checkbox9.isChecked())
+                && (checkbox10.isChecked()) && (checkbox11.isChecked()) && (checkbox12.isChecked()))
+            cijfer = "10";
+        else
+            cijfer = "1";
+        System.out.println("Cijfer is " + cijfer);
+    }});
 
-            }
-        });}
+
+    checkbox3.setOnClickListener(new View.OnClickListener()
+    {
+        @Override
+        public void onClick(View v) {
+        if (checkbox1.isChecked() && (checkbox2.isChecked()) && (checkbox3.isChecked())
+                && (checkbox4.isChecked()) && (checkbox5.isChecked()) && (checkbox6.isChecked())
+                && (checkbox7.isChecked()) && (checkbox8.isChecked()) && (checkbox9.isChecked())
+                && (checkbox10.isChecked()) && (checkbox11.isChecked()) && (checkbox12.isChecked()))
+            cijfer = "10";
+        else
+            cijfer = "1";
+        System.out.println("Cijfer is " + cijfer);
+    }});
+
+    checkbox4.setOnClickListener(new View.OnClickListener()
+    {
+        @Override
+        public void onClick(View v) {
+        if (checkbox1.isChecked() && (checkbox2.isChecked()) && (checkbox3.isChecked())
+                && (checkbox4.isChecked()) && (checkbox5.isChecked()) && (checkbox6.isChecked())
+                && (checkbox7.isChecked()) && (checkbox8.isChecked()) && (checkbox9.isChecked())
+                && (checkbox10.isChecked()) && (checkbox11.isChecked()) && (checkbox12.isChecked()))
+            cijfer = "10";
+        else
+            cijfer = "1";
+        System.out.println("Cijfer is " + cijfer);
+    }});
+
+    checkbox5.setOnClickListener(new View.OnClickListener()
+    {
+        @Override
+        public void onClick(View v) {
+        if (checkbox1.isChecked() && (checkbox2.isChecked()) && (checkbox3.isChecked())
+                && (checkbox4.isChecked()) && (checkbox5.isChecked()) && (checkbox6.isChecked())
+                && (checkbox7.isChecked()) && (checkbox8.isChecked()) && (checkbox9.isChecked())
+                && (checkbox10.isChecked()) && (checkbox11.isChecked()) && (checkbox12.isChecked()))
+            cijfer = "10";
+        else
+            cijfer = "1";
+        System.out.println("Cijfer is " + cijfer);
+    }});
+
+
+    checkbox6.setOnClickListener(new View.OnClickListener()
+    {
+        @Override
+        public void onClick(View v) {
+        if (checkbox1.isChecked() && (checkbox2.isChecked()) && (checkbox3.isChecked())
+                && (checkbox4.isChecked()) && (checkbox5.isChecked()) && (checkbox6.isChecked())
+                && (checkbox7.isChecked()) && (checkbox8.isChecked()) && (checkbox9.isChecked())
+                && (checkbox10.isChecked()) && (checkbox11.isChecked()) && (checkbox12.isChecked()))
+            cijfer = "10";
+        else
+            cijfer = "1";
+        System.out.println("Cijfer is " + cijfer);
+    }});
+
+    checkbox7.setOnClickListener(new View.OnClickListener()
+    {
+        @Override
+        public void onClick(View v) {
+        if (checkbox1.isChecked() && (checkbox2.isChecked()) && (checkbox3.isChecked())
+                && (checkbox4.isChecked()) && (checkbox5.isChecked()) && (checkbox6.isChecked())
+                && (checkbox7.isChecked()) && (checkbox8.isChecked()) && (checkbox9.isChecked())
+                && (checkbox10.isChecked()) && (checkbox11.isChecked()) && (checkbox12.isChecked()))
+            cijfer = "10";
+        else
+            cijfer = "1";
+        System.out.println("Cijfer is " + cijfer);
+    }});
+
+    checkbox8.setOnClickListener(new View.OnClickListener()
+    {
+        @Override
+        public void onClick(View v) {
+        if (checkbox1.isChecked() && (checkbox2.isChecked()) && (checkbox3.isChecked())
+                && (checkbox4.isChecked()) && (checkbox5.isChecked()) && (checkbox6.isChecked())
+                && (checkbox7.isChecked()) && (checkbox8.isChecked()) && (checkbox9.isChecked())
+                && (checkbox10.isChecked()) && (checkbox11.isChecked()) && (checkbox12.isChecked()))
+            cijfer = "10";
+        else
+            cijfer = "1";
+        System.out.println("Cijfer is " + cijfer);
+    }});
+
+    checkbox9.setOnClickListener(new View.OnClickListener()
+    {
+        @Override
+        public void onClick(View v) {
+        if (checkbox1.isChecked() && (checkbox2.isChecked()) && (checkbox3.isChecked())
+                && (checkbox4.isChecked()) && (checkbox5.isChecked()) && (checkbox6.isChecked())
+                && (checkbox7.isChecked()) && (checkbox8.isChecked()) && (checkbox9.isChecked())
+                && (checkbox10.isChecked()) && (checkbox11.isChecked()) && (checkbox12.isChecked()))
+            cijfer = "10";
+        else
+            cijfer = "1";
+        System.out.println("Cijfer is " + cijfer);
+    }});
+
+
+    checkbox10.setOnClickListener(new View.OnClickListener()
+    {
+        @Override
+        public void onClick(View v) {
+        if (checkbox1.isChecked() && (checkbox2.isChecked()) && (checkbox3.isChecked())
+                && (checkbox4.isChecked()) && (checkbox5.isChecked()) && (checkbox6.isChecked())
+                && (checkbox7.isChecked()) && (checkbox8.isChecked()) && (checkbox9.isChecked())
+                && (checkbox10.isChecked()) && (checkbox11.isChecked()) && (checkbox12.isChecked()))
+            cijfer = "10";
+        else
+            cijfer = "1";
+        System.out.println("Cijfer is " + cijfer);
+    }});
+
+
+    checkbox11.setOnClickListener(new View.OnClickListener()
+    {
+        @Override
+        public void onClick(View v) {
+        if (checkbox1.isChecked() && (checkbox2.isChecked()) && (checkbox3.isChecked())
+                && (checkbox4.isChecked()) && (checkbox5.isChecked()) && (checkbox6.isChecked())
+                && (checkbox7.isChecked()) && (checkbox8.isChecked()) && (checkbox9.isChecked())
+                && (checkbox10.isChecked()) && (checkbox11.isChecked()) && (checkbox12.isChecked()))
+            cijfer = "10";
+        else
+            cijfer = "1";
+        System.out.println("Cijfer is " + cijfer);
+    }});
+
+
+    checkbox12.setOnClickListener(new View.OnClickListener()
+    {
+        @Override
+        public void onClick(View v) {
+        if (checkbox1.isChecked() && (checkbox2.isChecked()) && (checkbox3.isChecked())
+                && (checkbox4.isChecked()) && (checkbox5.isChecked()) && (checkbox6.isChecked())
+                && (checkbox7.isChecked()) && (checkbox8.isChecked()) && (checkbox9.isChecked())
+                && (checkbox10.isChecked()) && (checkbox11.isChecked()) && (checkbox12.isChecked()))
+            cijfer ="10";
+        else
+            cijfer = "1";
+        System.out.println("Cijfer is " + cijfer);
+    }});}
 
 
 
