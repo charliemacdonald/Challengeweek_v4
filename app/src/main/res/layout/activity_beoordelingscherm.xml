@@ -20,314 +20,134 @@
         android:layout_height="55dp"
         android:src="@drawable/logohsleiden" />
 
-
-<Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/volgende"
-            android:background="@drawable/roundedbutton"
-            android:textColor="#000000"
-            android:textStyle="bold"
-            android:id="@+id/verzendbutton"
-            android:layout_column="12"
-    android:layout_alignParentBottom="true"
-    android:layout_alignParentLeft="true"
-    android:layout_alignParentStart="true"
-    android:layout_alignParentRight="true"
-    android:layout_alignParentEnd="true" />
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/Beoordeling"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        android:textColor="#000000"
-        android:id="@+id/Beoordeling"
-        android:layout_alignBottom="@+id/hsleidenlogo"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginRight="58dp"
-        android:layout_marginEnd="58dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/Onderdeel1"
-        android:background="@drawable/rounded_border"
-        android:text="Onderdeel 1"
-        android:textSize="18sp"
-        android:textColor="#000000"
-        android:textStyle="bold"
-        android:layout_marginTop="30dp"
+        android:text="New Text"
+        android:id="@+id/texviewbeoordelingstudent"
         android:layout_below="@+id/hsleidenlogo"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
-
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Text"
-        android:background="@drawable/rounded_border"
-        android:textColor="#000000"
-        android:id="@+id/onderdeel11"
-        android:layout_below="@+id/Onderdeel1"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/Criteriagehaald"
-        android:id="@+id/checkBox"
-        android:layout_alignBottom="@+id/onderdeel11"
-        android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:layout_below="@+id/Onderdeel1" />
+        android:layout_marginTop="15dp"
+        android:textSize="22sp"
+        android:textColor="#000000" />
 
-    <TextView
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Text"
-        android:background="@drawable/rounded_border"
-        android:textColor="#000000"
-        android:id="@+id/onderdeel12"
-        android:layout_below="@+id/onderdeel11"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/onderdeel11"
-        android:layout_alignEnd="@+id/onderdeel11" />
-
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/Criteriagehaald"
-        android:id="@+id/checkBox2"
-        android:layout_below="@+id/onderdeel11"
-        android:layout_alignLeft="@+id/checkBox"
-        android:layout_alignStart="@+id/checkBox"
-        android:layout_alignBottom="@+id/onderdeel12" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Text"
-        android:id="@+id/onderdeel13"
-        android:background="@drawable/rounded_border"
-        android:textColor="#000000"
-        android:layout_below="@+id/onderdeel12"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/onderdeel12"
-        android:layout_alignEnd="@+id/onderdeel12" />
-
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/Criteriagehaald"
-        android:id="@+id/checkBox3"
-        android:layout_alignTop="@+id/onderdeel13"
-        android:layout_alignLeft="@+id/checkBox2"
-        android:layout_alignStart="@+id/checkBox2"
-        android:layout_alignBottom="@+id/onderdeel13" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Text"
-        android:id="@+id/textView3"
-        android:layout_below="@+id/onderdeel13"
-        android:background="@drawable/rounded_border"
-        android:textColor="#000000"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/onderdeel13"
-        android:layout_alignEnd="@+id/onderdeel13" />
-
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/Criteriagehaald"
-        android:id="@+id/checkBox4"
-        android:layout_below="@+id/onderdeel13"
-        android:layout_alignLeft="@+id/checkBox3"
-        android:layout_alignStart="@+id/checkBox3"
-        android:layout_alignBottom="@+id/textView3" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Onderdeel 2"
-        android:background="@drawable/rounded_border"
-        android:textSize="18sp"
-        android:textColor="#000000"
+        android:text="@string/volgende"
+        android:background="@drawable/roundedbutton"
         android:textStyle="bold"
-        android:id="@+id/textView5"
-        android:layout_below="@+id/textView3"
+        android:textColor="#000000"
+        android:id="@+id/verzendbutton"
+        android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="43dp"
-        android:layout_alignRight="@+id/textView3"
-        android:layout_alignEnd="@+id/textView3" />
+        android:layout_alignRight="@+id/texviewbeoordelingstudent"
+        android:layout_alignEnd="@+id/texviewbeoordelingstudent" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="New Text"
-        android:id="@+id/textView6"
-        android:background="@drawable/rounded_border"
-        android:textColor="#000000"
-        android:layout_below="@+id/textView5"
+        android:textColor="#0099cc"
+        android:id="@+id/tekstcriteria1"
+        android:layout_below="@+id/texviewbeoordelingstudent"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/textView5"
-        android:layout_alignEnd="@+id/textView5" />
-
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/Criteriagehaald"
-        android:id="@+id/checkBox5"
-        android:layout_below="@+id/textView5"
-        android:layout_alignLeft="@+id/checkBox4"
-        android:layout_alignStart="@+id/checkBox4"
-        android:layout_alignBottom="@+id/textView6"
-         />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Text"
-        android:background="@drawable/rounded_border"
-        android:textColor="#000000"
-        android:id="@+id/textView7"
-        android:layout_below="@+id/textView6"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/textView6"
-        android:layout_alignEnd="@+id/textView6" />
-
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/Criteriagehaald"
-        android:id="@+id/checkBox6"
-        android:layout_alignTop="@+id/textView7"
-        android:layout_alignLeft="@+id/checkBox5"
-        android:layout_alignStart="@+id/checkBox5"
-        android:layout_alignBottom="@+id/textView7" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Text"
-        android:id="@+id/textView8"
-        android:background="@drawable/rounded_border"
-        android:textColor="#000000"
-        android:layout_below="@+id/textView7"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/checkBox6"
-        android:layout_alignEnd="@+id/checkBox6" />
-
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/Criteriagehaald"
-        android:id="@+id/checkBox7"
-        android:layout_below="@+id/textView7"
-        android:layout_alignLeft="@+id/checkBox6"
-        android:layout_alignStart="@+id/checkBox6"
-        android:layout_alignBottom="@+id/textView8" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Text"
-        android:id="@+id/textView9"
-        android:background="@drawable/rounded_border"
-        android:textColor="#000000"
-        android:layout_below="@+id/textView8"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/textView8"
-        android:layout_alignEnd="@+id/textView8" />
-
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/Criteriagehaald"
-        android:id="@+id/checkBox8"
-        android:layout_below="@+id/textView8"
-        android:layout_alignLeft="@+id/checkBox7"
-        android:layout_alignStart="@+id/checkBox7"
-        android:layout_alignBottom="@+id/textView9" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Onderdeel 3"
-        android:id="@+id/textView10"
+        android:layout_marginTop="37dp"
         android:textSize="18sp"
-        android:textStyle="bold"
-        android:background="@drawable/rounded_border"
-        android:textColor="#000000"
-        android:layout_marginTop="41dp"
-        android:layout_below="@+id/textView9"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/textView9"
-        android:layout_alignEnd="@+id/textView9" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Text"
-        android:id="@+id/textView11"
-        android:background="@drawable/rounded_border"
-        android:textColor="#000000"
-        android:layout_below="@+id/textView10"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/Criteriagehaald"
-        android:id="@+id/checkBox9"
-        android:layout_below="@+id/textView10"
-        android:layout_alignBottom="@+id/textView11"
+        android:textIsSelectable="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/tekstsubcriteria1"
+        android:layout_below="@+id/tekstcriteria1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/tekstcriteria1"
+        android:layout_alignEnd="@+id/tekstcriteria1" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/switch1"
+        android:layout_alignBottom="@+id/tekstsubcriteria1"
+        android:layout_alignRight="@+id/tekstcriteria1"
+        android:layout_alignEnd="@+id/tekstcriteria1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="New Text"
-        android:id="@+id/textView12"
-        android:background="@drawable/rounded_border"
-        android:textColor="#000000"
-        android:layout_below="@+id/textView11"
+        android:textColor="#0099cc"
+        android:textSize="18sp"
+        android:id="@+id/tekstcriteria2"
+        android:layout_below="@+id/tekstsubcriteria1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="26dp"
+        android:layout_alignRight="@+id/tekstsubcriteria1"
+        android:layout_alignEnd="@+id/tekstsubcriteria1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/tekstsubcriteria2"
+        android:layout_below="@+id/tekstcriteria2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/tekstcriteria2"
+        android:layout_alignEnd="@+id/tekstcriteria2" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/switch2"
+        android:layout_alignBottom="@+id/tekstsubcriteria2"
+        android:layout_alignLeft="@+id/switch1"
+        android:layout_alignStart="@+id/switch1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:textColor="#0099cc"
+        android:textSize="18sp"
+        android:id="@+id/tekstcriteria3"
+        android:layout_below="@+id/tekstsubcriteria2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="26dp"
+        android:layout_alignRight="@+id/tekstsubcriteria2"
+        android:layout_alignEnd="@+id/tekstsubcriteria2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/tekstsubcriteria3"
+        android:layout_below="@+id/tekstcriteria3"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
-    <CheckBox
+    <Switch
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/Criteriagehaald"
-        android:id="@+id/checkBox10"
-        android:layout_below="@+id/textView11"
-        android:layout_alignBottom="@+id/textView12"
+        android:id="@+id/switch3"
+        android:layout_alignBottom="@+id/tekstsubcriteria3"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
@@ -335,22 +155,33 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="New Text"
-        android:background="@drawable/rounded_border"
-        android:textColor="#000000"
-        android:id="@+id/textView13"
-        android:layout_below="@+id/textView12"
+        android:id="@+id/tekstcriteria4"
+        android:textColor="#0099cc"
+        android:textSize="18sp"
+        android:layout_below="@+id/tekstsubcriteria3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="26dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/tekstsubcriteria4"
+        android:layout_below="@+id/tekstcriteria4"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
-    <CheckBox
+    <Switch
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/Criteriagehaald"
-        android:id="@+id/checkBox11"
-        android:layout_below="@+id/textView12"
-        android:layout_alignBottom="@+id/textView13"
+        android:id="@+id/switch4"
+        android:layout_alignBottom="@+id/tekstsubcriteria4"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
@@ -358,22 +189,67 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="New Text"
-        android:background="@drawable/rounded_border"
-        android:textColor="#000000"
-        android:id="@+id/textView14"
-        android:layout_below="@+id/textView13"
+        android:id="@+id/tekstcriteria5"
+        android:textColor="#0099cc"
+        android:textSize="18sp"
+        android:layout_marginTop="26dp"
+        android:layout_below="@+id/switch4"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/textView13"
-        android:layout_alignEnd="@+id/textView13" />
+        android:layout_alignRight="@+id/switch4"
+        android:layout_alignEnd="@+id/switch4" />
 
-    <CheckBox
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/Criteriagehaald"
-        android:id="@+id/checkBox12"
-        android:layout_below="@+id/textView13"
-        android:layout_alignBottom="@+id/textView14"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/tekstsubcriteria5"
+        android:layout_below="@+id/tekstcriteria5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/tekstcriteria5"
+        android:layout_alignEnd="@+id/tekstcriteria5" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/switch5"
+        android:layout_alignBottom="@+id/tekstsubcriteria5"
+        android:layout_alignRight="@+id/tekstcriteria5"
+        android:layout_alignEnd="@+id/tekstcriteria5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:textColor="#0099cc"
+        android:textSize="18sp"
+        android:id="@+id/tekstcriteria6"
+        android:layout_below="@+id/tekstsubcriteria5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="26dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/tekstsubcriteria6"
+        android:layout_below="@+id/tekstcriteria6"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/tekstcriteria6"
+        android:layout_alignEnd="@+id/tekstcriteria6" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/switch6"
+        android:layout_alignBottom="@+id/tekstsubcriteria6"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 

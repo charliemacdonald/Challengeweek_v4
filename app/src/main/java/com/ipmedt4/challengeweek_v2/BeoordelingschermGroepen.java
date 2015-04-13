@@ -1,13 +1,10 @@
 package com.ipmedt4.challengeweek_v2;
 
 import android.content.Intent;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.support.v7.app.ActionBarActivity;
 import android.view.View;
 import android.widget.Button;
-import android.widget.CheckBox;
 
 
 public class BeoordelingschermGroepen extends ActionBarActivity {
@@ -26,7 +23,7 @@ public class BeoordelingschermGroepen extends ActionBarActivity {
             @Override
             public void onClick(View v) {
                 // TODO Auto-generated method stub
-                Intent in = new Intent(getApplicationContext(), OpmerkingenschermGroepen.class);
+                Intent in = new Intent(getApplicationContext(), BeoordelingschermGroepen.class);
                 String klas = in.getStringExtra("klas");
                 String groep = in.getStringExtra("groep");
                 in.putExtra("klas", klas);

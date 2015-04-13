@@ -25,7 +25,7 @@ public class OverzichtKlassenGroepen extends ActionBarActivity {
         Button inf1abutton = (Button) findViewById(R.id.inf1abutton);
         Button inf1bbutton = (Button) findViewById(R.id.inf1bbutton);
         Button inf1cbutton = (Button) findViewById(R.id.inf1cbutton);
-        final Button inf1dbutton = (Button) findViewById(R.id.inf1dbutton);
+        Button inf1dbutton = (Button) findViewById(R.id.inf1dbutton);
         Button inf1ebutton = (Button) findViewById(R.id.inf1ebutton);
         Button inf1fbutton = (Button) findViewById(R.id.inf1fbutton);
         Button inf1gbutton = (Button) findViewById(R.id.inf1gbutton);
@@ -35,8 +35,8 @@ public class OverzichtKlassenGroepen extends ActionBarActivity {
             @Override
             public void onClick(View v) {
                 Intent in = new Intent(v.getContext(), Groepenscherm.class);
-                String klas = "INF1A";
-                in.putExtra("INF1A", klas);
+                String Klas = "INF1A";
+                in.putExtra("Klas", Klas);
                 startActivityForResult(in, 0);
 
             }});
@@ -44,8 +44,8 @@ public class OverzichtKlassenGroepen extends ActionBarActivity {
 
             public void onClick(View v) {
                 Intent in = new Intent(v.getContext(), Groepenscherm.class);
-                String klas = "INF1B";
-                in.putExtra("INF1B", klas);
+                String Klas = "INF1B";
+                in.putExtra("Klas", Klas);
                 startActivityForResult(in, 0);
 
             }
@@ -55,8 +55,8 @@ public class OverzichtKlassenGroepen extends ActionBarActivity {
 
             public void onClick(View v) {
                 Intent in = new Intent(v.getContext(), Groepenscherm.class);
-                String klas = "INF1C";
-                in.putExtra("INF1C", klas);
+                String Klas = "INF1C";
+                in.putExtra("Klas", Klas);
                 startActivityForResult(in, 0);
 
             }
@@ -66,8 +66,8 @@ public class OverzichtKlassenGroepen extends ActionBarActivity {
 
             public void onClick(View v) {
                 Intent in = new Intent(v.getContext(), Groepenscherm.class);
-                String klas = "INF1D";
-                in.putExtra("INF1D", klas);
+                String Klas = "INF1D";
+                in.putExtra("Klas", Klas);
                 startActivityForResult(in, 0);
 
             }
@@ -77,8 +77,8 @@ public class OverzichtKlassenGroepen extends ActionBarActivity {
 
             public void onClick(View v) {
                 Intent in = new Intent(v.getContext(), Groepenscherm.class);
-                String klas = "INF1E";
-                in.putExtra("INF1E", klas);
+                String Klas = "INF1E";
+                in.putExtra("Klas", Klas);
                 startActivityForResult(in, 0);
 
             }
@@ -88,8 +88,8 @@ public class OverzichtKlassenGroepen extends ActionBarActivity {
 
             public void onClick(View v) {
                 Intent in = new Intent(v.getContext(), Groepenscherm.class);
-                String klas = "INF1F";
-                in.putExtra("INF1F", klas);
+                String Klas = "INF1F";
+                in.putExtra("Klas", Klas);
                 startActivityForResult(in, 0);
             }
         });
@@ -98,8 +98,8 @@ public class OverzichtKlassenGroepen extends ActionBarActivity {
 
             public void onClick(View v) {
                 Intent in = new Intent(v.getContext(), Groepenscherm.class);
-                String klas = "INF1G";
-                in.putExtra("INF1G", klas);
+                String Klas = "INF1G";
+                in.putExtra("Klas", Klas);
                 startActivityForResult(in, 0);
 
             }
@@ -109,8 +109,8 @@ public class OverzichtKlassenGroepen extends ActionBarActivity {
 
             public void onClick(View v) {
                 Intent in = new Intent(v.getContext(), Groepenscherm.class);
-                String klas = "INF1H";
-                in.putExtra("INF1H", klas);
+                String Klas = "INF1H";
+                in.putExtra("Klas", Klas);
                 startActivityForResult(in, 0);
 
             }

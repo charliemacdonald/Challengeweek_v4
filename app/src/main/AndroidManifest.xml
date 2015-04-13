@@ -93,14 +93,6 @@
                 android:value="com.ipmedt4.challengeweek_v2.Beoordelingscherm" />
         </activity>
         <activity
-            android:name=".Opmerkingenscherm"
-            android:label="@string/title_activity_opmerkingenscherm"
-            android:parentActivityName=".Beoordelingscherm" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.ipmedt4.challengeweek_v2.Beoordelingscherm" />
-        </activity>
-        <activity
             android:name=".Overzicht_Studenten1A"
             android:label="@string/title_activity_overzicht__studenten1"
             android:parentActivityName=".OverzichtKlassen" >
@@ -193,20 +185,12 @@
                 android:value="com.ipmedt4.challengeweek_v2.Groepenscherm" />
         </activity>
         <activity
-            android:name=".OpmerkingenschermGroepen"
-            android:label="@string/title_activity_opmerkingenscherm_groepen"
+            android:name=".BevestigingschermGroepen"
+            android:label="@string/title_activity_bevestigingscherm_groepen"
             android:parentActivityName=".BeoordelingschermGroepen" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.ipmedt4.challengeweek_v2.BeoordelingschermGroepen" />
-        </activity>
-        <activity
-            android:name=".BevestigingschermGroepen"
-            android:label="@string/title_activity_bevestigingscherm_groepen"
-            android:parentActivityName=".OpmerkingenschermGroepen" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.ipmedt4.challengeweek_v2.OpmerkingenschermGroepen" />
         </activity>
     </application>
 

@@ -16,7 +16,8 @@ public class Groepenscherm extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_groepenscherm);
-        Intent in = getIntent();
+        Intent i = getIntent();
+        final String Klas = i.getStringExtra("Klas");
 
         TextView Groepen = (TextView) findViewById(R.id.Groepen);
         Button Groep1 = (Button) findViewById(R.id.Groep1);
@@ -29,10 +30,9 @@ public class Groepenscherm extends ActionBarActivity {
             @Override
             public void onClick(View v) {
                 Intent in = new Intent(v.getContext(), BeoordelingschermGroepen.class);
-                String klas = in.getStringExtra("klas");
-                String groep = "1";
-                in.putExtra("klas", klas);
-                in.putExtra("1", groep);
+                String Groep = "1";
+                in.putExtra("Klas", Klas);
+                in.putExtra("Groep", Groep);
                 startActivityForResult(in, 0);
 
             }});
@@ -40,10 +40,9 @@ public class Groepenscherm extends ActionBarActivity {
 
             public void onClick(View v) {
                 Intent in = new Intent(v.getContext(), BeoordelingschermGroepen.class);
-                String klas = in.getStringExtra("klas");
-                String groep = "2";
-                in.putExtra("klas", klas);
-                in.putExtra("2", groep);
+                String Groep = "2";
+                in.putExtra("Klas", Klas);
+                in.putExtra("Groep", Groep);
                 startActivityForResult(in, 0);
 
             }
@@ -53,10 +52,9 @@ public class Groepenscherm extends ActionBarActivity {
 
             public void onClick(View v) {
                 Intent in = new Intent(v.getContext(), BeoordelingschermGroepen.class);
-                String klas = in.getStringExtra("klas");
-                String groep = "3";
-                in.putExtra("klas", klas);
-                in.putExtra("3", groep);
+                String Groep = "3";
+                in.putExtra("Klas", Klas);
+                in.putExtra("Groep", Groep);
                 startActivityForResult(in, 0);
 
             }
@@ -66,10 +64,9 @@ public class Groepenscherm extends ActionBarActivity {
 
             public void onClick(View v) {
                 Intent in = new Intent(v.getContext(), BeoordelingschermGroepen.class);
-                String klas = in.getStringExtra("klas");
-                String groep = "4";
-                in.putExtra("klas", klas);
-                in.putExtra("4", groep);
+                String Groep = "4";
+                in.putExtra("Klas", Klas);
+                in.putExtra("Groep", Groep);
                 startActivityForResult(in, 0);
 
             }
@@ -79,10 +76,9 @@ public class Groepenscherm extends ActionBarActivity {
 
             public void onClick(View v) {
                 Intent in = new Intent(v.getContext(), BeoordelingschermGroepen.class);
-                String klas = in.getStringExtra("klas");
-                String groep = "5";
-                in.putExtra("klas", klas);
-                in.putExtra("5", groep);
+                String Groep = "5";
+                in.putExtra("Klas", Klas);
+                in.putExtra("Groep", Groep);
                 startActivityForResult(in, 0);
 
             }

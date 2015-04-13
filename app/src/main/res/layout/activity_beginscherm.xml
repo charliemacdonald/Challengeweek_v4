@@ -71,7 +71,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/Overzichtstudenten"
+        android:text="@string/Overzichtallestudenten"
         android:id="@+id/buttonallestudenten"
         android:background="@drawable/roundedbutton"
         android:layout_centerVertical="true"

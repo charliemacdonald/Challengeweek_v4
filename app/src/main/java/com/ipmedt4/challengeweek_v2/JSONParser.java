@@ -41,7 +41,7 @@ public class JSONParser {
         try {
 
             // check for request method
-            if(method == "POST" && is != null){
+            if(method == "POST"){
                 // request method is POST
                 // defaultHttpClient
                 DefaultHttpClient httpClient = new DefaultHttpClient();
@@ -50,8 +50,7 @@ public class JSONParser {
 
                 HttpResponse httpResponse = httpClient.execute(httpPost);
                 HttpEntity httpEntity = httpResponse.getEntity();
-
-                    is = httpEntity.getContent();
+                is = httpEntity.getContent();
 
             }else if(method == "GET"){
                 // request method is GET
@@ -62,9 +61,8 @@ public class JSONParser {
 
                 HttpResponse httpResponse = httpClient.execute(httpGet);
                 HttpEntity httpEntity = httpResponse.getEntity();
-                if (is !=null){
                 is = httpEntity.getContent();
-            }}
+            }
 
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
@@ -76,11 +74,11 @@ public class JSONParser {
 
         try {
             BufferedReader reader = new BufferedReader(new InputStreamReader(
-                    (is), "iso-8859-1"), 8);
+                    is, "iso-8859-1"), 8);
             StringBuilder sb = new StringBuilder();
             String line = null;
             while ((line = reader.readLine()) != null) {
-                sb.append(line);
+                sb.append(line + "\n");
             }
             is.close();
             json = sb.toString();
@@ -100,5 +98,4 @@ public class JSONParser {
 
     }
 }
-
 
