@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="120dp"
     android:orientation="vertical"
     android:padding="6dip"
-    android:background="@drawable/rounded_border">
+    android:background="@drawable/buttongrijs">
 
 
     <TextView
@@ -15,7 +15,11 @@
         android:layout_alignParentTop="true"
         android:text="Naam: "
         android:textStyle="bold"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="18sp"
+        android:textIsSelectable="true"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="12dp" />
 
     <TextView
         android:id="@+id/textView2"
@@ -26,17 +30,24 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:layout_below="@+id/Naam"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="3dp" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView2"
-        android:layout_below="@+id/textView2"
         android:text="Klas: "
         android:textStyle="bold"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="18sp"
+        android:textIsSelectable="true"
+        android:layout_below="@+id/textView2"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp" />
 
 
 
@@ -45,10 +56,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
-        android:layout_alignBaseline="@+id/textView15"
-        android:layout_alignBottom="@+id/textView15"
-        android:layout_alignLeft="@+id/Studentnummer"
-        android:layout_alignStart="@+id/Studentnummer" />
+        android:textSize="18sp"
+        android:layout_alignTop="@+id/textView15"
+        android:layout_alignLeft="@+id/Klas"
+        android:layout_alignStart="@+id/Klas" />
 
 
 
@@ -57,17 +68,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
-        android:layout_alignBottom="@+id/textView2"
-        android:layout_centerHorizontal="true" />
+        android:textSize="18sp"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_alignLeft="@+id/Klas"
+        android:layout_alignStart="@+id/Klas" />
 
     <TextView
         android:id="@+id/Naam"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
-        android:layout_alignParentTop="true"
-        android:layout_alignLeft="@+id/Groep"
-        android:layout_alignStart="@+id/Groep" />
+        android:textSize="18sp"
+        android:layout_alignTop="@+id/textView"
+        android:layout_alignLeft="@+id/Studentnummer"
+        android:layout_alignStart="@+id/Studentnummer" />
 
     <TextView
         android:id="@+id/textView15"
@@ -77,15 +91,16 @@
         android:textStyle="bold"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:layout_below="@+id/textView3"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView" />
 
     <TextView
         android:id="@+id/Klas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
-        android:layout_above="@+id/textView15"
+        android:textSize="18sp"
+        android:layout_alignTop="@+id/textView3"
         android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
