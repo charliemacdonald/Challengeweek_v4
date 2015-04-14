@@ -6,7 +6,7 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_beginscherm">Beginscherm</string>
     <string name="Email">E-mail</string>
-    <string name="Overzichtallestudenten"> Overzicht van alle studenten </string>
+    <string name="Overzichtallestudenten"> OVERZICHT VAN ALLE STUDENTEN </string>
     <string name="volgende">VOLGENDE</string>
     <string name="opslaan">Opslaan</string>
     <string name="opmerkingen">Opmerkingen</string>
@@ -17,13 +17,13 @@
     <string name="Versie">VERSIE</string>
     <string name="Disclaimer">DISCLAIMER</string>
     <string name="Uitloggen">UITLOGGEN</string>
-    <string name="some_text"> Overzicht studenten </string>
+    <string name="some_text"> Selecteer hier een student </string>
     <string name="some_hint"> Typ hier om student te zoeken </string>
     <string name="Overzichtstudenten">OVERZICHT STUDENTEN PER KLAS</string>
     <string name="Overzichtgroepen"> Overzicht groepen</string>
     <string name="title_activity_overzicht_studenten">OverzichtStudenten</string>
     <string name="hello_world">Hello world!</string>
-    <string name="Klassen">Klassen</string>
+    <string name="Klassen">Selecteer hier een klas</string>
     <string name="Studenten">Studenten</string>
     <string name="inf1a">INF1A</string>
     <string name="inf1b">INF1B</string>
@@ -36,7 +36,7 @@
     <string name="inf1i">INF1I</string>
     <string name="inf1j">INF1J</string>
     <string name="inf1k">INF1K</string>
-    <string name="groepen">Groepen</string>
+    <string name="groepen">Selecteer hier een groep </string>
     <string name="groep2"> Groep 2</string>
     <string name="groep3"> Groep 3</string>
     <string name="groep4"> Groep 4</string>
