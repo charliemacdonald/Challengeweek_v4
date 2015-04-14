@@ -26,7 +26,9 @@
         android:layout_alignLeft="@+id/beoordelingbevestigen"
         android:layout_alignStart="@+id/beoordelingbevestigen"
         android:layout_alignRight="@+id/beoordelingbevestigen"
-        android:layout_alignEnd="@+id/beoordelingbevestigen" />
+        android:layout_alignEnd="@+id/beoordelingbevestigen"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="10dp" />
 
     <Button
         android:layout_width="456dp"
@@ -65,7 +67,20 @@
         android:id="@+id/beoordelingtekst"
         android:layout_above="@+id/textView4"
         android:layout_toRightOf="@+id/hsleidenlogo"
-        android:layout_toEndOf="@+id/hsleidenlogo" />
+        android:layout_alignRight="@+id/textView4"
+        android:layout_alignEnd="@+id/textView4"
+        android:textSize="20sp"
+        android:textIsSelectable="false" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/bluecheckmark"
+        android:layout_below="@+id/hsleidenlogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="57dp"
+        android:layout_above="@+id/beoordelingtekst" />
 
 
 </RelativeLayout>

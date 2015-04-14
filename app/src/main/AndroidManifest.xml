@@ -25,7 +25,8 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name=".Loginscherm"
-            android:label="@string/Challengeweek" >
+            android:label="@string/Challengeweek"
+            android:theme="@style/AppTheme" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -175,6 +176,18 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.ipmedt4.challengeweek_v2.BeoordelingschermGroepen" />
+        </activity>
+        <activity
+            android:name=".StudentenGroepen"
+            android:label="@string/title_activity_studenten_groepen"
+            android:parentActivityName=".Groepenscherm" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ipmedt4.challengeweek_v2.Groepenscherm" />
+        </activity>
+        <activity
+            android:name=".SplashScreen"
+            android:label="@string/title_activity_splash_screen" >
         </activity>
     </application>
 

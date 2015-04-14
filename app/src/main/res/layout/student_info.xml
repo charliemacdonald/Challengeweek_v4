@@ -3,7 +3,9 @@
     android:layout_width="fill_parent"
     android:layout_height="120dp"
     android:orientation="vertical"
-    android:padding="6dip"
+    android:padding="0dip"
+    android:focusable="false"
+    android:descendantFocusability="blocksDescendants"
     android:background="@drawable/buttongrijs">
 
 
