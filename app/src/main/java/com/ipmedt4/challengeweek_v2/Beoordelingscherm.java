@@ -24,19 +24,20 @@ String cijfer;
 
 
 
-
         setContentView(R.layout.activity_beoordelingscherm);
-        TextView textviewbeoordelingstudenten = (TextView) findViewById(R.id.texviewbeoordelingstudent);
+        TextView textviewbeoordelingstudenten = (TextView) findViewById(R.id.texviewbeoordelinggroepen);
         Switch switch1 = (Switch) findViewById(R.id.switch1);
         Switch switch2 = (Switch) findViewById(R.id.switch2);
         Switch switch3 = (Switch) findViewById(R.id.switch3);
         Switch switch4 = (Switch) findViewById(R.id.switch4);
         Switch switch5 = (Switch) findViewById(R.id.switch5);
         Switch switch6 = (Switch) findViewById(R.id.switch6);
+        Switch switch7 = (Switch) findViewById(R.id.switch7);
+        Switch switch8 = (Switch) findViewById(R.id.switch8);
 
-        final Intent intent = getIntent();
-        final String Naam = intent.getStringExtra("Naam");
-        final String Studentnummer = intent.getStringExtra("Studentnummer");
+
+        final String Naam = getIntent().getStringExtra("Naam");
+        final String Studentnummer = getIntent().getStringExtra("Studentnummer");
         textviewbeoordelingstudenten.setText("Beoordeling voor "+ "" + "" + Naam + " met studentnummer " + "" + Studentnummer );
 
 
@@ -118,6 +119,33 @@ String cijfer;
                     }
                 }
             });}
+
+        if (switch7 != null) {
+            switch7.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+                @Override
+                public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                    if (isChecked) {
+                        cijfer = "voldoende";
+                    } else {
+                        cijfer = "onvoldoende";
+                        System.out.println("Cijfer is " + cijfer);
+                    }
+                }
+            });}
+
+        if (switch8 != null) {
+            switch8.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+                @Override
+                public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                    if (isChecked) {
+                        cijfer = "voldoende";
+                    } else {
+                        cijfer = "onvoldoende";
+                        System.out.println("Cijfer is " + cijfer);
+                    }
+                }
+            });}
+
 
 
 

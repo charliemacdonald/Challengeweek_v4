@@ -1,6 +1,8 @@
 package com.ipmedt4.challengeweek_v2;
 
+import android.app.AlertDialog;
 import android.app.ProgressDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -35,7 +37,7 @@ public class Bevestigingsscherm extends ActionBarActivity {
     InputStream is=null;
     String result=null;
     String line=null;
-    int code;
+
 
     private ProgressDialog pDialog;
 
@@ -48,7 +50,7 @@ public class Bevestigingsscherm extends ActionBarActivity {
         final String Naam = in.getStringExtra("Naam");
          final String Studentnummer = in.getStringExtra("Studentnummer");
          final String Cijfer = in.getStringExtra("Cijfer");
-        
+
 
         System.out.println(Naam + Studentnummer + Cijfer);
 
@@ -68,6 +70,17 @@ public class Bevestigingsscherm extends ActionBarActivity {
             @Override
             public void onClick(final View v) {
                 new updateCijferStudent().execute("Naam", "Studentnummer", "Cijfer");
+                AlertDialog.Builder builder = new AlertDialog.Builder(Bevestigingsscherm.this);
+                builder.setMessage("De beoordeling is succesvol opgeslagen!")
+                        .setCancelable(false)
+                        .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int id) {
+                                Intent intent = new Intent(v.getContext(), Beginscherm.class);
+                                startActivityForResult(intent, 0);
+                            }
+                        });
+                AlertDialog alert = builder.create();
+                alert.show();
 
 
 
@@ -90,7 +103,10 @@ public class Bevestigingsscherm extends ActionBarActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(v.getContext(), Beoordelingscherm.class);
+                Intent intent = new Intent(getApplicationContext(), Beoordelingscherm.class);
+                intent.getStringExtra("Klas");
+                intent.getStringExtra("Groep");
+
                 startActivityForResult(intent, 0);
 
 
@@ -107,15 +123,7 @@ public class Bevestigingsscherm extends ActionBarActivity {
        /**
          * Before starting background thread Show Progress Dialog
          */
-        @Override
-        protected void onPreExecute() {
-            super.onPreExecute();
-            pDialog = new ProgressDialog(Bevestigingsscherm.this);
-            pDialog.setMessage("Saving product ...");
-            pDialog.setIndeterminate(false);
-            pDialog.setCancelable(true);
-            pDialog.show();
-        }
+
 
         /**
          * Saving product
@@ -164,10 +172,7 @@ public class Bevestigingsscherm extends ActionBarActivity {
          * After completing background task Dismiss the progress dialog
          * *
          */
-        protected void onPostExecute(String file_url) {
-            // dismiss the dialog once product uupdated
-            pDialog.dismiss();
-        }
+
     }
 
 

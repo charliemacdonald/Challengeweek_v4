@@ -131,7 +131,7 @@ public class Overzicht_Studenten1B extends ListActivity {
 
                         String Naam = c.getString(TAG_NAAM);
                         String Studentnummer = c.getString(TAG_STUDENTNUMMER);
-                        String Klas = c.getString(TAG_KLAS);
+                        String Klas = c.getString(TAG_KLAS );
                         String Groep = c.getString(TAG_GROEP);
 
 

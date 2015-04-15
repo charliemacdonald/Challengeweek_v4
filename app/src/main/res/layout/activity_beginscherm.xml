@@ -79,6 +79,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignRight="@+id/Overzichtstudenten"
-        android:layout_alignEnd="@+id/Overzichtstudenten" />
+        android:layout_alignEnd="@+id/Overzichtstudenten"
+        android:textStyle="bold" />
 
 </RelativeLayout>

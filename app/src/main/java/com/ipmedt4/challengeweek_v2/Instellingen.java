@@ -9,6 +9,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 
 public class Instellingen extends ActionBarActivity {
@@ -27,9 +28,8 @@ Button uitlogbutton;
 
             @Override
             public void onClick(View v) {
-                // TODO Auto-generated method stub
-                Intent intent = new Intent(v.getContext(), Versiescherm.class);
-                startActivityForResult(intent, 0);
+                Toast.makeText(getApplicationContext(), "Dit is versie 1.0",
+                        Toast.LENGTH_LONG).show();
 
 
             }});
@@ -37,8 +37,8 @@ Button uitlogbutton;
         disclaimerbutton.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
-                Intent myintent2 = new Intent(v.getContext(), Disclaimerscherm.class);
-                startActivity(myintent2);
+                Toast.makeText(getApplicationContext(), "Aan deze applicatie kunnen " + "" + "" +
+                        " geen rechten worden ontleend. ", Toast.LENGTH_LONG).show();
 
             }
         });

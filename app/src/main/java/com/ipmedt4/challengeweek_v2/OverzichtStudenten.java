@@ -38,7 +38,7 @@ public class OverzichtStudenten extends ListActivity {
     private static final String TAG_KLAS = "Klas";
     private static final String TAG_GROEP = "Groep";
     private static final String TAG_CIJFER = "Cijfer";
-    private static final String TAG_OPMERKINGEN = "Opmerkingen";
+
 
 
     // contacts JSONArray
@@ -61,12 +61,15 @@ public class OverzichtStudenten extends ListActivity {
 
         ListView lv = (ListView) findViewById(android.R.id.list);
         // Listview on item click listener
+        lv.setFocusable(false);
+        lv.setFocusableInTouchMode(false);
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
             @Override
             public void onItemClick(AdapterView<?> parent, View view,
                                     int position, long id) {
                 // getting values from selected ListItem
+
                 String Naam = ((TextView) view.findViewById(R.id.Naam))
                         .getText().toString();
                 String Studentnummer = ((TextView) view.findViewById(R.id.Studentnummer))

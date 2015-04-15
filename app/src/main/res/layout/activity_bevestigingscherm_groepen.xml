@@ -26,7 +26,8 @@
         android:layout_alignLeft="@+id/beoordelingbevestigen"
         android:layout_alignStart="@+id/beoordelingbevestigen"
         android:layout_alignRight="@+id/beoordelingbevestigen"
-        android:layout_alignEnd="@+id/beoordelingbevestigen" />
+        android:layout_alignEnd="@+id/beoordelingbevestigen"
+        android:layout_marginTop="10dp" />
 
     <Button
         android:layout_width="456dp"
@@ -47,13 +48,11 @@
         android:layout_height="wrap_content"
         android:text="@string/vraagbeoordelingbevestigen"
         android:textColor="#000000"
-        android:textSize="20sp"
+        android:textSize="18sp"
         android:textStyle="bold"
         android:id="@+id/textView4"
-        android:layout_above="@+id/bevestingannuleren"
-        android:layout_toRightOf="@+id/hsleidenlogo"
-        android:layout_toEndOf="@+id/hsleidenlogo"
-        android:layout_marginBottom="48dp" />
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -69,15 +68,21 @@
 
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Medium Text"
         android:textColor="#000000"
         android:textStyle="bold"
         android:id="@+id/beoordelingtekst"
+        android:textSize="18sp"
+        android:textIsSelectable="true"
+        android:layout_below="@+id/checkmark"
+        android:layout_marginTop="85dp"
         android:layout_above="@+id/textView4"
-        android:layout_toRightOf="@+id/hsleidenlogo"
-        android:layout_toEndOf="@+id/hsleidenlogo" />
+        android:layout_alignRight="@+id/textView4"
+        android:layout_alignEnd="@+id/textView4"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4" />
 
 
 </RelativeLayout>

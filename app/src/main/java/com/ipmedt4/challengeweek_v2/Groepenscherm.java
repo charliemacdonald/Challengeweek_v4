@@ -19,7 +19,7 @@ public class Groepenscherm extends ActionBarActivity {
         Intent i = getIntent();
         final String Klas = i.getStringExtra("Klas");
 
-        TextView Groepen = (TextView) findViewById(R.id.Groepen);
+        TextView Groepen = (TextView) findViewById(R.id.textView2);
         Button Groep1 = (Button) findViewById(R.id.Groep1);
         Button Groep2 = (Button) findViewById(R.id.Groep2);
         Button Groep3 = (Button) findViewById(R.id.Groep3);

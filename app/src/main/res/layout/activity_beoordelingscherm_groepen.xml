@@ -8,12 +8,13 @@
         android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingTop="@dimen/activity_vertical_margin"
         android:paddingBottom="@dimen/activity_vertical_margin"
-        tools:context="com.ipmedt4.challengeweek_v2.Beoordelingscherm">
+        tools:context="com.ipmedt4.challengeweek_v2.BeoordelingschermGroepen">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="New Text"
+
             android:id="@+id/texviewbeoordelinggroepen"
             android:textSize="22sp"
             android:textColor="#000000"
@@ -38,7 +39,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="New Text"
+            android:text="@string/Criteria"
             android:textColor="#0099cc"
             android:id="@+id/tekstcriteria1"
             android:textSize="18sp"
@@ -52,18 +53,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="Small Text"
+            android:text="@string/subcriteria"
             android:id="@+id/tekstsubcriteria1"
             android:layout_below="@+id/tekstcriteria1"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:layout_alignRight="@+id/tekstcriteria1"
-            android:layout_alignEnd="@+id/tekstcriteria1" />
+            android:layout_alignRight="@+id/tekstsubcriteria2"
+            android:layout_alignEnd="@+id/tekstsubcriteria2" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="New Text"
+            android:text="@string/Criteria"
             android:textColor="#0099cc"
             android:textSize="18sp"
             android:id="@+id/tekstcriteria2"
@@ -78,13 +79,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="Small Text"
+            android:text="@string/subcriteria"
             android:id="@+id/tekstsubcriteria2"
             android:layout_below="@+id/tekstcriteria2"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:layout_alignRight="@+id/tekstcriteria2"
-            android:layout_alignEnd="@+id/tekstcriteria2" />
+            android:layout_alignRight="@+id/tekstsubcriteria3"
+            android:layout_alignEnd="@+id/tekstsubcriteria3" />
 
         <Switch
             android:layout_width="wrap_content"
@@ -97,7 +98,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="New Text"
+            android:text="@string/Criteria"
             android:textColor="#0099cc"
             android:textSize="18sp"
             android:id="@+id/tekstcriteria3"
@@ -110,7 +111,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="Small Text"
+            android:text="@string/subcriteria"
             android:id="@+id/tekstsubcriteria3"
             android:layout_below="@+id/tekstcriteria3"
             android:layout_alignParentLeft="true"
@@ -129,7 +130,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="New Text"
+            android:text="@string/Criteria"
             android:id="@+id/tekstcriteria4"
             android:textColor="#0099cc"
             android:textSize="18sp"
@@ -142,7 +143,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="Small Text"
+            android:text="@string/subcriteria"
             android:id="@+id/tekstsubcriteria4"
             android:layout_below="@+id/tekstcriteria4"
             android:layout_alignParentLeft="true"
@@ -161,7 +162,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="New Text"
+            android:text="@string/Criteria"
             android:id="@+id/tekstcriteria5"
             android:textColor="#0099cc"
             android:textSize="18sp"
@@ -176,7 +177,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="Small Text"
+            android:text="@string/subcriteria"
             android:id="@+id/tekstsubcriteria5"
             android:layout_below="@+id/tekstcriteria5"
             android:layout_alignParentLeft="true"
@@ -195,7 +196,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="New Text"
+            android:text="@string/Criteria"
             android:textColor="#0099cc"
             android:textSize="18sp"
             android:id="@+id/tekstcriteria6"
@@ -208,25 +209,23 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="Small Text"
+            android:text="@string/subcriteria"
             android:id="@+id/tekstsubcriteria6"
             android:layout_below="@+id/tekstcriteria6"
             android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_alignRight="@+id/switch6"
-            android:layout_alignEnd="@+id/switch6" />
+            android:layout_alignParentStart="true" />
 
         <Switch
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/switch6"
-            android:layout_above="@+id/textView5"
-            android:layout_alignRight="@+id/tekstsubcriteria6"
-            android:layout_alignEnd="@+id/tekstsubcriteria6" />
+            android:layout_alignBottom="@+id/tekstsubcriteria6"
+            android:layout_alignLeft="@+id/switch6"
+            android:layout_alignStart="@+id/switch6" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="New Text"
+            android:text="@string/Criteria"
             android:textColor="#0099cc"
             android:textSize="18sp"
             android:id="@+id/tekstcriteria7"
@@ -241,21 +240,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="Small Text"
+            android:text="@string/subcriteria"
             android:id="@+id/tekstsubcriteria7"
             android:layout_below="@+id/tekstcriteria7"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_alignRight="@+id/tekstcriteria7"
             android:layout_alignEnd="@+id/tekstcriteria7" />
-
-        <Switch
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/switch6"
-            android:layout_alignBottom="@+id/tekstsubcriteria7"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true" />
 
         <Switch
             android:layout_width="wrap_content"
@@ -276,7 +267,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="New Text"
+            android:text="@string/Criteria"
             android:id="@+id/textView5"
             android:textColor="#0099cc"
             android:textSize="18sp"
@@ -291,7 +282,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="Small Text"
+            android:text="@string/subcriteria"
             android:id="@+id/textView6"
             android:layout_below="@+id/textView5"
             android:layout_alignParentLeft="true"
@@ -302,7 +293,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="New Text"
+            android:text="@string/Criteria"
             android:id="@+id/textView7"
             android:textColor="#0099cc"
             android:textSize="18sp"
@@ -316,7 +307,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="Small Text"
+            android:text="@string/subcriteria"
             android:id="@+id/textView8"
             android:layout_below="@+id/textView7"
             android:layout_alignParentLeft="true"
@@ -328,16 +319,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/switch7"
-            android:layout_below="@+id/tekstsubcriteria6"
+            android:layout_alignBottom="@+id/textView6"
             android:layout_alignLeft="@+id/switch6"
-            android:layout_alignStart="@+id/switch6"
-            android:layout_marginTop="14dp" />
+            android:layout_alignStart="@+id/switch6" />
 
         <Switch
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/switch8"
             android:layout_alignBottom="@+id/textView8"
-            android:layout_alignRight="@+id/textView7"
-            android:layout_alignEnd="@+id/textView7" />
-        </RelativeLayout>
+            android:layout_alignLeft="@+id/switch7"
+            android:layout_alignStart="@+id/switch7" />
+
+
+    </RelativeLayout>
